@@ -1,0 +1,26 @@
+{
+    IBClasses = (
+        {CLASS = FKBarcodeScannersManager; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {switchPane = id; }; 
+            CLASS = FKMultiplePanesController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = FKVerticallyCenteredTextFieldCell; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSTextFieldCell; 
+        }, 
+        {CLASS = FKWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = PreferencesController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {barcodeReadersView = NSView; generalView = NSView; }; 
+            SUPERCLASS = FKMultiplePanesController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

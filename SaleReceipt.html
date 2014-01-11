@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Page sans titre</title>
+		<link href="./ShoppingBag.css" rel="stylesheet" type="text/css" media="all">
+		<link href="./Receipt.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+
+	<body bgcolor="#ffffff">
+		<div align="center">
+			<p>
+				<font size="5">Terre de Jeux</font>
+				<img src="./LogoT2J.png" width="10%"></img>
+			</p>
+			<br>
+		</div>
+		<p>Ticket de caisse string:///saleNumber/</p>
+		<table width="100%" border="0" cellspacing="0" cellpadding="2">
+		  <colgroup>
+  		  <col></col>
+	   	  <col width="60"></col>
+	   	  <col width="60"></col>
+	   	  <col width="60"></col>
+		  </colgroup>
+			<tr>
+				<td>
+					<div align="center">
+						<b>Article</b></div>
+				</td>
+				<td>
+					<div align="center">
+						<b>Quantit&eacute;</b></div>
+				</td>
+				<td>
+					<div align="center">
+						<b>Prix unitaire TTC</b></div>
+				</td>
+				<td>
+					<div align="center">
+						<b>Prix total TTC</b></div>
+				</td>
+			</tr>
+			<!-- BeginRepeat ON saleLines | -->
+			<tr>
+				<td>
+					string:///product.name/
+				</td>
+				<td>
+					<div align="center">
+						integer:///quantity/</div>
+				</td>
+				<td>
+					<div align="right">
+						currency:///productBasePriceTTC/</div>
+				</td>
+				<td>
+					<div align="right">
+						currency:///lineTotalTTC/</div>
+				</td>
+			</tr>
+			<!-- EndRepeat -->
+			<tr>
+				<td colspan="3">
+					<div align="right">Remise</div>
+				</td>
+				<td>
+					<div align="right">percent:///discountRate/</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div align="right">Total HT</div>
+				</td>
+				<td>
+					<div align="right">currency:///discountedTotalHT/</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div align="right">TVA</div>
+				</td>
+				<td>
+					<div align="right">currency:///totalTax/</div>
+				</td>
+			</tr>
+		  <!-- BeginRepeat ON amountByTaxRate | -->
+			<tr>
+		    <td colspan="3">
+					<div align="right">
+						<i>dont TVA &agrave; percent:///taxRate/</i></div>
+				</td>
+				<td>
+					<div align="right">
+						<i>currency:///taxAmount/</i></div>
+				</td>
+			</tr>
+			<!-- EndRepeat -->
+			<tr>
+				<td colspan="3">
+					<div align="right">
+						<b>Total TTC</b></div>
+				</td>
+				<td>
+					<div align="right">
+						<b>currency:///discountedTotalTTC/</b></div>
+				</td>
+			</tr>
+		</table>
+		<div align="left">
+			<p>Paiement string:///paymentMethod.name/</p>
+		</div>
+		<div align="right">
+			<p></p>
+			<p>date:///date/</p>
+		</div>
+		<p></p>
+		<p></p>
+	</body>
+
+</html>

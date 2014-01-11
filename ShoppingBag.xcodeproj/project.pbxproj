@@ -1,0 +1,2121 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F20343270C3FE37600E2930C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F20343260C3FE37600E2930C /* Localizable.strings */; };
+		F2078D330C8C7C7600CE5391 /* ShoppingBag.css in Copy Files (Templates) */ = {isa = PBXBuildFile; fileRef = F2078D320C8C7C7600CE5391 /* ShoppingBag.css */; };
+		F207BBAD0CA6913A00D6B5C6 /* TB_AddInventory.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F207BBAC0CA6913A00D6B5C6 /* TB_AddInventory.tiff */; };
+		F207BBB80CA691B300D6B5C6 /* TB_Delete.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F207BBB70CA691B300D6B5C6 /* TB_Delete.tiff */; };
+		F207BBBC0CA6921C00D6B5C6 /* Inventories.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F207BBBB0CA6921C00D6B5C6 /* Inventories.tiff */; };
+		F20CE60C107F64360037F659 /* Provider.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CE60B107F64360037F659 /* Provider.m */; };
+		F20D98D80C7256D400839D54 /* ProductFamiliesModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F20D98D60C7256D300839D54 /* ProductFamiliesModule.m */; };
+		F20D990F0C72570600839D54 /* ProductFamiliesModule.nib in Resources */ = {isa = PBXBuildFile; fileRef = F20D990E0C72570600839D54 /* ProductFamiliesModule.nib */; };
+		F20EE33C10887B0400D3F192 /* TB_Export.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F20EE33B10887B0400D3F192 /* TB_Export.tiff */; };
+		F20EEC711089F7CD00D3F192 /* TB_AddProvider.png in Resources */ = {isa = PBXBuildFile; fileRef = F20EEC701089F7CD00D3F192 /* TB_AddProvider.png */; };
+		F20EF235108BB8FD00D3F192 /* SaleLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EF234108BB8FD00D3F192 /* SaleLine.m */; };
+		F20EFADA108CBDF300D3F192 /* FKManagedArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAD9108CBDF300D3F192 /* FKManagedArrayController.m */; };
+		F20EFAE1108CBE0600D3F192 /* FKModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAE0108CBE0600D3F192 /* FKModule.m */; };
+		F20EFB1D108CBEDC00D3F192 /* NSImage-NKDBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAEF108CBEDC00D3F192 /* NSImage-NKDBarcode.m */; };
+		F20EFB1E108CBEDC00D3F192 /* NSImage-Normalize.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAF1108CBEDC00D3F192 /* NSImage-Normalize.m */; };
+		F20EFB1F108CBEDC00D3F192 /* NSString-UPCEAN.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAF3108CBEDC00D3F192 /* NSString-UPCEAN.m */; };
+		F20EFB20108CBEDC00D3F192 /* NKDBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAF6108CBEDC00D3F192 /* NKDBarcode.m */; };
+		F20EFB21108CBEDC00D3F192 /* NKDCode39Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAF8108CBEDC00D3F192 /* NKDCode39Barcode.m */; };
+		F20EFB22108CBEDC00D3F192 /* NKDExtendedCode39Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAFA108CBEDC00D3F192 /* NKDExtendedCode39Barcode.m */; };
+		F20EFB23108CBEDC00D3F192 /* NKDInterleavedTwoOfFiveBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAFC108CBEDC00D3F192 /* NKDInterleavedTwoOfFiveBarcode.m */; };
+		F20EFB24108CBEDC00D3F192 /* NKDModifiedPlesseyBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAFE108CBEDC00D3F192 /* NKDModifiedPlesseyBarcode.m */; };
+		F20EFB25108CBEDC00D3F192 /* NKDPostnetBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB00108CBEDC00D3F192 /* NKDPostnetBarcode.m */; };
+		F20EFB26108CBEDC00D3F192 /* NKDUPCABarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB02108CBEDC00D3F192 /* NKDUPCABarcode.m */; };
+		F20EFB27108CBEDC00D3F192 /* NKDModifiedPlesseyHexBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB04108CBEDC00D3F192 /* NKDModifiedPlesseyHexBarcode.m */; };
+		F20EFB28108CBEDC00D3F192 /* NKDIndustrialTwoOfFiveBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB06108CBEDC00D3F192 /* NKDIndustrialTwoOfFiveBarcode.m */; };
+		F20EFB29108CBEDC00D3F192 /* NKDEAN13Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB08108CBEDC00D3F192 /* NKDEAN13Barcode.m */; };
+		F20EFB2A108CBEDC00D3F192 /* NKDCode128Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB0A108CBEDC00D3F192 /* NKDCode128Barcode.m */; };
+		F20EFB2B108CBEDC00D3F192 /* NKDAbstractUPCEANBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB0C108CBEDC00D3F192 /* NKDAbstractUPCEANBarcode.m */; };
+		F20EFB2C108CBEDC00D3F192 /* NKDCodabarBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB0E108CBEDC00D3F192 /* NKDCodabarBarcode.m */; };
+		F20EFB2D108CBEDC00D3F192 /* NKDUPCEBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB10108CBEDC00D3F192 /* NKDUPCEBarcode.m */; };
+		F20EFB2E108CBEDC00D3F192 /* NKDEAN8Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB12108CBEDC00D3F192 /* NKDEAN8Barcode.m */; };
+		F20EFB2F108CBEDC00D3F192 /* NKDBarcodeOffscreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB14108CBEDC00D3F192 /* NKDBarcodeOffscreenView.m */; };
+		F20EFB30108CBEDC00D3F192 /* NKDBarcodeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB16108CBEDC00D3F192 /* NKDBarcodeImageView.m */; };
+		F20EFB31108CBEDC00D3F192 /* NKDRoyalMailBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB18108CBEDC00D3F192 /* NKDRoyalMailBarcode.m */; };
+		F20EFB32108CBEDC00D3F192 /* NKDPlanetBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB1A108CBEDC00D3F192 /* NKDPlanetBarcode.m */; };
+		F20EFB33108CBEDC00D3F192 /* JapanPostBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB1C108CBEDC00D3F192 /* JapanPostBarcode.m */; };
+		F20EFB5B108CBF3200D3F192 /* NSAlert_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB3A108CBF3200D3F192 /* NSAlert_FKAdditions.m */; };
+		F20EFB5C108CBF3200D3F192 /* NSBezierPath_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB3C108CBF3200D3F192 /* NSBezierPath_FKAdditions.m */; };
+		F20EFB5D108CBF3200D3F192 /* NSColor_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB3E108CBF3200D3F192 /* NSColor_FKAdditions.m */; };
+		F20EFB5E108CBF3200D3F192 /* NSComboBoxCell_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB40108CBF3200D3F192 /* NSComboBoxCell_FKAdditions.m */; };
+		F20EFB5F108CBF3200D3F192 /* NSDate_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB42108CBF3200D3F192 /* NSDate_FKAdditions.m */; };
+		F20EFB60108CBF3200D3F192 /* NSDecimalNumber_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB44108CBF3200D3F192 /* NSDecimalNumber_FKAdditions.m */; };
+		F20EFB61108CBF3200D3F192 /* NSImage_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB46108CBF3200D3F192 /* NSImage_FKAdditions.m */; };
+		F20EFB62108CBF3200D3F192 /* NSImageView_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB48108CBF3200D3F192 /* NSImageView_FKAdditions.m */; };
+		F20EFB63108CBF3200D3F192 /* NSMutableArray_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB4A108CBF3200D3F192 /* NSMutableArray_FKAdditions.m */; };
+		F20EFB64108CBF3200D3F192 /* NSMutableParagraphStyle_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB4C108CBF3200D3F192 /* NSMutableParagraphStyle_FKAdditions.m */; };
+		F20EFB65108CBF3200D3F192 /* NSObject_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB4E108CBF3200D3F192 /* NSObject_FKAdditions.m */; };
+		F20EFB67108CBF3200D3F192 /* NSString_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB54108CBF3200D3F192 /* NSString_FKAdditions.m */; };
+		F20EFB68108CBF3200D3F192 /* NSTableColumn_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB56108CBF3200D3F192 /* NSTableColumn_FKAdditions.m */; };
+		F20EFB69108CBF3200D3F192 /* NSView_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB58108CBF3200D3F192 /* NSView_FKAdditions.m */; };
+		F20EFB6A108CBF3200D3F192 /* NSWindow_FKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFB5A108CBF3200D3F192 /* NSWindow_FKAdditions.m */; };
+		F20EFB74108CC1C800D3F192 /* FKAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EF9F6108CBDC100D3F192 /* FKAlert.m */; };
+		F20EFB75108CC1C800D3F192 /* FKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EF9F8108CBDC100D3F192 /* FKAppDelegate.m */; };
+		F20EFB76108CC1C800D3F192 /* FKBarcodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EF9FA108CBDC100D3F192 /* FKBarcodeScanner.m */; };
+		F20EFB77108CC1C800D3F192 /* FKBarcodeScannersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EF9FC108CBDC100D3F192 /* FKBarcodeScannersManager.m */; };
+		F20EFB78108CC1C800D3F192 /* FKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA04108CBDC100D3F192 /* FKButton.m */; };
+		F20EFB79108CC1C800D3F192 /* FKButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA06108CBDC100D3F192 /* FKButtonCell.m */; };
+		F20EFB7A108CC1C800D3F192 /* FKComboBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA08108CBDC100D3F192 /* FKComboBox.m */; };
+		F20EFB7B108CC1C800D3F192 /* FKComboBoxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA0A108CBDC100D3F192 /* FKComboBoxCell.m */; };
+		F20EFB7C108CC1C800D3F192 /* FKCurrencyFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA0C108CBDC100D3F192 /* FKCurrencyFormatter.m */; };
+		F20EFB7D108CC1C800D3F192 /* FKCurrencyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA0E108CBDC100D3F192 /* FKCurrencyTextField.m */; };
+		F20EFB7E108CC1C800D3F192 /* FKCurrencyTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA10108CBDC100D3F192 /* FKCurrencyTextFieldCell.m */; };
+		F20EFB7F108CC1C800D3F192 /* FKDecimalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA12108CBDC100D3F192 /* FKDecimalFormatter.m */; };
+		F20EFB80108CC1C800D3F192 /* FKDecimalTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA14108CBDC100D3F192 /* FKDecimalTextField.m */; };
+		F20EFB81108CC1C800D3F192 /* FKDecimalTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA16108CBDC100D3F192 /* FKDecimalTextFieldCell.m */; };
+		F20EFB82108CC1C800D3F192 /* FKFlatRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA18108CBDC100D3F192 /* FKFlatRoundedButton.m */; };
+		F20EFB83108CC1C800D3F192 /* FKFlatRoundedButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA1A108CBDC100D3F192 /* FKFlatRoundedButtonCell.m */; };
+		F20EFB84108CC1C800D3F192 /* FKFlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA1C108CBDC100D3F192 /* FKFlippedView.m */; };
+		F20EFB85108CC1C800D3F192 /* FKFocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA1E108CBDC100D3F192 /* FKFocusView.m */; };
+		F20EFB86108CC1C800D3F192 /* FKGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA20108CBDC100D3F192 /* FKGroup.m */; };
+		F20EFB87108CC1C800D3F192 /* FKImageAndTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA22108CBDC100D3F192 /* FKImageAndTextCell.m */; };
+		F20EFB88108CC1C800D3F192 /* FKImageAndTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA24108CBDC100D3F192 /* FKImageAndTextField.m */; };
+		F20EFB89108CC1C800D3F192 /* FKIntegerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA26108CBDC100D3F192 /* FKIntegerFormatter.m */; };
+		F20EFB8A108CC1C800D3F192 /* FKIntegerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA28108CBDC100D3F192 /* FKIntegerTextField.m */; };
+		F20EFB8B108CC1C800D3F192 /* FKIntegerTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA2A108CBDC100D3F192 /* FKIntegerTextFieldCell.m */; };
+		F20EFB8C108CC1C800D3F192 /* FKLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA2E108CBDC100D3F192 /* FKLine.m */; };
+		F20EFB8D108CC1C800D3F192 /* FKManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA31108CBDC100D3F192 /* FKManagedObject.m */; };
+		F20EFB8E108CC1C800D3F192 /* FKManagedObjectsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA33108CBDC100D3F192 /* FKManagedObjectsManager.m */; };
+		F20EFB8F108CC1C800D3F192 /* FKManagedPlatePopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA35108CBDC100D3F192 /* FKManagedPlatePopUpButton.m */; };
+		F20EFB90108CC1C800D3F192 /* FKModule_BrowserStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA37108CBDC100D3F192 /* FKModule_BrowserStyle.m */; };
+		F20EFB91108CC1C800D3F192 /* FKModule_FullStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA39108CBDC100D3F192 /* FKModule_FullStyle.m */; };
+		F20EFB92108CC1C800D3F192 /* FKModule_MiniStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA3B108CBDC100D3F192 /* FKModule_MiniStyle.m */; };
+		F20EFB93108CC1C800D3F192 /* FKModuleBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA3E108CBDC100D3F192 /* FKModuleBottomBar.m */; };
+		F20EFB94108CC1C800D3F192 /* FKModuleCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA41108CBDC100D3F192 /* FKModuleCenter.m */; };
+		F20EFB95108CC1C800D3F192 /* FKModuleGradientTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA44108CBDC100D3F192 /* FKModuleGradientTextField.m */; };
+		F20EFB96108CC1C800D3F192 /* FKModuleGradientTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA46108CBDC100D3F192 /* FKModuleGradientTextFieldCell.m */; };
+		F20EFB9C108CC1C800D3F192 /* FKModuleTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA52108CBDC100D3F192 /* FKModuleTheme.m */; };
+		F20EFB9D108CC1C800D3F192 /* FKModuleThemeBlue.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA54108CBDC100D3F192 /* FKModuleThemeBlue.m */; };
+		F20EFB9E108CC1C800D3F192 /* FKModuleThemeBrown.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA56108CBDC100D3F192 /* FKModuleThemeBrown.m */; };
+		F20EFB9F108CC1C800D3F192 /* FKModuleThemeGreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA58108CBDC100D3F192 /* FKModuleThemeGreen.m */; };
+		F20EFBA0108CC1C800D3F192 /* FKModuleThemeOrange.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA5A108CBDC100D3F192 /* FKModuleThemeOrange.m */; };
+		F20EFBA1108CC1C800D3F192 /* FKModuleThemePurple.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA5C108CBDC100D3F192 /* FKModuleThemePurple.m */; };
+		F20EFBA2108CC1C800D3F192 /* FKModuleThemeRed.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA5E108CBDC100D3F192 /* FKModuleThemeRed.m */; };
+		F20EFBA3108CC1C800D3F192 /* FKModuleThemeYellow.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA60108CBDC100D3F192 /* FKModuleThemeYellow.m */; };
+		F20EFBAD108CC1C800D3F192 /* FKMultiplePanesController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA80108CBDC100D3F192 /* FKMultiplePanesController.m */; };
+		F20EFBAE108CC1C800D3F192 /* FKMultipleValuesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA82108CBDC100D3F192 /* FKMultipleValuesProxy.m */; };
+		F20EFBAF108CC1C800D3F192 /* FKNavigationToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA84108CBDC100D3F192 /* FKNavigationToolbarItem.m */; };
+		F20EFBB0108CC1C800D3F192 /* FKNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA86108CBDC100D3F192 /* FKNumberFormatter.m */; };
+		F20EFBB1108CC1C800D3F192 /* FKOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA88108CBDC100D3F192 /* FKOutlineView.m */; };
+		F20EFBB2108CC1C800D3F192 /* FKPercentFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA8A108CBDC100D3F192 /* FKPercentFormatter.m */; };
+		F20EFBB3108CC1C800D3F192 /* FKPercentTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA8C108CBDC100D3F192 /* FKPercentTextField.m */; };
+		F20EFBB4108CC1C800D3F192 /* FKPercentTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA8E108CBDC200D3F192 /* FKPercentTextFieldCell.m */; };
+		F20EFBB5108CC1C800D3F192 /* FKPlatePopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA90108CBDC200D3F192 /* FKPlatePopUpButton.m */; };
+		F20EFBB6108CC1C800D3F192 /* FKPlatePopUpButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA92108CBDC200D3F192 /* FKPlatePopUpButtonCell.m */; };
+		F20EFBB7108CC1C800D3F192 /* FKPlusMinusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA94108CBDC200D3F192 /* FKPlusMinusView.m */; };
+		F20EFBB8108CC1C800D3F192 /* FKPrintManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA96108CBDC200D3F192 /* FKPrintManager.m */; };
+		F20EFBB9108CC1C800D3F192 /* FKSidebarObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA98108CBDC200D3F192 /* FKSidebarObject.m */; };
+		F20EFBBA108CC1C800D3F192 /* FKSmartGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA9A108CBDC200D3F192 /* FKSmartGroup.m */; };
+		F20EFBBB108CC1C800D3F192 /* FKSourceListGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA9C108CBDC200D3F192 /* FKSourceListGroup.m */; };
+		F20EFBBC108CC1C800D3F192 /* FKSourceListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFA9E108CBDC200D3F192 /* FKSourceListItem.m */; };
+		F20EFBBD108CC1C800D3F192 /* FKSourceListSmartGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAA0108CBDC200D3F192 /* FKSourceListSmartGroup.m */; };
+		F20EFBBE108CC1C800D3F192 /* FKSplitter.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAA2108CBDC200D3F192 /* FKSplitter.m */; };
+		F20EFBBF108CC1C800D3F192 /* FKSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAA4108CBDC200D3F192 /* FKSplitView.m */; };
+		F20EFBC0108CC1C800D3F192 /* FKSquareComboBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAA6108CBDC200D3F192 /* FKSquareComboBox.m */; };
+		F20EFBC1108CC1C800D3F192 /* FKStackableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAA8108CBDC200D3F192 /* FKStackableView.m */; };
+		F20EFBC2108CC1C800D3F192 /* FKStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAAA108CBDC200D3F192 /* FKStackView.m */; };
+		F20EFBC3108CC1C800D3F192 /* FKSubviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAAC108CBDC200D3F192 /* FKSubviewTableViewCell.m */; };
+		F20EFBC4108CC1C800D3F192 /* FKSubviewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAAE108CBDC200D3F192 /* FKSubviewTableViewController.m */; };
+		F20EFBC5108CC1C800D3F192 /* FKTableCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAB0108CBDC200D3F192 /* FKTableCornerView.m */; };
+		F20EFBC6108CC1C800D3F192 /* FKTableHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAB2108CBDC200D3F192 /* FKTableHeaderCell.m */; };
+		F20EFBC7108CC1C800D3F192 /* FKTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAB4108CBDC200D3F192 /* FKTableHeaderView.m */; };
+		F20EFBC8108CC1C800D3F192 /* FKTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFABA108CBDC200D3F192 /* FKTabView.m */; };
+		F20EFBC9108CC1C800D3F192 /* FKTabViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFABC108CBDC200D3F192 /* FKTabViewItem.m */; };
+		F20EFBCA108CC1C800D3F192 /* FKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFABE108CBDC200D3F192 /* FKTextField.m */; };
+		F20EFBCB108CC1C800D3F192 /* FKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAC0108CBDC200D3F192 /* FKTextFieldCell.m */; };
+		F20EFBCC108CC1C800D3F192 /* FKToolbarItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAC2108CBDC200D3F192 /* FKToolbarItemButton.m */; };
+		F20EFBCD108CC1C800D3F192 /* FKToolbarItemPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAC4108CBDC200D3F192 /* FKToolbarItemPopUpButton.m */; };
+		F20EFBCE108CC1C800D3F192 /* FKToolbarItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAC6108CBDC200D3F192 /* FKToolbarItemView.m */; };
+		F20EFBCF108CC1C800D3F192 /* FKURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAC8108CBDC200D3F192 /* FKURLProtocol.m */; };
+		F20EFBD0108CC1C800D3F192 /* FKVerticallyCenteredCurrencyTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFACA108CBDC200D3F192 /* FKVerticallyCenteredCurrencyTextFieldCell.m */; };
+		F20EFBD1108CC1C800D3F192 /* FKVerticallyCenteredDecimalTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFACC108CBDC200D3F192 /* FKVerticallyCenteredDecimalTextFieldCell.m */; };
+		F20EFBD2108CC1C800D3F192 /* FKVerticallyCenteredIntegerTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFACE108CBDC200D3F192 /* FKVerticallyCenteredIntegerTextFieldCell.m */; };
+		F20EFBD3108CC1C800D3F192 /* FKVerticallyCenteredPercentTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAD0108CBDC200D3F192 /* FKVerticallyCenteredPercentTextFieldCell.m */; };
+		F20EFBD4108CC1C800D3F192 /* FKVerticallyCenteredTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAD2108CBDC200D3F192 /* FKVerticallyCenteredTextFieldCell.m */; };
+		F20EFBD5108CC1C800D3F192 /* FKView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAD4108CBDC200D3F192 /* FKView.m */; };
+		F20EFBD6108CC1C800D3F192 /* FKViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAD6108CBDC200D3F192 /* FKViewAnimation.m */; };
+		F20EFBD7108CC1C800D3F192 /* FKWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFAD8108CBDC200D3F192 /* FKWindow.m */; };
+		F20EFC02108CC22700D3F192 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EFC01108CC22700D3F192 /* Carbon.framework */; };
+		F20EFC04108CC22700D3F192 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EFC03108CC22700D3F192 /* IOKit.framework */; };
+		F20EFC19108CC26E00D3F192 /* FKTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20EFC18108CC26E00D3F192 /* FKTableView.m */; };
+		F20EFC89108CE8F600D3F192 /* TabViewBack.png in Resources */ = {isa = PBXBuildFile; fileRef = F20EFC88108CE8F600D3F192 /* TabViewBack.png */; };
+		F20EFCB3108CFA6200D3F192 /* Minus.png in Resources */ = {isa = PBXBuildFile; fileRef = F20EFCB1108CFA6200D3F192 /* Minus.png */; };
+		F20EFCB4108CFA6200D3F192 /* Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = F20EFCB2108CFA6200D3F192 /* Plus.png */; };
+		F20EFCB8108CFA8100D3F192 /* FilterBarBack.png in Resources */ = {isa = PBXBuildFile; fileRef = F20EFCB7108CFA8100D3F192 /* FilterBarBack.png */; };
+		F21568F50C9C1A3100DCC9E4 /* BarcodeReadersPreferences.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F21568F40C9C1A3100DCC9E4 /* BarcodeReadersPreferences.tiff */; };
+		F21D60C1107D2AC8005E4C4F /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D60C0107D2AC8005E4C4F /* Product.m */; };
+		F21D61AC107D3EFF005E4C4F /* ProviderProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D61AB107D3EFF005E4C4F /* ProviderProduct.m */; };
+		F21DE89B0C52A7EC00FF982E /* ErrorMessages.strings in Resources */ = {isa = PBXBuildFile; fileRef = F21DE89A0C52A7EC00FF982E /* ErrorMessages.strings */; };
+		F21DFCC71881415C00FB28EB /* ShoppingBag_DataModel_1.45.mom in Resources */ = {isa = PBXBuildFile; fileRef = F21DFCC31881415C00FB28EB /* ShoppingBag_DataModel_1.45.mom */; };
+		F21DFCC81881415C00FB28EB /* ShoppingBag_DataModel_1.411.mom in Resources */ = {isa = PBXBuildFile; fileRef = F21DFCC41881415C00FB28EB /* ShoppingBag_DataModel_1.411.mom */; };
+		F21DFCC91881415C00FB28EB /* ShoppingBag_DataModel.mom in Resources */ = {isa = PBXBuildFile; fileRef = F21DFCC51881415C00FB28EB /* ShoppingBag_DataModel.mom */; };
+		F21DFCCA1881415C00FB28EB /* VersionInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F21DFCC61881415C00FB28EB /* VersionInfo.plist */; };
+		F22AAE240CB24ED500FFD465 /* TB_AddCustomer.tif in Resources */ = {isa = PBXBuildFile; fileRef = F22AAE230CB24ED500FFD465 /* TB_AddCustomer.tif */; };
+		F22AAE260CB24EF200FFD465 /* Customers.png in Resources */ = {isa = PBXBuildFile; fileRef = F22AAE250CB24EF200FFD465 /* Customers.png */; };
+		F22F79620C552710005F2885 /* BrandsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F22F79600C552710005F2885 /* BrandsModule.m */; };
+		F22F796C0C552745005F2885 /* BrandsModule.nib in Resources */ = {isa = PBXBuildFile; fileRef = F22F796B0C552745005F2885 /* BrandsModule.nib */; };
+		F2329AF60C79868F0081264C /* TB_Exit.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F2329AF30C79868F0081264C /* TB_Exit.tiff */; };
+		F2329AF90C7987BA0081264C /* TB_AddSale.png in Resources */ = {isa = PBXBuildFile; fileRef = F2329AF80C7987BA0081264C /* TB_AddSale.png */; };
+		F23C64A80C3C344F00DC452C /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = F23C64A70C3C344F00DC452C /* MainMenu.nib */; };
+		F241A6270C9734BF004DFF3B /* Products.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F241A6260C9734BF004DFF3B /* Products.tiff */; };
+		F25AA03A0CA10E9E00280BAE /* StockSnapshotLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F25AA0380CA10E9E00280BAE /* StockSnapshotLine.m */; };
+		F25CD41B12C94DDF00795F3B /* SaleLineMigrationPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F25CD41A12C94DDF00795F3B /* SaleLineMigrationPolicy.m */; };
+		F26088E71084C56900CF845F /* PaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F26088E61084C56900CF845F /* PaymentMethod.m */; };
+		F260DF1817118F8A008848B6 /* SaleMigrationPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F260DF1717118F8A008848B6 /* SaleMigrationPolicy.m */; };
+		F260DFC9171193B9008848B6 /* 1.45_1.412.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = F260DFC8171193B9008848B6 /* 1.45_1.412.xcmappingmodel */; };
+		F261EEAD0CB3DAE50012E86D /* InventoryEndStockSnapshot.html in Copy Files (Templates) */ = {isa = PBXBuildFile; fileRef = F261EEAC0CB3DAE50012E86D /* InventoryEndStockSnapshot.html */; };
+		F26256980CACEC300030148E /* SaleInvoice.html in Copy Files (Templates) */ = {isa = PBXBuildFile; fileRef = F26256970CACEC300030148E /* SaleInvoice.html */; };
+		F2749A1A10CBC4A500C9DEBA /* FKModuleToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F27499FC10CBC4A500C9DEBA /* FKModuleToolbar.m */; };
+		F2749A1B10CBC4A500C9DEBA /* FKModuleToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F27499FE10CBC4A500C9DEBA /* FKModuleToolbarButton.m */; };
+		F2749A1C10CBC4A500C9DEBA /* FKModuleToolbarButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A0010CBC4A500C9DEBA /* FKModuleToolbarButtonCell.m */; };
+		F2749A1D10CBC4A500C9DEBA /* FKModuleToolbarClipIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A0210CBC4A500C9DEBA /* FKModuleToolbarClipIndicator.m */; };
+		F2749A1E10CBC4A500C9DEBA /* FKModuleToolbarClipIndicatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A0410CBC4A500C9DEBA /* FKModuleToolbarClipIndicatorCell.m */; };
+		F2749A1F10CBC4A500C9DEBA /* FKModuleToolbarFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A0610CBC4A500C9DEBA /* FKModuleToolbarFlatButton.m */; };
+		F2749A2010CBC4A500C9DEBA /* FKModuleToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A0810CBC4A500C9DEBA /* FKModuleToolbarItem.m */; };
+		F2749A2110CBC4A500C9DEBA /* FKModuleToolbarSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A0A10CBC4A500C9DEBA /* FKModuleToolbarSeparator.m */; };
+		F2749A2210CBC4A500C9DEBA /* FKModuleToolbarSeparatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A0C10CBC4A500C9DEBA /* FKModuleToolbarSeparatorItem.m */; };
+		F2749A2310CBC4A500C9DEBA /* FKModuleToolbarSpaceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A0E10CBC4A500C9DEBA /* FKModuleToolbarSpaceItem.m */; };
+		F2749A2410CBC4A500C9DEBA /* FKModuleFilterBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A1110CBC4A500C9DEBA /* FKModuleFilterBar.m */; };
+		F2749A2510CBC4A500C9DEBA /* FKModuleFilterBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A1310CBC4A500C9DEBA /* FKModuleFilterBarButton.m */; };
+		F2749A2610CBC4A500C9DEBA /* FKModuleFilterBarButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A1510CBC4A500C9DEBA /* FKModuleFilterBarButtonCell.m */; };
+		F2749A2710CBC4A500C9DEBA /* FKModuleFilterBarClipIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A1710CBC4A500C9DEBA /* FKModuleFilterBarClipIndicator.m */; };
+		F2749A2810CBC4A500C9DEBA /* FKModuleFilterBarClipIndicatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2749A1910CBC4A500C9DEBA /* FKModuleFilterBarClipIndicatorCell.m */; };
+		F2749A4010CBC67700C9DEBA /* FKNavigationBarBack.png in Resources */ = {isa = PBXBuildFile; fileRef = F2749A3F10CBC67700C9DEBA /* FKNavigationBarBack.png */; };
+		F2749A5410CBC83200C9DEBA /* TB_Show.png in Resources */ = {isa = PBXBuildFile; fileRef = F2749A5310CBC83200C9DEBA /* TB_Show.png */; };
+		F27CBD9D0C7F660200A7EDEF /* SaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27CBD9B0C7F660200A7EDEF /* SaleView.m */; };
+		F28758D9107B39A40042EBA8 /* TaxRate.m in Sources */ = {isa = PBXBuildFile; fileRef = F28758D8107B39A40042EBA8 /* TaxRate.m */; };
+		F28ED992108DEA2000A6C949 /* LogoT2J.png in Copy Files (Templates) */ = {isa = PBXBuildFile; fileRef = F28ED991108DEA2000A6C949 /* LogoT2J.png */; };
+		F28ED9A1108DEAF300A6C949 /* Receipt.css in Resources */ = {isa = PBXBuildFile; fileRef = F28ED9A0108DEAF300A6C949 /* Receipt.css */; };
+		F28F1AD10CA100D900EC715A /* StockSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = F28F1ACF0CA100D900EC715A /* StockSnapshot.m */; };
+		F290D86F0CA51CAC00FA9E55 /* StatusGray.png in Resources */ = {isa = PBXBuildFile; fileRef = F290D86B0CA51CAC00FA9E55 /* StatusGray.png */; };
+		F290D8700CA51CAC00FA9E55 /* StatusGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F290D86C0CA51CAC00FA9E55 /* StatusGreen.png */; };
+		F290D8710CA51CAC00FA9E55 /* StatusRed.png in Resources */ = {isa = PBXBuildFile; fileRef = F290D86D0CA51CAC00FA9E55 /* StatusRed.png */; };
+		F290D8720CA51CAC00FA9E55 /* StatusYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F290D86E0CA51CAC00FA9E55 /* StatusYellow.png */; };
+		F290D9F90CA57AD100FA9E55 /* TB_Run.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F290D9F60CA57AD100FA9E55 /* TB_Run.tiff */; };
+		F290D9FA0CA57AD100FA9E55 /* TB_Pause.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F290D9F70CA57AD100FA9E55 /* TB_Pause.tiff */; };
+		F290D9FB0CA57AD100FA9E55 /* TB_Stop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F290D9F80CA57AD100FA9E55 /* TB_Stop.tiff */; };
+		F2976E470C875BF40099F564 /* Inventory.m in Sources */ = {isa = PBXBuildFile; fileRef = F2976E450C875BF40099F564 /* Inventory.m */; };
+		F29774060C89CD1C0099F564 /* InventoriesModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F29774040C89CD1C0099F564 /* InventoriesModule.m */; };
+		F297742C0C89CD610099F564 /* InventoriesModule.nib in Resources */ = {isa = PBXBuildFile; fileRef = F297742B0C89CD610099F564 /* InventoriesModule.nib */; };
+		F29778CA0C8B086C0099F564 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29778C90C8B086C0099F564 /* WebKit.framework */; };
+		F297795C0C8B10B00099F564 /* InventoryBeginStockSnapshot.html in Copy Files (Templates) */ = {isa = PBXBuildFile; fileRef = F297795B0C8B10B00099F564 /* InventoryBeginStockSnapshot.html */; };
+		F2A4AC661147945A000AC76F /* SBMOCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A4AC651147945A000AC76F /* SBMOCHelper.m */; };
+		F2A4AC7211479501000AC76F /* SBMOCHelper+Brand.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A4AC7111479501000AC76F /* SBMOCHelper+Brand.m */; };
+		F2A4AC9211479862000AC76F /* SBMOCHelper+ProductFamily.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A4AC9111479862000AC76F /* SBMOCHelper+ProductFamily.m */; };
+		F2C579510C78EF030071F3E9 /* CustomersModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C5794F0C78EF030071F3E9 /* CustomersModule.m */; };
+		F2C5796B0C78EF1C0071F3E9 /* CustomersModule.nib in Resources */ = {isa = PBXBuildFile; fileRef = F2C5796A0C78EF1C0071F3E9 /* CustomersModule.nib */; };
+		F2C579760C78EF440071F3E9 /* SBModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C579740C78EF440071F3E9 /* SBModule.m */; };
+		F2C6BCBA0CA6D371009EC4BE /* TB_Print.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F2C6BCB90CA6D371009EC4BE /* TB_Print.tiff */; };
+		F2C82F8D0CAA9F040018BAE5 /* PaymentMethodsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C82F8B0CAA9F040018BAE5 /* PaymentMethodsModule.m */; };
+		F2C82FBB0CAA9F330018BAE5 /* PaymentMethodsModule.nib in Resources */ = {isa = PBXBuildFile; fileRef = F2C82FBA0CAA9F330018BAE5 /* PaymentMethodsModule.nib */; };
+		F2C8332A0CABB14F0018BAE5 /* SaleReceipt.html in Copy Files (Templates) */ = {isa = PBXBuildFile; fileRef = F2C833290CABB14F0018BAE5 /* SaleReceipt.html */; };
+		F2C94ADC0E91908300F8D763 /* Sales.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C94ADB0E91908300F8D763 /* Sales.png */; };
+		F2C94AE30E9192C800F8D763 /* Providers.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C94AE20E9192C800F8D763 /* Providers.png */; };
+		F2C9D4330C99AC7300E615CB /* TB_AddProduct.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F2C9D4320C99AC7300E615CB /* TB_AddProduct.tiff */; };
+		F2D197B60CB0E54C00F85FAF /* IncomingProductsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D197B40CB0E54C00F85FAF /* IncomingProductsManager.m */; };
+		F2D197C80CB0E5A600F85FAF /* IncomingProducts.nib in Resources */ = {isa = PBXBuildFile; fileRef = F2D197C70CB0E5A600F85FAF /* IncomingProducts.nib */; };
+		F2D197D20CB0E6DB00F85FAF /* TB_ReceiveProducts.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D197D10CB0E6DB00F85FAF /* TB_ReceiveProducts.png */; };
+		F2D19B560CB1800900F85FAF /* TB_Edit.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F2D19B550CB1800900F85FAF /* TB_Edit.tiff */; };
+		F2D19B7A0CB18DD800F85FAF /* TB_PrintReceipt.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D19B790CB18DD800F85FAF /* TB_PrintReceipt.png */; };
+		F2D19B830CB1975500F85FAF /* TB_PrintInvoice.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2D19B820CB1975500F85FAF /* TB_PrintInvoice.tif */; };
+		F2D19B880CB197B700F85FAF /* TaxRates.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2D19B870CB197B700F85FAF /* TaxRates.tif */; };
+		F2D19B8B0CB197F000F85FAF /* TB_Pay.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2D19B8A0CB197F000F85FAF /* TB_Pay.tif */; };
+		F2D19BAB0CB1983700F85FAF /* PaymentMethods.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2D19BAA0CB1983700F85FAF /* PaymentMethods.tif */; };
+		F2D19BAE0CB1987E00F85FAF /* TB_AddPaymentMethod.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2D19BAD0CB1987E00F85FAF /* TB_AddPaymentMethod.tif */; };
+		F2D19BB10CB198B300F85FAF /* TB_AddTax.tif in Resources */ = {isa = PBXBuildFile; fileRef = F2D19BB00CB198B300F85FAF /* TB_AddTax.tif */; };
+		F2D19C290CB19E4A00F85FAF /* ProductCategories.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F2D19C270CB19E4A00F85FAF /* ProductCategories.tiff */; };
+		F2D19C2A0CB19E4A00F85FAF /* ProductFamilies.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F2D19C280CB19E4A00F85FAF /* ProductFamilies.tiff */; };
+		F2D19C530CB1A01100F85FAF /* TB_AddProductCategory.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F2D19C510CB1A01100F85FAF /* TB_AddProductCategory.tiff */; };
+		F2D19C540CB1A01100F85FAF /* TB_AddProductFamily.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F2D19C520CB1A01100F85FAF /* TB_AddProductFamily.tiff */; };
+		F2DA2D9E0CA300AB00A2CF9A /* small_goto_alt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F2DA2D940CA300AB00A2CF9A /* small_goto_alt.pdf */; };
+		F2DA2DA00CA300AB00A2CF9A /* small_goto.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F2DA2D960CA300AB00A2CF9A /* small_goto.pdf */; };
+		F2DA2DA10CA300AB00A2CF9A /* small_reveal_alt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F2DA2D970CA300AB00A2CF9A /* small_reveal_alt.pdf */; };
+		F2DA2DA20CA300AB00A2CF9A /* small_reveal_down.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F2DA2D980CA300AB00A2CF9A /* small_reveal_down.pdf */; };
+		F2DA2DA30CA300AB00A2CF9A /* small_reveal.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F2DA2D990CA300AB00A2CF9A /* small_reveal.pdf */; };
+		F2DA2DA60CA300AC00A2CF9A /* small_notification.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DA2D9C0CA300AB00A2CF9A /* small_notification.png */; };
+		F2DA2F1F0CA3117600A2CF9A /* CustomerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DA2F1D0CA3117600A2CF9A /* CustomerView.m */; };
+		F2DA2FDD0CA39F2F00A2CF9A /* invoice_unpaid_stamp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F2DA2FDB0CA39F2F00A2CF9A /* invoice_unpaid_stamp.pdf */; };
+		F2DA2FDE0CA39F2F00A2CF9A /* invoice_payed_stamp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F2DA2FDC0CA39F2F00A2CF9A /* invoice_payed_stamp.pdf */; };
+		F2DA308C0CA3C6CE00A2CF9A /* SmallClose.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DA308B0CA3C6CE00A2CF9A /* SmallClose.png */; };
+		F2DA30EB0CA3CDD300A2CF9A /* SmallClose_alt.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DA30EA0CA3CDD300A2CF9A /* SmallClose_alt.png */; };
+		F2DA30F10CA3CE4B00A2CF9A /* SmallEdit.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DA30EF0CA3CE4B00A2CF9A /* SmallEdit.png */; };
+		F2DA30F20CA3CE4B00A2CF9A /* SmallEdit_alt.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DA30F00CA3CE4B00A2CF9A /* SmallEdit_alt.png */; };
+		F2DFDBEB0CAFF1A800AF0499 /* DailyZ.html in Copy Files (Templates) */ = {isa = PBXBuildFile; fileRef = F2DFDBEA0CAFF1A800AF0499 /* DailyZ.html */; };
+		F2DFDD1D0CB0041800AF0499 /* StockValue.html in Copy Files (Templates) */ = {isa = PBXBuildFile; fileRef = F2DFDD1C0CB0041800AF0499 /* StockValue.html */; };
+		F2E035990C3C2EE700BF1030 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E0355C0C3C2EE700BF1030 /* Customer.m */; };
+		F2E0359A0C3C2EE700BF1030 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E0355D0C3C2EE700BF1030 /* Address.m */; };
+		F2E035A00C3C2EE700BF1030 /* Brand.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E035630C3C2EE700BF1030 /* Brand.m */; };
+		F2E035A50C3C2EE700BF1030 /* Invoice.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E035680C3C2EE700BF1030 /* Invoice.m */; };
+		F2E035AA0C3C2EE700BF1030 /* ProductCategoriesModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E0356D0C3C2EE700BF1030 /* ProductCategoriesModule.m */; };
+		F2E035AD0C3C2EE700BF1030 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E035700C3C2EE700BF1030 /* PreferencesController.m */; };
+		F2E035AE0C3C2EE700BF1030 /* ProductCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E035710C3C2EE700BF1030 /* ProductCategory.m */; };
+		F2E035B10C3C2EE700BF1030 /* ProductFamily.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E035740C3C2EE700BF1030 /* ProductFamily.m */; };
+		F2E035B40C3C2EE700BF1030 /* ProductsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E035770C3C2EE700BF1030 /* ProductsModule.m */; };
+		F2E035BA0C3C2EE700BF1030 /* ProvidersModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E0357D0C3C2EE700BF1030 /* ProvidersModule.m */; };
+		F2E035C10C3C2EE700BF1030 /* SalesModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E035840C3C2EE700BF1030 /* SalesModule.m */; };
+		F2E035C20C3C2EE700BF1030 /* ShoppingBag.icns in Resources */ = {isa = PBXBuildFile; fileRef = F2E035850C3C2EE700BF1030 /* ShoppingBag.icns */; };
+		F2E035C50C3C2EE700BF1030 /* ShoppingBagAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E035880C3C2EE700BF1030 /* ShoppingBagAppDelegate.m */; };
+		F2E035C70C3C2EE700BF1030 /* StockMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E0358A0C3C2EE700BF1030 /* StockMovement.m */; };
+		F2E035C80C3C2EE700BF1030 /* SupplyOrderLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E0358B0C3C2EE700BF1030 /* SupplyOrderLine.m */; };
+		F2E035CE0C3C2EE700BF1030 /* SupplyOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E035910C3C2EE700BF1030 /* SupplyOrder.m */; };
+		F2E035CF0C3C2EE700BF1030 /* StockAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E035920C3C2EE700BF1030 /* StockAlert.m */; };
+		F2E035D00C3C2EE700BF1030 /* TaxRatesModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E035930C3C2EE700BF1030 /* TaxRatesModule.m */; };
+		F2E035E40C3C2F2900BF1030 /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = F2E035D60C3C2F2900BF1030 /* Preferences.nib */; };
+		F2E035E50C3C2F2900BF1030 /* ProductCategoriesModule.nib in Resources */ = {isa = PBXBuildFile; fileRef = F2E035D80C3C2F2900BF1030 /* ProductCategoriesModule.nib */; };
+		F2E035E70C3C2F2900BF1030 /* TaxRatesModule.nib in Resources */ = {isa = PBXBuildFile; fileRef = F2E035DC0C3C2F2900BF1030 /* TaxRatesModule.nib */; };
+		F2E035E80C3C2F2900BF1030 /* SalesModule.nib in Resources */ = {isa = PBXBuildFile; fileRef = F2E035DE0C3C2F2900BF1030 /* SalesModule.nib */; };
+		F2E035EA0C3C2F2900BF1030 /* ProvidersModule.nib in Resources */ = {isa = PBXBuildFile; fileRef = F2E035E20C3C2F2900BF1030 /* ProvidersModule.nib */; };
+		F2E036490C3C30C000BF1030 /* ProductsModule.nib in Resources */ = {isa = PBXBuildFile; fileRef = F2E036470C3C30C000BF1030 /* ProductsModule.nib */; };
+		F2E8411C106AB64A002326A0 /* Brands.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E8411B106AB64A002326A0 /* Brands.png */; };
+		F2E8412D106AB6A2002326A0 /* TB_AddBrand.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E8412C106AB6A2002326A0 /* TB_AddBrand.png */; };
+		F2E841E4106ABEA8002326A0 /* ShopPreferences.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E841E3106ABEA8002326A0 /* ShopPreferences.png */; };
+		F2FCC3B1112AC1D8006603DA /* ShoppingBag_DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2FCC3B0112AC1D8006603DA /* ShoppingBag_DataModel.xcdatamodeld */; };
+		F2FCC3C3112AC40C006603DA /* 1_1.45.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = F2FCC3C2112AC40C006603DA /* 1_1.45.xcmappingmodel */; };
+		F2FD2521106D169000147916 /* Sale.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FD2520106D169000147916 /* Sale.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F2078D450C8C7E1F00CE5391 /* Copy Files (Templates) */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = Templates;
+			dstSubfolderSpec = 7;
+			files = (
+				F28ED992108DEA2000A6C949 /* LogoT2J.png in Copy Files (Templates) */,
+				F2DFDBEB0CAFF1A800AF0499 /* DailyZ.html in Copy Files (Templates) */,
+				F297795C0C8B10B00099F564 /* InventoryBeginStockSnapshot.html in Copy Files (Templates) */,
+				F261EEAD0CB3DAE50012E86D /* InventoryEndStockSnapshot.html in Copy Files (Templates) */,
+				F26256980CACEC300030148E /* SaleInvoice.html in Copy Files (Templates) */,
+				F2C8332A0CABB14F0018BAE5 /* SaleReceipt.html in Copy Files (Templates) */,
+				F2078D330C8C7C7600CE5391 /* ShoppingBag.css in Copy Files (Templates) */,
+				F2DFDD1D0CB0041800AF0499 /* StockValue.html in Copy Files (Templates) */,
+			);
+			name = "Copy Files (Templates)";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D156600CA8F17D00C7ECFD /* Copy Files (Frameworks) */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Files (Frameworks)";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* ShoppingBag_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingBag_Prefix.pch; sourceTree = "<group>"; };
+		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F20343280C3FE37C00E2930C /* French */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F2078D320C8C7C7600CE5391 /* ShoppingBag.css */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = ShoppingBag.css; sourceTree = "<group>"; };
+		F207BBAC0CA6913A00D6B5C6 /* TB_AddInventory.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_AddInventory.tiff; sourceTree = "<group>"; };
+		F207BBB70CA691B300D6B5C6 /* TB_Delete.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_Delete.tiff; sourceTree = "<group>"; };
+		F207BBBB0CA6921C00D6B5C6 /* Inventories.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Inventories.tiff; sourceTree = "<group>"; };
+		F20CE60A107F64360037F659 /* Provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Provider.h; sourceTree = "<group>"; };
+		F20CE60B107F64360037F659 /* Provider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Provider.m; sourceTree = "<group>"; };
+		F20D98D50C7256D300839D54 /* ProductFamiliesModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFamiliesModule.h; sourceTree = "<group>"; };
+		F20D98D60C7256D300839D54 /* ProductFamiliesModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFamiliesModule.m; sourceTree = "<group>"; };
+		F20D99100C72570C00839D54 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/ProductFamiliesModule.nib; sourceTree = "<group>"; };
+		F20EE33B10887B0400D3F192 /* TB_Export.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_Export.tiff; sourceTree = "<group>"; };
+		F20EEC701089F7CD00D3F192 /* TB_AddProvider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_AddProvider.png; sourceTree = "<group>"; };
+		F20EF233108BB8FD00D3F192 /* SaleLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaleLine.h; sourceTree = "<group>"; };
+		F20EF234108BB8FD00D3F192 /* SaleLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaleLine.m; sourceTree = "<group>"; };
+		F20EF9F5108CBDC100D3F192 /* FKAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKAlert.h; sourceTree = "<group>"; };
+		F20EF9F6108CBDC100D3F192 /* FKAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKAlert.m; sourceTree = "<group>"; };
+		F20EF9F7108CBDC100D3F192 /* FKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKAppDelegate.h; sourceTree = "<group>"; };
+		F20EF9F8108CBDC100D3F192 /* FKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKAppDelegate.m; sourceTree = "<group>"; };
+		F20EF9F9108CBDC100D3F192 /* FKBarcodeScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKBarcodeScanner.h; sourceTree = "<group>"; };
+		F20EF9FA108CBDC100D3F192 /* FKBarcodeScanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKBarcodeScanner.m; sourceTree = "<group>"; };
+		F20EF9FB108CBDC100D3F192 /* FKBarcodeScannersManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKBarcodeScannersManager.h; sourceTree = "<group>"; };
+		F20EF9FC108CBDC100D3F192 /* FKBarcodeScannersManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKBarcodeScannersManager.m; sourceTree = "<group>"; };
+		F20EF9FD108CBDC100D3F192 /* FKButton_NormalFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FKButton_NormalFill.png; sourceTree = "<group>"; };
+		F20EF9FE108CBDC100D3F192 /* FKButton_NormalLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FKButton_NormalLeft.png; sourceTree = "<group>"; };
+		F20EF9FF108CBDC100D3F192 /* FKButton_NormalRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FKButton_NormalRight.png; sourceTree = "<group>"; };
+		F20EFA00108CBDC100D3F192 /* FKButton_PressedFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FKButton_PressedFill.png; sourceTree = "<group>"; };
+		F20EFA01108CBDC100D3F192 /* FKButton_PressedLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FKButton_PressedLeft.png; sourceTree = "<group>"; };
+		F20EFA02108CBDC100D3F192 /* FKButton_PressedRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FKButton_PressedRight.png; sourceTree = "<group>"; };
+		F20EFA03108CBDC100D3F192 /* FKButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKButton.h; sourceTree = "<group>"; };
+		F20EFA04108CBDC100D3F192 /* FKButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKButton.m; sourceTree = "<group>"; };
+		F20EFA05108CBDC100D3F192 /* FKButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKButtonCell.h; sourceTree = "<group>"; };
+		F20EFA06108CBDC100D3F192 /* FKButtonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKButtonCell.m; sourceTree = "<group>"; };
+		F20EFA07108CBDC100D3F192 /* FKComboBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKComboBox.h; sourceTree = "<group>"; };
+		F20EFA08108CBDC100D3F192 /* FKComboBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKComboBox.m; sourceTree = "<group>"; };
+		F20EFA09108CBDC100D3F192 /* FKComboBoxCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKComboBoxCell.h; sourceTree = "<group>"; };
+		F20EFA0A108CBDC100D3F192 /* FKComboBoxCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKComboBoxCell.m; sourceTree = "<group>"; };
+		F20EFA0B108CBDC100D3F192 /* FKCurrencyFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKCurrencyFormatter.h; sourceTree = "<group>"; };
+		F20EFA0C108CBDC100D3F192 /* FKCurrencyFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKCurrencyFormatter.m; sourceTree = "<group>"; };
+		F20EFA0D108CBDC100D3F192 /* FKCurrencyTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKCurrencyTextField.h; sourceTree = "<group>"; };
+		F20EFA0E108CBDC100D3F192 /* FKCurrencyTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKCurrencyTextField.m; sourceTree = "<group>"; };
+		F20EFA0F108CBDC100D3F192 /* FKCurrencyTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKCurrencyTextFieldCell.h; sourceTree = "<group>"; };
+		F20EFA10108CBDC100D3F192 /* FKCurrencyTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKCurrencyTextFieldCell.m; sourceTree = "<group>"; };
+		F20EFA11108CBDC100D3F192 /* FKDecimalFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKDecimalFormatter.h; sourceTree = "<group>"; };
+		F20EFA12108CBDC100D3F192 /* FKDecimalFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKDecimalFormatter.m; sourceTree = "<group>"; };
+		F20EFA13108CBDC100D3F192 /* FKDecimalTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKDecimalTextField.h; sourceTree = "<group>"; };
+		F20EFA14108CBDC100D3F192 /* FKDecimalTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKDecimalTextField.m; sourceTree = "<group>"; };
+		F20EFA15108CBDC100D3F192 /* FKDecimalTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKDecimalTextFieldCell.h; sourceTree = "<group>"; };
+		F20EFA16108CBDC100D3F192 /* FKDecimalTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKDecimalTextFieldCell.m; sourceTree = "<group>"; };
+		F20EFA17108CBDC100D3F192 /* FKFlatRoundedButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKFlatRoundedButton.h; sourceTree = "<group>"; };
+		F20EFA18108CBDC100D3F192 /* FKFlatRoundedButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKFlatRoundedButton.m; sourceTree = "<group>"; };
+		F20EFA19108CBDC100D3F192 /* FKFlatRoundedButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKFlatRoundedButtonCell.h; sourceTree = "<group>"; };
+		F20EFA1A108CBDC100D3F192 /* FKFlatRoundedButtonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKFlatRoundedButtonCell.m; sourceTree = "<group>"; };
+		F20EFA1B108CBDC100D3F192 /* FKFlippedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKFlippedView.h; sourceTree = "<group>"; };
+		F20EFA1C108CBDC100D3F192 /* FKFlippedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKFlippedView.m; sourceTree = "<group>"; };
+		F20EFA1D108CBDC100D3F192 /* FKFocusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKFocusView.h; sourceTree = "<group>"; };
+		F20EFA1E108CBDC100D3F192 /* FKFocusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKFocusView.m; sourceTree = "<group>"; };
+		F20EFA1F108CBDC100D3F192 /* FKGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKGroup.h; sourceTree = "<group>"; };
+		F20EFA20108CBDC100D3F192 /* FKGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKGroup.m; sourceTree = "<group>"; };
+		F20EFA21108CBDC100D3F192 /* FKImageAndTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKImageAndTextCell.h; sourceTree = "<group>"; };
+		F20EFA22108CBDC100D3F192 /* FKImageAndTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKImageAndTextCell.m; sourceTree = "<group>"; };
+		F20EFA23108CBDC100D3F192 /* FKImageAndTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKImageAndTextField.h; sourceTree = "<group>"; };
+		F20EFA24108CBDC100D3F192 /* FKImageAndTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKImageAndTextField.m; sourceTree = "<group>"; };
+		F20EFA25108CBDC100D3F192 /* FKIntegerFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKIntegerFormatter.h; sourceTree = "<group>"; };
+		F20EFA26108CBDC100D3F192 /* FKIntegerFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKIntegerFormatter.m; sourceTree = "<group>"; };
+		F20EFA27108CBDC100D3F192 /* FKIntegerTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKIntegerTextField.h; sourceTree = "<group>"; };
+		F20EFA28108CBDC100D3F192 /* FKIntegerTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKIntegerTextField.m; sourceTree = "<group>"; };
+		F20EFA29108CBDC100D3F192 /* FKIntegerTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKIntegerTextFieldCell.h; sourceTree = "<group>"; };
+		F20EFA2A108CBDC100D3F192 /* FKIntegerTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKIntegerTextFieldCell.m; sourceTree = "<group>"; };
+		F20EFA2C108CBDC100D3F192 /* FKKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKKit.h; sourceTree = "<group>"; };
+		F20EFA2D108CBDC100D3F192 /* FKLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKLine.h; sourceTree = "<group>"; };
+		F20EFA2E108CBDC100D3F192 /* FKLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKLine.m; sourceTree = "<group>"; };
+		F20EFA2F108CBDC100D3F192 /* FKManagedArrayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKManagedArrayController.h; sourceTree = "<group>"; };
+		F20EFA30108CBDC100D3F192 /* FKManagedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKManagedObject.h; sourceTree = "<group>"; };
+		F20EFA31108CBDC100D3F192 /* FKManagedObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKManagedObject.m; sourceTree = "<group>"; };
+		F20EFA32108CBDC100D3F192 /* FKManagedObjectsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKManagedObjectsManager.h; sourceTree = "<group>"; };
+		F20EFA33108CBDC100D3F192 /* FKManagedObjectsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKManagedObjectsManager.m; sourceTree = "<group>"; };
+		F20EFA34108CBDC100D3F192 /* FKManagedPlatePopUpButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKManagedPlatePopUpButton.h; sourceTree = "<group>"; };
+		F20EFA35108CBDC100D3F192 /* FKManagedPlatePopUpButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKManagedPlatePopUpButton.m; sourceTree = "<group>"; };
+		F20EFA36108CBDC100D3F192 /* FKModule_BrowserStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModule_BrowserStyle.h; sourceTree = "<group>"; };
+		F20EFA37108CBDC100D3F192 /* FKModule_BrowserStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModule_BrowserStyle.m; sourceTree = "<group>"; };
+		F20EFA38108CBDC100D3F192 /* FKModule_FullStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModule_FullStyle.h; sourceTree = "<group>"; };
+		F20EFA39108CBDC100D3F192 /* FKModule_FullStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModule_FullStyle.m; sourceTree = "<group>"; };
+		F20EFA3A108CBDC100D3F192 /* FKModule_MiniStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModule_MiniStyle.h; sourceTree = "<group>"; };
+		F20EFA3B108CBDC100D3F192 /* FKModule_MiniStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModule_MiniStyle.m; sourceTree = "<group>"; };
+		F20EFA3C108CBDC100D3F192 /* FKModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModule.h; sourceTree = "<group>"; };
+		F20EFA3D108CBDC100D3F192 /* FKModuleBottomBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModuleBottomBar.h; sourceTree = "<group>"; };
+		F20EFA3E108CBDC100D3F192 /* FKModuleBottomBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModuleBottomBar.m; sourceTree = "<group>"; };
+		F20EFA3F108CBDC100D3F192 /* FKModuleBottomBarFiller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FKModuleBottomBarFiller.png; sourceTree = "<group>"; };
+		F20EFA40108CBDC100D3F192 /* FKModuleCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModuleCenter.h; sourceTree = "<group>"; };
+		F20EFA41108CBDC100D3F192 /* FKModuleCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModuleCenter.m; sourceTree = "<group>"; };
+		F20EFA43108CBDC100D3F192 /* FKModuleGradientTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModuleGradientTextField.h; sourceTree = "<group>"; };
+		F20EFA44108CBDC100D3F192 /* FKModuleGradientTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModuleGradientTextField.m; sourceTree = "<group>"; };
+		F20EFA45108CBDC100D3F192 /* FKModuleGradientTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModuleGradientTextFieldCell.h; sourceTree = "<group>"; };
+		F20EFA46108CBDC100D3F192 /* FKModuleGradientTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModuleGradientTextFieldCell.m; sourceTree = "<group>"; };
+		F20EFA51108CBDC100D3F192 /* FKModuleTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModuleTheme.h; sourceTree = "<group>"; };
+		F20EFA52108CBDC100D3F192 /* FKModuleTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModuleTheme.m; sourceTree = "<group>"; };
+		F20EFA53108CBDC100D3F192 /* FKModuleThemeBlue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModuleThemeBlue.h; sourceTree = "<group>"; };
+		F20EFA54108CBDC100D3F192 /* FKModuleThemeBlue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModuleThemeBlue.m; sourceTree = "<group>"; };
+		F20EFA55108CBDC100D3F192 /* FKModuleThemeBrown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModuleThemeBrown.h; sourceTree = "<group>"; };
+		F20EFA56108CBDC100D3F192 /* FKModuleThemeBrown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModuleThemeBrown.m; sourceTree = "<group>"; };
+		F20EFA57108CBDC100D3F192 /* FKModuleThemeGreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModuleThemeGreen.h; sourceTree = "<group>"; };
+		F20EFA58108CBDC100D3F192 /* FKModuleThemeGreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModuleThemeGreen.m; sourceTree = "<group>"; };
+		F20EFA59108CBDC100D3F192 /* FKModuleThemeOrange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModuleThemeOrange.h; sourceTree = "<group>"; };
+		F20EFA5A108CBDC100D3F192 /* FKModuleThemeOrange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModuleThemeOrange.m; sourceTree = "<group>"; };
+		F20EFA5B108CBDC100D3F192 /* FKModuleThemePurple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModuleThemePurple.h; sourceTree = "<group>"; };
+		F20EFA5C108CBDC100D3F192 /* FKModuleThemePurple.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModuleThemePurple.m; sourceTree = "<group>"; };
+		F20EFA5D108CBDC100D3F192 /* FKModuleThemeRed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModuleThemeRed.h; sourceTree = "<group>"; };
+		F20EFA5E108CBDC100D3F192 /* FKModuleThemeRed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModuleThemeRed.m; sourceTree = "<group>"; };
+		F20EFA5F108CBDC100D3F192 /* FKModuleThemeYellow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKModuleThemeYellow.h; sourceTree = "<group>"; };
+		F20EFA60108CBDC100D3F192 /* FKModuleThemeYellow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKModuleThemeYellow.m; sourceTree = "<group>"; };
+		F20EFA61108CBDC100D3F192 /* FKModuleTitleBar_GrayGradientBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FKModuleTitleBar_GrayGradientBackground.png; sourceTree = "<group>"; };
+		F20EFA7F108CBDC100D3F192 /* FKMultiplePanesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKMultiplePanesController.h; sourceTree = "<group>"; };
+		F20EFA80108CBDC100D3F192 /* FKMultiplePanesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKMultiplePanesController.m; sourceTree = "<group>"; };
+		F20EFA81108CBDC100D3F192 /* FKMultipleValuesProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKMultipleValuesProxy.h; sourceTree = "<group>"; };
+		F20EFA82108CBDC100D3F192 /* FKMultipleValuesProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKMultipleValuesProxy.m; sourceTree = "<group>"; };
+		F20EFA83108CBDC100D3F192 /* FKNavigationToolbarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKNavigationToolbarItem.h; sourceTree = "<group>"; };
+		F20EFA84108CBDC100D3F192 /* FKNavigationToolbarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKNavigationToolbarItem.m; sourceTree = "<group>"; };
+		F20EFA85108CBDC100D3F192 /* FKNumberFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKNumberFormatter.h; sourceTree = "<group>"; };
+		F20EFA86108CBDC100D3F192 /* FKNumberFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKNumberFormatter.m; sourceTree = "<group>"; };
+		F20EFA87108CBDC100D3F192 /* FKOutlineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKOutlineView.h; sourceTree = "<group>"; };
+		F20EFA88108CBDC100D3F192 /* FKOutlineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKOutlineView.m; sourceTree = "<group>"; };
+		F20EFA89108CBDC100D3F192 /* FKPercentFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKPercentFormatter.h; sourceTree = "<group>"; };
+		F20EFA8A108CBDC100D3F192 /* FKPercentFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKPercentFormatter.m; sourceTree = "<group>"; };
+		F20EFA8B108CBDC100D3F192 /* FKPercentTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKPercentTextField.h; sourceTree = "<group>"; };
+		F20EFA8C108CBDC100D3F192 /* FKPercentTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKPercentTextField.m; sourceTree = "<group>"; };
+		F20EFA8D108CBDC200D3F192 /* FKPercentTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKPercentTextFieldCell.h; sourceTree = "<group>"; };
+		F20EFA8E108CBDC200D3F192 /* FKPercentTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKPercentTextFieldCell.m; sourceTree = "<group>"; };
+		F20EFA8F108CBDC200D3F192 /* FKPlatePopUpButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKPlatePopUpButton.h; sourceTree = "<group>"; };
+		F20EFA90108CBDC200D3F192 /* FKPlatePopUpButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKPlatePopUpButton.m; sourceTree = "<group>"; };
+		F20EFA91108CBDC200D3F192 /* FKPlatePopUpButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKPlatePopUpButtonCell.h; sourceTree = "<group>"; };
+		F20EFA92108CBDC200D3F192 /* FKPlatePopUpButtonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKPlatePopUpButtonCell.m; sourceTree = "<group>"; };
+		F20EFA93108CBDC200D3F192 /* FKPlusMinusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKPlusMinusView.h; sourceTree = "<group>"; };
+		F20EFA94108CBDC200D3F192 /* FKPlusMinusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKPlusMinusView.m; sourceTree = "<group>"; };
+		F20EFA95108CBDC200D3F192 /* FKPrintManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKPrintManager.h; sourceTree = "<group>"; };
+		F20EFA96108CBDC200D3F192 /* FKPrintManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKPrintManager.m; sourceTree = "<group>"; };
+		F20EFA97108CBDC200D3F192 /* FKSidebarObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKSidebarObject.h; sourceTree = "<group>"; };
+		F20EFA98108CBDC200D3F192 /* FKSidebarObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKSidebarObject.m; sourceTree = "<group>"; };
+		F20EFA99108CBDC200D3F192 /* FKSmartGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKSmartGroup.h; sourceTree = "<group>"; };
+		F20EFA9A108CBDC200D3F192 /* FKSmartGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKSmartGroup.m; sourceTree = "<group>"; };
+		F20EFA9B108CBDC200D3F192 /* FKSourceListGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKSourceListGroup.h; sourceTree = "<group>"; };
+		F20EFA9C108CBDC200D3F192 /* FKSourceListGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKSourceListGroup.m; sourceTree = "<group>"; };
+		F20EFA9D108CBDC200D3F192 /* FKSourceListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKSourceListItem.h; sourceTree = "<group>"; };
+		F20EFA9E108CBDC200D3F192 /* FKSourceListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKSourceListItem.m; sourceTree = "<group>"; };
+		F20EFA9F108CBDC200D3F192 /* FKSourceListSmartGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKSourceListSmartGroup.h; sourceTree = "<group>"; };
+		F20EFAA0108CBDC200D3F192 /* FKSourceListSmartGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKSourceListSmartGroup.m; sourceTree = "<group>"; };
+		F20EFAA1108CBDC200D3F192 /* FKSplitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKSplitter.h; sourceTree = "<group>"; };
+		F20EFAA2108CBDC200D3F192 /* FKSplitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKSplitter.m; sourceTree = "<group>"; };
+		F20EFAA3108CBDC200D3F192 /* FKSplitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKSplitView.h; sourceTree = "<group>"; };
+		F20EFAA4108CBDC200D3F192 /* FKSplitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKSplitView.m; sourceTree = "<group>"; };
+		F20EFAA5108CBDC200D3F192 /* FKSquareComboBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKSquareComboBox.h; sourceTree = "<group>"; };
+		F20EFAA6108CBDC200D3F192 /* FKSquareComboBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKSquareComboBox.m; sourceTree = "<group>"; };
+		F20EFAA7108CBDC200D3F192 /* FKStackableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKStackableView.h; sourceTree = "<group>"; };
+		F20EFAA8108CBDC200D3F192 /* FKStackableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKStackableView.m; sourceTree = "<group>"; };
+		F20EFAA9108CBDC200D3F192 /* FKStackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKStackView.h; sourceTree = "<group>"; };
+		F20EFAAA108CBDC200D3F192 /* FKStackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKStackView.m; sourceTree = "<group>"; };
+		F20EFAAB108CBDC200D3F192 /* FKSubviewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKSubviewTableViewCell.h; sourceTree = "<group>"; };
+		F20EFAAC108CBDC200D3F192 /* FKSubviewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKSubviewTableViewCell.m; sourceTree = "<group>"; };
+		F20EFAAD108CBDC200D3F192 /* FKSubviewTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKSubviewTableViewController.h; sourceTree = "<group>"; };
+		F20EFAAE108CBDC200D3F192 /* FKSubviewTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKSubviewTableViewController.m; sourceTree = "<group>"; };
+		F20EFAAF108CBDC200D3F192 /* FKTableCornerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTableCornerView.h; sourceTree = "<group>"; };
+		F20EFAB0108CBDC200D3F192 /* FKTableCornerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKTableCornerView.m; sourceTree = "<group>"; };
+		F20EFAB1108CBDC200D3F192 /* FKTableHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTableHeaderCell.h; sourceTree = "<group>"; };
+		F20EFAB2108CBDC200D3F192 /* FKTableHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKTableHeaderCell.m; sourceTree = "<group>"; };
+		F20EFAB3108CBDC200D3F192 /* FKTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTableHeaderView.h; sourceTree = "<group>"; };
+		F20EFAB4108CBDC200D3F192 /* FKTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKTableHeaderView.m; sourceTree = "<group>"; };
+		F20EFAB5108CBDC200D3F192 /* FKTableView_Implementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTableView_Implementation.h; sourceTree = "<group>"; };
+		F20EFAB6108CBDC200D3F192 /* FKTableView_Methods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTableView_Methods.h; sourceTree = "<group>"; };
+		F20EFAB7108CBDC200D3F192 /* FKTableView_Vars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTableView_Vars.h; sourceTree = "<group>"; };
+		F20EFAB8108CBDC200D3F192 /* FKTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTableView.h; sourceTree = "<group>"; };
+		F20EFAB9108CBDC200D3F192 /* FKTabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTabView.h; sourceTree = "<group>"; };
+		F20EFABA108CBDC200D3F192 /* FKTabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKTabView.m; sourceTree = "<group>"; };
+		F20EFABB108CBDC200D3F192 /* FKTabViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTabViewItem.h; sourceTree = "<group>"; };
+		F20EFABC108CBDC200D3F192 /* FKTabViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKTabViewItem.m; sourceTree = "<group>"; };
+		F20EFABD108CBDC200D3F192 /* FKTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTextField.h; sourceTree = "<group>"; };
+		F20EFABE108CBDC200D3F192 /* FKTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKTextField.m; sourceTree = "<group>"; };
+		F20EFABF108CBDC200D3F192 /* FKTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKTextFieldCell.h; sourceTree = "<group>"; };
+		F20EFAC0108CBDC200D3F192 /* FKTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKTextFieldCell.m; sourceTree = "<group>"; };
+		F20EFAC1108CBDC200D3F192 /* FKToolbarItemButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKToolbarItemButton.h; sourceTree = "<group>"; };
+		F20EFAC2108CBDC200D3F192 /* FKToolbarItemButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKToolbarItemButton.m; sourceTree = "<group>"; };
+		F20EFAC3108CBDC200D3F192 /* FKToolbarItemPopUpButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKToolbarItemPopUpButton.h; sourceTree = "<group>"; };
+		F20EFAC4108CBDC200D3F192 /* FKToolbarItemPopUpButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKToolbarItemPopUpButton.m; sourceTree = "<group>"; };
+		F20EFAC5108CBDC200D3F192 /* FKToolbarItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKToolbarItemView.h; sourceTree = "<group>"; };
+		F20EFAC6108CBDC200D3F192 /* FKToolbarItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKToolbarItemView.m; sourceTree = "<group>"; };
+		F20EFAC7108CBDC200D3F192 /* FKURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKURLProtocol.h; sourceTree = "<group>"; };
+		F20EFAC8108CBDC200D3F192 /* FKURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKURLProtocol.m; sourceTree = "<group>"; };
+		F20EFAC9108CBDC200D3F192 /* FKVerticallyCenteredCurrencyTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKVerticallyCenteredCurrencyTextFieldCell.h; sourceTree = "<group>"; };
+		F20EFACA108CBDC200D3F192 /* FKVerticallyCenteredCurrencyTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKVerticallyCenteredCurrencyTextFieldCell.m; sourceTree = "<group>"; };
+		F20EFACB108CBDC200D3F192 /* FKVerticallyCenteredDecimalTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKVerticallyCenteredDecimalTextFieldCell.h; sourceTree = "<group>"; };
+		F20EFACC108CBDC200D3F192 /* FKVerticallyCenteredDecimalTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKVerticallyCenteredDecimalTextFieldCell.m; sourceTree = "<group>"; };
+		F20EFACD108CBDC200D3F192 /* FKVerticallyCenteredIntegerTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKVerticallyCenteredIntegerTextFieldCell.h; sourceTree = "<group>"; };
+		F20EFACE108CBDC200D3F192 /* FKVerticallyCenteredIntegerTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKVerticallyCenteredIntegerTextFieldCell.m; sourceTree = "<group>"; };
+		F20EFACF108CBDC200D3F192 /* FKVerticallyCenteredPercentTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKVerticallyCenteredPercentTextFieldCell.h; sourceTree = "<group>"; };
+		F20EFAD0108CBDC200D3F192 /* FKVerticallyCenteredPercentTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKVerticallyCenteredPercentTextFieldCell.m; sourceTree = "<group>"; };
+		F20EFAD1108CBDC200D3F192 /* FKVerticallyCenteredTextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKVerticallyCenteredTextFieldCell.h; sourceTree = "<group>"; };
+		F20EFAD2108CBDC200D3F192 /* FKVerticallyCenteredTextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKVerticallyCenteredTextFieldCell.m; sourceTree = "<group>"; };
+		F20EFAD3108CBDC200D3F192 /* FKView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKView.h; sourceTree = "<group>"; };
+		F20EFAD4108CBDC200D3F192 /* FKView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKView.m; sourceTree = "<group>"; };
+		F20EFAD5108CBDC200D3F192 /* FKViewAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKViewAnimation.h; sourceTree = "<group>"; };
+		F20EFAD6108CBDC200D3F192 /* FKViewAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKViewAnimation.m; sourceTree = "<group>"; };
+		F20EFAD7108CBDC200D3F192 /* FKWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKWindow.h; sourceTree = "<group>"; };
+		F20EFAD8108CBDC200D3F192 /* FKWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKWindow.m; sourceTree = "<group>"; };
+		F20EFAD9108CBDF300D3F192 /* FKManagedArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKManagedArrayController.m; sourceTree = "<group>"; };
+		F20EFAE0108CBE0600D3F192 /* FKModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModule.m; sourceTree = "<group>"; };
+		F20EFAEE108CBEDC00D3F192 /* NSImage-NKDBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage-NKDBarcode.h"; sourceTree = "<group>"; };
+		F20EFAEF108CBEDC00D3F192 /* NSImage-NKDBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage-NKDBarcode.m"; sourceTree = "<group>"; };
+		F20EFAF0108CBEDC00D3F192 /* NSImage-Resolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage-Resolution.h"; sourceTree = "<group>"; };
+		F20EFAF1108CBEDC00D3F192 /* NSImage-Normalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage-Normalize.m"; sourceTree = "<group>"; };
+		F20EFAF2108CBEDC00D3F192 /* NSString-UPCEAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-UPCEAN.h"; sourceTree = "<group>"; };
+		F20EFAF3108CBEDC00D3F192 /* NSString-UPCEAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-UPCEAN.m"; sourceTree = "<group>"; };
+		F20EFAF4108CBEDC00D3F192 /* NKDBarcodeFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDBarcodeFramework.h; sourceTree = "<group>"; };
+		F20EFAF5108CBEDC00D3F192 /* NKDBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDBarcode.h; sourceTree = "<group>"; };
+		F20EFAF6108CBEDC00D3F192 /* NKDBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDBarcode.m; sourceTree = "<group>"; };
+		F20EFAF7108CBEDC00D3F192 /* NKDCode39Barcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDCode39Barcode.h; sourceTree = "<group>"; };
+		F20EFAF8108CBEDC00D3F192 /* NKDCode39Barcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDCode39Barcode.m; sourceTree = "<group>"; };
+		F20EFAF9108CBEDC00D3F192 /* NKDExtendedCode39Barcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDExtendedCode39Barcode.h; sourceTree = "<group>"; };
+		F20EFAFA108CBEDC00D3F192 /* NKDExtendedCode39Barcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDExtendedCode39Barcode.m; sourceTree = "<group>"; };
+		F20EFAFB108CBEDC00D3F192 /* NKDInterleavedTwoOfFiveBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDInterleavedTwoOfFiveBarcode.h; sourceTree = "<group>"; };
+		F20EFAFC108CBEDC00D3F192 /* NKDInterleavedTwoOfFiveBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDInterleavedTwoOfFiveBarcode.m; sourceTree = "<group>"; };
+		F20EFAFD108CBEDC00D3F192 /* NKDModifiedPlesseyBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDModifiedPlesseyBarcode.h; sourceTree = "<group>"; };
+		F20EFAFE108CBEDC00D3F192 /* NKDModifiedPlesseyBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDModifiedPlesseyBarcode.m; sourceTree = "<group>"; };
+		F20EFAFF108CBEDC00D3F192 /* NKDPostnetBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDPostnetBarcode.h; sourceTree = "<group>"; };
+		F20EFB00108CBEDC00D3F192 /* NKDPostnetBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDPostnetBarcode.m; sourceTree = "<group>"; };
+		F20EFB01108CBEDC00D3F192 /* NKDUPCABarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDUPCABarcode.h; sourceTree = "<group>"; };
+		F20EFB02108CBEDC00D3F192 /* NKDUPCABarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDUPCABarcode.m; sourceTree = "<group>"; };
+		F20EFB03108CBEDC00D3F192 /* NKDModifiedPlesseyHexBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDModifiedPlesseyHexBarcode.h; sourceTree = "<group>"; };
+		F20EFB04108CBEDC00D3F192 /* NKDModifiedPlesseyHexBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDModifiedPlesseyHexBarcode.m; sourceTree = "<group>"; };
+		F20EFB05108CBEDC00D3F192 /* NKDIndustrialTwoOfFiveBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDIndustrialTwoOfFiveBarcode.h; sourceTree = "<group>"; };
+		F20EFB06108CBEDC00D3F192 /* NKDIndustrialTwoOfFiveBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDIndustrialTwoOfFiveBarcode.m; sourceTree = "<group>"; };
+		F20EFB07108CBEDC00D3F192 /* NKDEAN13Barcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDEAN13Barcode.h; sourceTree = "<group>"; };
+		F20EFB08108CBEDC00D3F192 /* NKDEAN13Barcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDEAN13Barcode.m; sourceTree = "<group>"; };
+		F20EFB09108CBEDC00D3F192 /* NKDCode128Barcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDCode128Barcode.h; sourceTree = "<group>"; };
+		F20EFB0A108CBEDC00D3F192 /* NKDCode128Barcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDCode128Barcode.m; sourceTree = "<group>"; };
+		F20EFB0B108CBEDC00D3F192 /* NKDAbstractUPCEANBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDAbstractUPCEANBarcode.h; sourceTree = "<group>"; };
+		F20EFB0C108CBEDC00D3F192 /* NKDAbstractUPCEANBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDAbstractUPCEANBarcode.m; sourceTree = "<group>"; };
+		F20EFB0D108CBEDC00D3F192 /* NKDCodabarBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDCodabarBarcode.h; sourceTree = "<group>"; };
+		F20EFB0E108CBEDC00D3F192 /* NKDCodabarBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDCodabarBarcode.m; sourceTree = "<group>"; };
+		F20EFB0F108CBEDC00D3F192 /* NKDUPCEBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDUPCEBarcode.h; sourceTree = "<group>"; };
+		F20EFB10108CBEDC00D3F192 /* NKDUPCEBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDUPCEBarcode.m; sourceTree = "<group>"; };
+		F20EFB11108CBEDC00D3F192 /* NKDEAN8Barcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDEAN8Barcode.h; sourceTree = "<group>"; };
+		F20EFB12108CBEDC00D3F192 /* NKDEAN8Barcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDEAN8Barcode.m; sourceTree = "<group>"; };
+		F20EFB13108CBEDC00D3F192 /* NKDBarcodeOffscreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDBarcodeOffscreenView.h; sourceTree = "<group>"; };
+		F20EFB14108CBEDC00D3F192 /* NKDBarcodeOffscreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDBarcodeOffscreenView.m; sourceTree = "<group>"; };
+		F20EFB15108CBEDC00D3F192 /* NKDBarcodeImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDBarcodeImageView.h; sourceTree = "<group>"; };
+		F20EFB16108CBEDC00D3F192 /* NKDBarcodeImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDBarcodeImageView.m; sourceTree = "<group>"; };
+		F20EFB17108CBEDC00D3F192 /* NKDRoyalMailBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDRoyalMailBarcode.h; sourceTree = "<group>"; };
+		F20EFB18108CBEDC00D3F192 /* NKDRoyalMailBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDRoyalMailBarcode.m; sourceTree = "<group>"; };
+		F20EFB19108CBEDC00D3F192 /* NKDPlanetBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDPlanetBarcode.h; sourceTree = "<group>"; };
+		F20EFB1A108CBEDC00D3F192 /* NKDPlanetBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDPlanetBarcode.m; sourceTree = "<group>"; };
+		F20EFB1B108CBEDC00D3F192 /* JapanPostBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapanPostBarcode.h; sourceTree = "<group>"; };
+		F20EFB1C108CBEDC00D3F192 /* JapanPostBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapanPostBarcode.m; sourceTree = "<group>"; };
+		F20EFB39108CBF3200D3F192 /* NSAlert_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAlert_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB3A108CBF3200D3F192 /* NSAlert_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSAlert_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB3B108CBF3200D3F192 /* NSBezierPath_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBezierPath_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB3C108CBF3200D3F192 /* NSBezierPath_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBezierPath_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB3D108CBF3200D3F192 /* NSColor_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSColor_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB3E108CBF3200D3F192 /* NSColor_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSColor_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB3F108CBF3200D3F192 /* NSComboBoxCell_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSComboBoxCell_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB40108CBF3200D3F192 /* NSComboBoxCell_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSComboBoxCell_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB41108CBF3200D3F192 /* NSDate_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDate_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB42108CBF3200D3F192 /* NSDate_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDate_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB43108CBF3200D3F192 /* NSDecimalNumber_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDecimalNumber_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB44108CBF3200D3F192 /* NSDecimalNumber_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDecimalNumber_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB45108CBF3200D3F192 /* NSImage_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSImage_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB46108CBF3200D3F192 /* NSImage_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSImage_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB47108CBF3200D3F192 /* NSImageView_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSImageView_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB48108CBF3200D3F192 /* NSImageView_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSImageView_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB49108CBF3200D3F192 /* NSMutableArray_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArray_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB4A108CBF3200D3F192 /* NSMutableArray_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArray_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB4B108CBF3200D3F192 /* NSMutableParagraphStyle_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableParagraphStyle_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB4C108CBF3200D3F192 /* NSMutableParagraphStyle_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableParagraphStyle_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB4D108CBF3200D3F192 /* NSObject_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB4E108CBF3200D3F192 /* NSObject_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB4F108CBF3200D3F192 /* NSPointFunctions_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPointFunctions_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB50108CBF3200D3F192 /* NSRectFunctions_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRectFunctions_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB53108CBF3200D3F192 /* NSString_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB54108CBF3200D3F192 /* NSString_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB55108CBF3200D3F192 /* NSTableColumn_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTableColumn_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB56108CBF3200D3F192 /* NSTableColumn_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTableColumn_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB57108CBF3200D3F192 /* NSView_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSView_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB58108CBF3200D3F192 /* NSView_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSView_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFB59108CBF3200D3F192 /* NSWindow_FKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWindow_FKAdditions.h; sourceTree = "<group>"; };
+		F20EFB5A108CBF3200D3F192 /* NSWindow_FKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSWindow_FKAdditions.m; sourceTree = "<group>"; };
+		F20EFC01108CC22700D3F192 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		F20EFC03108CC22700D3F192 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		F20EFC18108CC26E00D3F192 /* FKTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKTableView.m; sourceTree = "<group>"; };
+		F20EFC88108CE8F600D3F192 /* TabViewBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabViewBack.png; sourceTree = "<group>"; };
+		F20EFCB1108CFA6200D3F192 /* Minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Minus.png; sourceTree = "<group>"; };
+		F20EFCB2108CFA6200D3F192 /* Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plus.png; sourceTree = "<group>"; };
+		F20EFCB7108CFA8100D3F192 /* FilterBarBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FilterBarBack.png; sourceTree = "<group>"; };
+		F21568F40C9C1A3100DCC9E4 /* BarcodeReadersPreferences.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = BarcodeReadersPreferences.tiff; sourceTree = "<group>"; };
+		F21D60BF107D2AC8005E4C4F /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		F21D60C0107D2AC8005E4C4F /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		F21D61AA107D3EFF005E4C4F /* ProviderProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProviderProduct.h; sourceTree = "<group>"; };
+		F21D61AB107D3EFF005E4C4F /* ProviderProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProviderProduct.m; sourceTree = "<group>"; };
+		F21DE89C0C52A7F200FF982E /* French */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/ErrorMessages.strings; sourceTree = "<group>"; };
+		F21DFCC31881415C00FB28EB /* ShoppingBag_DataModel_1.45.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ShoppingBag_DataModel_1.45.mom; sourceTree = "<group>"; };
+		F21DFCC41881415C00FB28EB /* ShoppingBag_DataModel_1.411.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ShoppingBag_DataModel_1.411.mom; sourceTree = "<group>"; };
+		F21DFCC51881415C00FB28EB /* ShoppingBag_DataModel.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ShoppingBag_DataModel.mom; sourceTree = "<group>"; };
+		F21DFCC61881415C00FB28EB /* VersionInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = VersionInfo.plist; sourceTree = "<group>"; };
+		F22AAE230CB24ED500FFD465 /* TB_AddCustomer.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_AddCustomer.tif; sourceTree = "<group>"; };
+		F22AAE250CB24EF200FFD465 /* Customers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Customers.png; sourceTree = "<group>"; };
+		F22F795F0C552710005F2885 /* BrandsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandsModule.h; sourceTree = "<group>"; };
+		F22F79600C552710005F2885 /* BrandsModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandsModule.m; sourceTree = "<group>"; };
+		F22F796D0C55274A005F2885 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/BrandsModule.nib; sourceTree = "<group>"; };
+		F2329AF30C79868F0081264C /* TB_Exit.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_Exit.tiff; sourceTree = "<group>"; };
+		F2329AF80C7987BA0081264C /* TB_AddSale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_AddSale.png; sourceTree = "<group>"; };
+		F23C64A90C3C345700DC452C /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F241A6260C9734BF004DFF3B /* Products.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Products.tiff; sourceTree = "<group>"; };
+		F25AA0370CA10E9E00280BAE /* StockSnapshotLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockSnapshotLine.h; sourceTree = "<group>"; };
+		F25AA0380CA10E9E00280BAE /* StockSnapshotLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockSnapshotLine.m; sourceTree = "<group>"; };
+		F25CD41912C94DDF00795F3B /* SaleLineMigrationPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaleLineMigrationPolicy.h; sourceTree = "<group>"; };
+		F25CD41A12C94DDF00795F3B /* SaleLineMigrationPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaleLineMigrationPolicy.m; sourceTree = "<group>"; };
+		F26088E51084C56900CF845F /* PaymentMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentMethod.h; sourceTree = "<group>"; };
+		F26088E61084C56900CF845F /* PaymentMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentMethod.m; sourceTree = "<group>"; };
+		F260DF10171040AB008848B6 /* ShoppingBag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingBag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F260DF1617118F8A008848B6 /* SaleMigrationPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaleMigrationPolicy.h; sourceTree = "<group>"; };
+		F260DF1717118F8A008848B6 /* SaleMigrationPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaleMigrationPolicy.m; sourceTree = "<group>"; };
+		F260DFC8171193B9008848B6 /* 1.45_1.412.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = 1.45_1.412.xcmappingmodel; sourceTree = "<group>"; };
+		F261EEAC0CB3DAE50012E86D /* InventoryEndStockSnapshot.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = InventoryEndStockSnapshot.html; sourceTree = "<group>"; };
+		F26256970CACEC300030148E /* SaleInvoice.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = SaleInvoice.html; sourceTree = "<group>"; };
+		F27499FB10CBC4A500C9DEBA /* FKModuleToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleToolbar.h; sourceTree = "<group>"; };
+		F27499FC10CBC4A500C9DEBA /* FKModuleToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleToolbar.m; sourceTree = "<group>"; };
+		F27499FD10CBC4A500C9DEBA /* FKModuleToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleToolbarButton.h; sourceTree = "<group>"; };
+		F27499FE10CBC4A500C9DEBA /* FKModuleToolbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleToolbarButton.m; sourceTree = "<group>"; };
+		F27499FF10CBC4A500C9DEBA /* FKModuleToolbarButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleToolbarButtonCell.h; sourceTree = "<group>"; };
+		F2749A0010CBC4A500C9DEBA /* FKModuleToolbarButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleToolbarButtonCell.m; sourceTree = "<group>"; };
+		F2749A0110CBC4A500C9DEBA /* FKModuleToolbarClipIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleToolbarClipIndicator.h; sourceTree = "<group>"; };
+		F2749A0210CBC4A500C9DEBA /* FKModuleToolbarClipIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleToolbarClipIndicator.m; sourceTree = "<group>"; };
+		F2749A0310CBC4A500C9DEBA /* FKModuleToolbarClipIndicatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleToolbarClipIndicatorCell.h; sourceTree = "<group>"; };
+		F2749A0410CBC4A500C9DEBA /* FKModuleToolbarClipIndicatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleToolbarClipIndicatorCell.m; sourceTree = "<group>"; };
+		F2749A0510CBC4A500C9DEBA /* FKModuleToolbarFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleToolbarFlatButton.h; sourceTree = "<group>"; };
+		F2749A0610CBC4A500C9DEBA /* FKModuleToolbarFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleToolbarFlatButton.m; sourceTree = "<group>"; };
+		F2749A0710CBC4A500C9DEBA /* FKModuleToolbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleToolbarItem.h; sourceTree = "<group>"; };
+		F2749A0810CBC4A500C9DEBA /* FKModuleToolbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleToolbarItem.m; sourceTree = "<group>"; };
+		F2749A0910CBC4A500C9DEBA /* FKModuleToolbarSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleToolbarSeparator.h; sourceTree = "<group>"; };
+		F2749A0A10CBC4A500C9DEBA /* FKModuleToolbarSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleToolbarSeparator.m; sourceTree = "<group>"; };
+		F2749A0B10CBC4A500C9DEBA /* FKModuleToolbarSeparatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleToolbarSeparatorItem.h; sourceTree = "<group>"; };
+		F2749A0C10CBC4A500C9DEBA /* FKModuleToolbarSeparatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleToolbarSeparatorItem.m; sourceTree = "<group>"; };
+		F2749A0D10CBC4A500C9DEBA /* FKModuleToolbarSpaceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleToolbarSpaceItem.h; sourceTree = "<group>"; };
+		F2749A0E10CBC4A500C9DEBA /* FKModuleToolbarSpaceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleToolbarSpaceItem.m; sourceTree = "<group>"; };
+		F2749A1010CBC4A500C9DEBA /* FKModuleFilterBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleFilterBar.h; sourceTree = "<group>"; };
+		F2749A1110CBC4A500C9DEBA /* FKModuleFilterBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleFilterBar.m; sourceTree = "<group>"; };
+		F2749A1210CBC4A500C9DEBA /* FKModuleFilterBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleFilterBarButton.h; sourceTree = "<group>"; };
+		F2749A1310CBC4A500C9DEBA /* FKModuleFilterBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleFilterBarButton.m; sourceTree = "<group>"; };
+		F2749A1410CBC4A500C9DEBA /* FKModuleFilterBarButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleFilterBarButtonCell.h; sourceTree = "<group>"; };
+		F2749A1510CBC4A500C9DEBA /* FKModuleFilterBarButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleFilterBarButtonCell.m; sourceTree = "<group>"; };
+		F2749A1610CBC4A500C9DEBA /* FKModuleFilterBarClipIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleFilterBarClipIndicator.h; sourceTree = "<group>"; };
+		F2749A1710CBC4A500C9DEBA /* FKModuleFilterBarClipIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleFilterBarClipIndicator.m; sourceTree = "<group>"; };
+		F2749A1810CBC4A500C9DEBA /* FKModuleFilterBarClipIndicatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKModuleFilterBarClipIndicatorCell.h; sourceTree = "<group>"; };
+		F2749A1910CBC4A500C9DEBA /* FKModuleFilterBarClipIndicatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKModuleFilterBarClipIndicatorCell.m; sourceTree = "<group>"; };
+		F2749A3F10CBC67700C9DEBA /* FKNavigationBarBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FKNavigationBarBack.png; sourceTree = "<group>"; };
+		F2749A5310CBC83200C9DEBA /* TB_Show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_Show.png; sourceTree = "<group>"; };
+		F27CBD9A0C7F660200A7EDEF /* SaleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaleView.h; sourceTree = "<group>"; };
+		F27CBD9B0C7F660200A7EDEF /* SaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaleView.m; sourceTree = "<group>"; };
+		F28758D7107B39A40042EBA8 /* TaxRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxRate.h; sourceTree = "<group>"; };
+		F28758D8107B39A40042EBA8 /* TaxRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxRate.m; sourceTree = "<group>"; };
+		F28ED991108DEA2000A6C949 /* LogoT2J.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoT2J.png; sourceTree = "<group>"; };
+		F28ED9A0108DEAF300A6C949 /* Receipt.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Receipt.css; sourceTree = "<group>"; };
+		F28F1ACE0CA100D900EC715A /* StockSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockSnapshot.h; sourceTree = "<group>"; };
+		F28F1ACF0CA100D900EC715A /* StockSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockSnapshot.m; sourceTree = "<group>"; };
+		F290D86B0CA51CAC00FA9E55 /* StatusGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusGray.png; sourceTree = "<group>"; };
+		F290D86C0CA51CAC00FA9E55 /* StatusGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusGreen.png; sourceTree = "<group>"; };
+		F290D86D0CA51CAC00FA9E55 /* StatusRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusRed.png; sourceTree = "<group>"; };
+		F290D86E0CA51CAC00FA9E55 /* StatusYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusYellow.png; sourceTree = "<group>"; };
+		F290D9F60CA57AD100FA9E55 /* TB_Run.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_Run.tiff; sourceTree = "<group>"; };
+		F290D9F70CA57AD100FA9E55 /* TB_Pause.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_Pause.tiff; sourceTree = "<group>"; };
+		F290D9F80CA57AD100FA9E55 /* TB_Stop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_Stop.tiff; sourceTree = "<group>"; };
+		F2976E440C875BF30099F564 /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inventory.h; sourceTree = "<group>"; };
+		F2976E450C875BF40099F564 /* Inventory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inventory.m; sourceTree = "<group>"; };
+		F29774030C89CD1C0099F564 /* InventoriesModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoriesModule.h; sourceTree = "<group>"; };
+		F29774040C89CD1C0099F564 /* InventoriesModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoriesModule.m; sourceTree = "<group>"; };
+		F297742D0C89CD670099F564 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/InventoriesModule.nib; sourceTree = "<group>"; };
+		F29778C90C8B086C0099F564 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		F297795B0C8B10B00099F564 /* InventoryBeginStockSnapshot.html */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 30; path = InventoryBeginStockSnapshot.html; sourceTree = "<group>"; };
+		F2A4AC641147945A000AC76F /* SBMOCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMOCHelper.h; sourceTree = "<group>"; };
+		F2A4AC651147945A000AC76F /* SBMOCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMOCHelper.m; sourceTree = "<group>"; };
+		F2A4AC7011479501000AC76F /* SBMOCHelper+Brand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SBMOCHelper+Brand.h"; sourceTree = "<group>"; };
+		F2A4AC7111479501000AC76F /* SBMOCHelper+Brand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SBMOCHelper+Brand.m"; sourceTree = "<group>"; };
+		F2A4AC9011479862000AC76F /* SBMOCHelper+ProductFamily.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SBMOCHelper+ProductFamily.h"; sourceTree = "<group>"; };
+		F2A4AC9111479862000AC76F /* SBMOCHelper+ProductFamily.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SBMOCHelper+ProductFamily.m"; sourceTree = "<group>"; };
+		F2C5794E0C78EF030071F3E9 /* CustomersModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomersModule.h; sourceTree = "<group>"; };
+		F2C5794F0C78EF030071F3E9 /* CustomersModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomersModule.m; sourceTree = "<group>"; };
+		F2C5796C0C78EF210071F3E9 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/CustomersModule.nib; sourceTree = "<group>"; };
+		F2C579730C78EF440071F3E9 /* SBModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBModule.h; sourceTree = "<group>"; };
+		F2C579740C78EF440071F3E9 /* SBModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBModule.m; sourceTree = "<group>"; };
+		F2C6BCB90CA6D371009EC4BE /* TB_Print.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_Print.tiff; sourceTree = "<group>"; };
+		F2C82F8A0CAA9F040018BAE5 /* PaymentMethodsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentMethodsModule.h; sourceTree = "<group>"; };
+		F2C82F8B0CAA9F040018BAE5 /* PaymentMethodsModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentMethodsModule.m; sourceTree = "<group>"; };
+		F2C82FBC0CAA9F3B0018BAE5 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/PaymentMethodsModule.nib; sourceTree = "<group>"; };
+		F2C833290CABB14F0018BAE5 /* SaleReceipt.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = SaleReceipt.html; sourceTree = "<group>"; };
+		F2C94ADB0E91908300F8D763 /* Sales.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sales.png; sourceTree = "<group>"; };
+		F2C94AE20E9192C800F8D763 /* Providers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Providers.png; sourceTree = "<group>"; };
+		F2C9D4320C99AC7300E615CB /* TB_AddProduct.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_AddProduct.tiff; sourceTree = "<group>"; };
+		F2D197B30CB0E54C00F85FAF /* IncomingProductsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomingProductsManager.h; sourceTree = "<group>"; };
+		F2D197B40CB0E54C00F85FAF /* IncomingProductsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomingProductsManager.m; sourceTree = "<group>"; };
+		F2D197C90CB0E5AB00F85FAF /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/IncomingProducts.nib; sourceTree = "<group>"; };
+		F2D197D10CB0E6DB00F85FAF /* TB_ReceiveProducts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_ReceiveProducts.png; sourceTree = "<group>"; };
+		F2D19B550CB1800900F85FAF /* TB_Edit.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_Edit.tiff; sourceTree = "<group>"; };
+		F2D19B790CB18DD800F85FAF /* TB_PrintReceipt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_PrintReceipt.png; sourceTree = "<group>"; };
+		F2D19B820CB1975500F85FAF /* TB_PrintInvoice.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_PrintInvoice.tif; sourceTree = "<group>"; };
+		F2D19B870CB197B700F85FAF /* TaxRates.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TaxRates.tif; sourceTree = "<group>"; };
+		F2D19B8A0CB197F000F85FAF /* TB_Pay.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_Pay.tif; sourceTree = "<group>"; };
+		F2D19BAA0CB1983700F85FAF /* PaymentMethods.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = PaymentMethods.tif; sourceTree = "<group>"; };
+		F2D19BAD0CB1987E00F85FAF /* TB_AddPaymentMethod.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_AddPaymentMethod.tif; sourceTree = "<group>"; };
+		F2D19BB00CB198B300F85FAF /* TB_AddTax.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_AddTax.tif; sourceTree = "<group>"; };
+		F2D19C270CB19E4A00F85FAF /* ProductCategories.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ProductCategories.tiff; sourceTree = "<group>"; };
+		F2D19C280CB19E4A00F85FAF /* ProductFamilies.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ProductFamilies.tiff; sourceTree = "<group>"; };
+		F2D19C510CB1A01100F85FAF /* TB_AddProductCategory.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_AddProductCategory.tiff; sourceTree = "<group>"; };
+		F2D19C520CB1A01100F85FAF /* TB_AddProductFamily.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_AddProductFamily.tiff; sourceTree = "<group>"; };
+		F2DA2D940CA300AB00A2CF9A /* small_goto_alt.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = small_goto_alt.pdf; sourceTree = "<group>"; };
+		F2DA2D960CA300AB00A2CF9A /* small_goto.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = small_goto.pdf; sourceTree = "<group>"; };
+		F2DA2D970CA300AB00A2CF9A /* small_reveal_alt.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = small_reveal_alt.pdf; sourceTree = "<group>"; };
+		F2DA2D980CA300AB00A2CF9A /* small_reveal_down.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = small_reveal_down.pdf; sourceTree = "<group>"; };
+		F2DA2D990CA300AB00A2CF9A /* small_reveal.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = small_reveal.pdf; sourceTree = "<group>"; };
+		F2DA2D9C0CA300AB00A2CF9A /* small_notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_notification.png; sourceTree = "<group>"; };
+		F2DA2F1C0CA3117600A2CF9A /* CustomerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerView.h; sourceTree = "<group>"; };
+		F2DA2F1D0CA3117600A2CF9A /* CustomerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerView.m; sourceTree = "<group>"; };
+		F2DA2FDB0CA39F2F00A2CF9A /* invoice_unpaid_stamp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = invoice_unpaid_stamp.pdf; sourceTree = "<group>"; };
+		F2DA2FDC0CA39F2F00A2CF9A /* invoice_payed_stamp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = invoice_payed_stamp.pdf; sourceTree = "<group>"; };
+		F2DA308B0CA3C6CE00A2CF9A /* SmallClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallClose.png; sourceTree = "<group>"; };
+		F2DA30EA0CA3CDD300A2CF9A /* SmallClose_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallClose_alt.png; sourceTree = "<group>"; };
+		F2DA30EF0CA3CE4B00A2CF9A /* SmallEdit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallEdit.png; sourceTree = "<group>"; };
+		F2DA30F00CA3CE4B00A2CF9A /* SmallEdit_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallEdit_alt.png; sourceTree = "<group>"; };
+		F2DFDBEA0CAFF1A800AF0499 /* DailyZ.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = DailyZ.html; sourceTree = "<group>"; };
+		F2DFDD1C0CB0041800AF0499 /* StockValue.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = StockValue.html; sourceTree = "<group>"; };
+		F2E0355A0C3C2EE700BF1030 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		F2E0355B0C3C2EE700BF1030 /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		F2E0355C0C3C2EE700BF1030 /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
+		F2E0355D0C3C2EE700BF1030 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		F2E035610C3C2EE700BF1030 /* Brand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Brand.h; sourceTree = "<group>"; };
+		F2E035630C3C2EE700BF1030 /* Brand.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Brand.m; sourceTree = "<group>"; };
+		F2E035670C3C2EE700BF1030 /* Invoice.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Invoice.h; sourceTree = "<group>"; };
+		F2E035680C3C2EE700BF1030 /* Invoice.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Invoice.m; sourceTree = "<group>"; };
+		F2E0356C0C3C2EE700BF1030 /* ProductCategoriesModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ProductCategoriesModule.h; sourceTree = "<group>"; };
+		F2E0356D0C3C2EE700BF1030 /* ProductCategoriesModule.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ProductCategoriesModule.m; sourceTree = "<group>"; };
+		F2E0356E0C3C2EE700BF1030 /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
+		F2E0356F0C3C2EE700BF1030 /* ProductCategory.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ProductCategory.h; sourceTree = "<group>"; };
+		F2E035700C3C2EE700BF1030 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
+		F2E035710C3C2EE700BF1030 /* ProductCategory.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ProductCategory.m; sourceTree = "<group>"; };
+		F2E035730C3C2EE700BF1030 /* ProductFamily.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ProductFamily.h; sourceTree = "<group>"; };
+		F2E035740C3C2EE700BF1030 /* ProductFamily.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ProductFamily.m; sourceTree = "<group>"; };
+		F2E035760C3C2EE700BF1030 /* ProductsModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ProductsModule.h; sourceTree = "<group>"; };
+		F2E035770C3C2EE700BF1030 /* ProductsModule.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ProductsModule.m; sourceTree = "<group>"; };
+		F2E0357C0C3C2EE700BF1030 /* ProvidersModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ProvidersModule.h; sourceTree = "<group>"; };
+		F2E0357D0C3C2EE700BF1030 /* ProvidersModule.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ProvidersModule.m; sourceTree = "<group>"; };
+		F2E035830C3C2EE700BF1030 /* SalesModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SalesModule.h; sourceTree = "<group>"; };
+		F2E035840C3C2EE700BF1030 /* SalesModule.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SalesModule.m; sourceTree = "<group>"; };
+		F2E035850C3C2EE700BF1030 /* ShoppingBag.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ShoppingBag.icns; sourceTree = "<group>"; };
+		F2E035860C3C2EE700BF1030 /* ShoppingBagAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ShoppingBagAppDelegate.h; sourceTree = "<group>"; };
+		F2E035870C3C2EE700BF1030 /* StockMovement.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = StockMovement.h; sourceTree = "<group>"; };
+		F2E035880C3C2EE700BF1030 /* ShoppingBagAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ShoppingBagAppDelegate.m; sourceTree = "<group>"; };
+		F2E035890C3C2EE700BF1030 /* SupplyOrderLine.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SupplyOrderLine.h; sourceTree = "<group>"; };
+		F2E0358A0C3C2EE700BF1030 /* StockMovement.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = StockMovement.m; sourceTree = "<group>"; };
+		F2E0358B0C3C2EE700BF1030 /* SupplyOrderLine.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SupplyOrderLine.m; sourceTree = "<group>"; };
+		F2E0358D0C3C2EE700BF1030 /* StockAlert.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = StockAlert.h; sourceTree = "<group>"; };
+		F2E0358E0C3C2EE700BF1030 /* SupplyOrder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SupplyOrder.h; sourceTree = "<group>"; };
+		F2E035900C3C2EE700BF1030 /* TaxRatesModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TaxRatesModule.h; sourceTree = "<group>"; };
+		F2E035910C3C2EE700BF1030 /* SupplyOrder.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SupplyOrder.m; sourceTree = "<group>"; };
+		F2E035920C3C2EE700BF1030 /* StockAlert.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = StockAlert.m; sourceTree = "<group>"; };
+		F2E035930C3C2EE700BF1030 /* TaxRatesModule.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TaxRatesModule.m; sourceTree = "<group>"; };
+		F2E035D70C3C2F2900BF1030 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/Preferences.nib; sourceTree = "<group>"; };
+		F2E035D90C3C2F2900BF1030 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/ProductCategoriesModule.nib; sourceTree = "<group>"; };
+		F2E035DD0C3C2F2900BF1030 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/TaxRatesModule.nib; sourceTree = "<group>"; };
+		F2E035DF0C3C2F2900BF1030 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/SalesModule.nib; sourceTree = "<group>"; };
+		F2E035E30C3C2F2900BF1030 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/ProvidersModule.nib; sourceTree = "<group>"; };
+		F2E036480C3C30C000BF1030 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/ProductsModule.nib; sourceTree = "<group>"; };
+		F2E036540C3C322100BF1030 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2E8411B106AB64A002326A0 /* Brands.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brands.png; sourceTree = "<group>"; };
+		F2E8412C106AB6A2002326A0 /* TB_AddBrand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_AddBrand.png; sourceTree = "<group>"; };
+		F2E841E3106ABEA8002326A0 /* ShopPreferences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShopPreferences.png; sourceTree = "<group>"; };
+		F2FCC3C2112AC40C006603DA /* 1_1.45.xcmappingmodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcmappingmodel; path = 1_1.45.xcmappingmodel; sourceTree = "<group>"; };
+		F2FD251F106D169000147916 /* Sale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sale.h; sourceTree = "<group>"; };
+		F2FD2520106D169000147916 /* Sale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sale.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				F29778CA0C8B086C0099F564 /* WebKit.framework in Frameworks */,
+				F20EFC02108CC22700D3F192 /* Carbon.framework in Frameworks */,
+				F20EFC04108CC22700D3F192 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F2E036510C3C320500BF1030 /* Preferences */,
+				F2E0360A0C3C307500BF1030 /* Modules */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				F20EFC01108CC22700D3F192 /* Carbon.framework */,
+				F20EFC03108CC22700D3F192 /* IOKit.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F29778C90C8B086C0099F564 /* WebKit.framework */,
+				77C82804067257F0000B614F /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F260DF10171040AB008848B6 /* ShoppingBag.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Shopping Bag */ = {
+			isa = PBXGroup;
+			children = (
+				F20EF9ED108CBD7800D3F192 /* FKKit */,
+				F2E035860C3C2EE700BF1030 /* ShoppingBagAppDelegate.h */,
+				F2E035880C3C2EE700BF1030 /* ShoppingBagAppDelegate.m */,
+				7756732906782D8800D1FEB8 /* Models */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "Shopping Bag";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* ShoppingBag_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F20EFCB1108CFA6200D3F192 /* Minus.png */,
+				F20EFCB2108CFA6200D3F192 /* Plus.png */,
+				F2078D2D0C8C7C6000CE5391 /* Templates */,
+				F23C64A70C3C344F00DC452C /* MainMenu.nib */,
+				F2E036500C3C31CF00BF1030 /* Images */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				F20343260C3FE37600E2930C /* Localizable.strings */,
+				F21DE89A0C52A7EC00FF982E /* ErrorMessages.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7756732906782D8800D1FEB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2E036060C3C2FF700BF1030 /* Managed objects */,
+				F2FCC3B0112AC1D8006603DA /* ShoppingBag_DataModel.xcdatamodeld */,
+				F260DF1617118F8A008848B6 /* SaleMigrationPolicy.h */,
+				F260DF1717118F8A008848B6 /* SaleMigrationPolicy.m */,
+				F25CD41912C94DDF00795F3B /* SaleLineMigrationPolicy.h */,
+				F25CD41A12C94DDF00795F3B /* SaleLineMigrationPolicy.m */,
+				F260DFC8171193B9008848B6 /* 1.45_1.412.xcmappingmodel */,
+				F2FCC3C2112AC40C006603DA /* 1_1.45.xcmappingmodel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F2078D2D0C8C7C6000CE5391 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				F28ED991108DEA2000A6C949 /* LogoT2J.png */,
+				F2078D320C8C7C7600CE5391 /* ShoppingBag.css */,
+				F28ED9A0108DEAF300A6C949 /* Receipt.css */,
+				F2DFDBEA0CAFF1A800AF0499 /* DailyZ.html */,
+				F297795B0C8B10B00099F564 /* InventoryBeginStockSnapshot.html */,
+				F261EEAC0CB3DAE50012E86D /* InventoryEndStockSnapshot.html */,
+				F26256970CACEC300030148E /* SaleInvoice.html */,
+				F2C833290CABB14F0018BAE5 /* SaleReceipt.html */,
+				F2DFDD1C0CB0041800AF0499 /* StockValue.html */,
+			);
+			name = Templates;
+			sourceTree = "<group>";
+		};
+		F20EF9ED108CBD7800D3F192 /* FKKit */ = {
+			isa = PBXGroup;
+			children = (
+				F20EFA2C108CBDC100D3F192 /* FKKit.h */,
+				F20EFAEC108CBEDC00D3F192 /* NKDBarcodeFramework */,
+				F20EFB38108CBF3200D3F192 /* FKAdditions */,
+				F20EF9F5108CBDC100D3F192 /* FKAlert.h */,
+				F20EF9F6108CBDC100D3F192 /* FKAlert.m */,
+				F20EF9F7108CBDC100D3F192 /* FKAppDelegate.h */,
+				F20EF9F8108CBDC100D3F192 /* FKAppDelegate.m */,
+				F20EF9F9108CBDC100D3F192 /* FKBarcodeScanner.h */,
+				F20EF9FA108CBDC100D3F192 /* FKBarcodeScanner.m */,
+				F20EF9FB108CBDC100D3F192 /* FKBarcodeScannersManager.h */,
+				F20EF9FC108CBDC100D3F192 /* FKBarcodeScannersManager.m */,
+				F20EF9FD108CBDC100D3F192 /* FKButton_NormalFill.png */,
+				F20EF9FE108CBDC100D3F192 /* FKButton_NormalLeft.png */,
+				F20EF9FF108CBDC100D3F192 /* FKButton_NormalRight.png */,
+				F20EFA00108CBDC100D3F192 /* FKButton_PressedFill.png */,
+				F20EFA01108CBDC100D3F192 /* FKButton_PressedLeft.png */,
+				F20EFA02108CBDC100D3F192 /* FKButton_PressedRight.png */,
+				F20EFA03108CBDC100D3F192 /* FKButton.h */,
+				F20EFA04108CBDC100D3F192 /* FKButton.m */,
+				F20EFA05108CBDC100D3F192 /* FKButtonCell.h */,
+				F20EFA06108CBDC100D3F192 /* FKButtonCell.m */,
+				F20EFA07108CBDC100D3F192 /* FKComboBox.h */,
+				F20EFA08108CBDC100D3F192 /* FKComboBox.m */,
+				F20EFA09108CBDC100D3F192 /* FKComboBoxCell.h */,
+				F20EFA0A108CBDC100D3F192 /* FKComboBoxCell.m */,
+				F20EFA0B108CBDC100D3F192 /* FKCurrencyFormatter.h */,
+				F20EFA0C108CBDC100D3F192 /* FKCurrencyFormatter.m */,
+				F20EFA0D108CBDC100D3F192 /* FKCurrencyTextField.h */,
+				F20EFA0E108CBDC100D3F192 /* FKCurrencyTextField.m */,
+				F20EFA0F108CBDC100D3F192 /* FKCurrencyTextFieldCell.h */,
+				F20EFA10108CBDC100D3F192 /* FKCurrencyTextFieldCell.m */,
+				F20EFA11108CBDC100D3F192 /* FKDecimalFormatter.h */,
+				F20EFA12108CBDC100D3F192 /* FKDecimalFormatter.m */,
+				F20EFA13108CBDC100D3F192 /* FKDecimalTextField.h */,
+				F20EFA14108CBDC100D3F192 /* FKDecimalTextField.m */,
+				F20EFA15108CBDC100D3F192 /* FKDecimalTextFieldCell.h */,
+				F20EFA16108CBDC100D3F192 /* FKDecimalTextFieldCell.m */,
+				F20EFA17108CBDC100D3F192 /* FKFlatRoundedButton.h */,
+				F20EFA18108CBDC100D3F192 /* FKFlatRoundedButton.m */,
+				F20EFA19108CBDC100D3F192 /* FKFlatRoundedButtonCell.h */,
+				F20EFA1A108CBDC100D3F192 /* FKFlatRoundedButtonCell.m */,
+				F20EFA1B108CBDC100D3F192 /* FKFlippedView.h */,
+				F20EFA1C108CBDC100D3F192 /* FKFlippedView.m */,
+				F20EFA1D108CBDC100D3F192 /* FKFocusView.h */,
+				F20EFA1E108CBDC100D3F192 /* FKFocusView.m */,
+				F20EFA1F108CBDC100D3F192 /* FKGroup.h */,
+				F20EFA20108CBDC100D3F192 /* FKGroup.m */,
+				F20EFA21108CBDC100D3F192 /* FKImageAndTextCell.h */,
+				F20EFA22108CBDC100D3F192 /* FKImageAndTextCell.m */,
+				F20EFA23108CBDC100D3F192 /* FKImageAndTextField.h */,
+				F20EFA24108CBDC100D3F192 /* FKImageAndTextField.m */,
+				F20EFA25108CBDC100D3F192 /* FKIntegerFormatter.h */,
+				F20EFA26108CBDC100D3F192 /* FKIntegerFormatter.m */,
+				F20EFA27108CBDC100D3F192 /* FKIntegerTextField.h */,
+				F20EFA28108CBDC100D3F192 /* FKIntegerTextField.m */,
+				F20EFA29108CBDC100D3F192 /* FKIntegerTextFieldCell.h */,
+				F20EFA2A108CBDC100D3F192 /* FKIntegerTextFieldCell.m */,
+				F20EFA2D108CBDC100D3F192 /* FKLine.h */,
+				F20EFA2E108CBDC100D3F192 /* FKLine.m */,
+				F20EFA2F108CBDC100D3F192 /* FKManagedArrayController.h */,
+				F20EFAD9108CBDF300D3F192 /* FKManagedArrayController.m */,
+				F20EFA30108CBDC100D3F192 /* FKManagedObject.h */,
+				F20EFA31108CBDC100D3F192 /* FKManagedObject.m */,
+				F20EFA32108CBDC100D3F192 /* FKManagedObjectsManager.h */,
+				F20EFA33108CBDC100D3F192 /* FKManagedObjectsManager.m */,
+				F20EFA34108CBDC100D3F192 /* FKManagedPlatePopUpButton.h */,
+				F20EFA35108CBDC100D3F192 /* FKManagedPlatePopUpButton.m */,
+				F20EFA3D108CBDC100D3F192 /* FKModuleBottomBar.h */,
+				F20EFA3E108CBDC100D3F192 /* FKModuleBottomBar.m */,
+				F20EFA3F108CBDC100D3F192 /* FKModuleBottomBarFiller.png */,
+				F20EFA40108CBDC100D3F192 /* FKModuleCenter.h */,
+				F20EFA41108CBDC100D3F192 /* FKModuleCenter.m */,
+				F20EFA43108CBDC100D3F192 /* FKModuleGradientTextField.h */,
+				F20EFA44108CBDC100D3F192 /* FKModuleGradientTextField.m */,
+				F20EFA45108CBDC100D3F192 /* FKModuleGradientTextFieldCell.h */,
+				F20EFA46108CBDC100D3F192 /* FKModuleGradientTextFieldCell.m */,
+				F20EFA51108CBDC100D3F192 /* FKModuleTheme.h */,
+				F20EFA52108CBDC100D3F192 /* FKModuleTheme.m */,
+				F20EFA53108CBDC100D3F192 /* FKModuleThemeBlue.h */,
+				F20EFA54108CBDC100D3F192 /* FKModuleThemeBlue.m */,
+				F20EFA55108CBDC100D3F192 /* FKModuleThemeBrown.h */,
+				F20EFA56108CBDC100D3F192 /* FKModuleThemeBrown.m */,
+				F20EFA57108CBDC100D3F192 /* FKModuleThemeGreen.h */,
+				F20EFA58108CBDC100D3F192 /* FKModuleThemeGreen.m */,
+				F20EFA59108CBDC100D3F192 /* FKModuleThemeOrange.h */,
+				F20EFA5A108CBDC100D3F192 /* FKModuleThemeOrange.m */,
+				F20EFA5B108CBDC100D3F192 /* FKModuleThemePurple.h */,
+				F20EFA5C108CBDC100D3F192 /* FKModuleThemePurple.m */,
+				F20EFA5D108CBDC100D3F192 /* FKModuleThemeRed.h */,
+				F20EFA5E108CBDC100D3F192 /* FKModuleThemeRed.m */,
+				F20EFA5F108CBDC100D3F192 /* FKModuleThemeYellow.h */,
+				F20EFA60108CBDC100D3F192 /* FKModuleThemeYellow.m */,
+				F20EFA61108CBDC100D3F192 /* FKModuleTitleBar_GrayGradientBackground.png */,
+				F20EFCC8108CFB1200D3F192 /* FKModule */,
+				F27499FA10CBC4A500C9DEBA /* FKModuleToolbar */,
+				F20EFA7F108CBDC100D3F192 /* FKMultiplePanesController.h */,
+				F20EFA80108CBDC100D3F192 /* FKMultiplePanesController.m */,
+				F20EFA81108CBDC100D3F192 /* FKMultipleValuesProxy.h */,
+				F20EFA82108CBDC100D3F192 /* FKMultipleValuesProxy.m */,
+				F20EFA83108CBDC100D3F192 /* FKNavigationToolbarItem.h */,
+				F20EFA84108CBDC100D3F192 /* FKNavigationToolbarItem.m */,
+				F20EFA85108CBDC100D3F192 /* FKNumberFormatter.h */,
+				F20EFA86108CBDC100D3F192 /* FKNumberFormatter.m */,
+				F20EFA87108CBDC100D3F192 /* FKOutlineView.h */,
+				F20EFA88108CBDC100D3F192 /* FKOutlineView.m */,
+				F20EFA89108CBDC100D3F192 /* FKPercentFormatter.h */,
+				F20EFA8A108CBDC100D3F192 /* FKPercentFormatter.m */,
+				F20EFA8B108CBDC100D3F192 /* FKPercentTextField.h */,
+				F20EFA8C108CBDC100D3F192 /* FKPercentTextField.m */,
+				F20EFA8D108CBDC200D3F192 /* FKPercentTextFieldCell.h */,
+				F20EFA8E108CBDC200D3F192 /* FKPercentTextFieldCell.m */,
+				F20EFA8F108CBDC200D3F192 /* FKPlatePopUpButton.h */,
+				F20EFA90108CBDC200D3F192 /* FKPlatePopUpButton.m */,
+				F20EFA91108CBDC200D3F192 /* FKPlatePopUpButtonCell.h */,
+				F20EFA92108CBDC200D3F192 /* FKPlatePopUpButtonCell.m */,
+				F20EFA93108CBDC200D3F192 /* FKPlusMinusView.h */,
+				F20EFA94108CBDC200D3F192 /* FKPlusMinusView.m */,
+				F20EFA95108CBDC200D3F192 /* FKPrintManager.h */,
+				F20EFA96108CBDC200D3F192 /* FKPrintManager.m */,
+				F20EFA97108CBDC200D3F192 /* FKSidebarObject.h */,
+				F20EFA98108CBDC200D3F192 /* FKSidebarObject.m */,
+				F20EFA99108CBDC200D3F192 /* FKSmartGroup.h */,
+				F20EFA9A108CBDC200D3F192 /* FKSmartGroup.m */,
+				F20EFA9B108CBDC200D3F192 /* FKSourceListGroup.h */,
+				F20EFA9C108CBDC200D3F192 /* FKSourceListGroup.m */,
+				F20EFA9D108CBDC200D3F192 /* FKSourceListItem.h */,
+				F20EFA9E108CBDC200D3F192 /* FKSourceListItem.m */,
+				F20EFA9F108CBDC200D3F192 /* FKSourceListSmartGroup.h */,
+				F20EFAA0108CBDC200D3F192 /* FKSourceListSmartGroup.m */,
+				F20EFAA1108CBDC200D3F192 /* FKSplitter.h */,
+				F20EFAA2108CBDC200D3F192 /* FKSplitter.m */,
+				F20EFAA3108CBDC200D3F192 /* FKSplitView.h */,
+				F20EFAA4108CBDC200D3F192 /* FKSplitView.m */,
+				F20EFAA5108CBDC200D3F192 /* FKSquareComboBox.h */,
+				F20EFAA6108CBDC200D3F192 /* FKSquareComboBox.m */,
+				F20EFAA7108CBDC200D3F192 /* FKStackableView.h */,
+				F20EFAA8108CBDC200D3F192 /* FKStackableView.m */,
+				F20EFAA9108CBDC200D3F192 /* FKStackView.h */,
+				F20EFAAA108CBDC200D3F192 /* FKStackView.m */,
+				F20EFAAB108CBDC200D3F192 /* FKSubviewTableViewCell.h */,
+				F20EFAAC108CBDC200D3F192 /* FKSubviewTableViewCell.m */,
+				F20EFAAD108CBDC200D3F192 /* FKSubviewTableViewController.h */,
+				F20EFAAE108CBDC200D3F192 /* FKSubviewTableViewController.m */,
+				F20EFAAF108CBDC200D3F192 /* FKTableCornerView.h */,
+				F20EFAB0108CBDC200D3F192 /* FKTableCornerView.m */,
+				F20EFAB1108CBDC200D3F192 /* FKTableHeaderCell.h */,
+				F20EFAB2108CBDC200D3F192 /* FKTableHeaderCell.m */,
+				F20EFAB3108CBDC200D3F192 /* FKTableHeaderView.h */,
+				F20EFAB4108CBDC200D3F192 /* FKTableHeaderView.m */,
+				F20EFAB5108CBDC200D3F192 /* FKTableView_Implementation.h */,
+				F20EFAB6108CBDC200D3F192 /* FKTableView_Methods.h */,
+				F20EFAB7108CBDC200D3F192 /* FKTableView_Vars.h */,
+				F20EFAB8108CBDC200D3F192 /* FKTableView.h */,
+				F20EFC18108CC26E00D3F192 /* FKTableView.m */,
+				F20EFC88108CE8F600D3F192 /* TabViewBack.png */,
+				F20EFAB9108CBDC200D3F192 /* FKTabView.h */,
+				F20EFABA108CBDC200D3F192 /* FKTabView.m */,
+				F20EFABB108CBDC200D3F192 /* FKTabViewItem.h */,
+				F20EFABC108CBDC200D3F192 /* FKTabViewItem.m */,
+				F20EFABD108CBDC200D3F192 /* FKTextField.h */,
+				F20EFABE108CBDC200D3F192 /* FKTextField.m */,
+				F20EFABF108CBDC200D3F192 /* FKTextFieldCell.h */,
+				F20EFAC0108CBDC200D3F192 /* FKTextFieldCell.m */,
+				F20EFAC1108CBDC200D3F192 /* FKToolbarItemButton.h */,
+				F20EFAC2108CBDC200D3F192 /* FKToolbarItemButton.m */,
+				F20EFAC3108CBDC200D3F192 /* FKToolbarItemPopUpButton.h */,
+				F20EFAC4108CBDC200D3F192 /* FKToolbarItemPopUpButton.m */,
+				F20EFAC5108CBDC200D3F192 /* FKToolbarItemView.h */,
+				F20EFAC6108CBDC200D3F192 /* FKToolbarItemView.m */,
+				F20EFAC7108CBDC200D3F192 /* FKURLProtocol.h */,
+				F20EFAC8108CBDC200D3F192 /* FKURLProtocol.m */,
+				F20EFAC9108CBDC200D3F192 /* FKVerticallyCenteredCurrencyTextFieldCell.h */,
+				F20EFACA108CBDC200D3F192 /* FKVerticallyCenteredCurrencyTextFieldCell.m */,
+				F20EFACB108CBDC200D3F192 /* FKVerticallyCenteredDecimalTextFieldCell.h */,
+				F20EFACC108CBDC200D3F192 /* FKVerticallyCenteredDecimalTextFieldCell.m */,
+				F20EFACD108CBDC200D3F192 /* FKVerticallyCenteredIntegerTextFieldCell.h */,
+				F20EFACE108CBDC200D3F192 /* FKVerticallyCenteredIntegerTextFieldCell.m */,
+				F20EFACF108CBDC200D3F192 /* FKVerticallyCenteredPercentTextFieldCell.h */,
+				F20EFAD0108CBDC200D3F192 /* FKVerticallyCenteredPercentTextFieldCell.m */,
+				F20EFAD1108CBDC200D3F192 /* FKVerticallyCenteredTextFieldCell.h */,
+				F20EFAD2108CBDC200D3F192 /* FKVerticallyCenteredTextFieldCell.m */,
+				F20EFAD3108CBDC200D3F192 /* FKView.h */,
+				F20EFAD4108CBDC200D3F192 /* FKView.m */,
+				F20EFAD5108CBDC200D3F192 /* FKViewAnimation.h */,
+				F20EFAD6108CBDC200D3F192 /* FKViewAnimation.m */,
+				F20EFAD7108CBDC200D3F192 /* FKWindow.h */,
+				F20EFAD8108CBDC200D3F192 /* FKWindow.m */,
+			);
+			name = FKKit;
+			sourceTree = "<group>";
+		};
+		F20EFAEC108CBEDC00D3F192 /* NKDBarcodeFramework */ = {
+			isa = PBXGroup;
+			children = (
+				F20EFAF4108CBEDC00D3F192 /* NKDBarcodeFramework.h */,
+				F20EFAF5108CBEDC00D3F192 /* NKDBarcode.h */,
+				F20EFAF6108CBEDC00D3F192 /* NKDBarcode.m */,
+				F20EFAF7108CBEDC00D3F192 /* NKDCode39Barcode.h */,
+				F20EFAF8108CBEDC00D3F192 /* NKDCode39Barcode.m */,
+				F20EFAF9108CBEDC00D3F192 /* NKDExtendedCode39Barcode.h */,
+				F20EFAFA108CBEDC00D3F192 /* NKDExtendedCode39Barcode.m */,
+				F20EFAFB108CBEDC00D3F192 /* NKDInterleavedTwoOfFiveBarcode.h */,
+				F20EFAFC108CBEDC00D3F192 /* NKDInterleavedTwoOfFiveBarcode.m */,
+				F20EFAFD108CBEDC00D3F192 /* NKDModifiedPlesseyBarcode.h */,
+				F20EFAFE108CBEDC00D3F192 /* NKDModifiedPlesseyBarcode.m */,
+				F20EFAFF108CBEDC00D3F192 /* NKDPostnetBarcode.h */,
+				F20EFB00108CBEDC00D3F192 /* NKDPostnetBarcode.m */,
+				F20EFB01108CBEDC00D3F192 /* NKDUPCABarcode.h */,
+				F20EFB02108CBEDC00D3F192 /* NKDUPCABarcode.m */,
+				F20EFB03108CBEDC00D3F192 /* NKDModifiedPlesseyHexBarcode.h */,
+				F20EFB04108CBEDC00D3F192 /* NKDModifiedPlesseyHexBarcode.m */,
+				F20EFB05108CBEDC00D3F192 /* NKDIndustrialTwoOfFiveBarcode.h */,
+				F20EFB06108CBEDC00D3F192 /* NKDIndustrialTwoOfFiveBarcode.m */,
+				F20EFB07108CBEDC00D3F192 /* NKDEAN13Barcode.h */,
+				F20EFB08108CBEDC00D3F192 /* NKDEAN13Barcode.m */,
+				F20EFB09108CBEDC00D3F192 /* NKDCode128Barcode.h */,
+				F20EFB0A108CBEDC00D3F192 /* NKDCode128Barcode.m */,
+				F20EFB0B108CBEDC00D3F192 /* NKDAbstractUPCEANBarcode.h */,
+				F20EFB0C108CBEDC00D3F192 /* NKDAbstractUPCEANBarcode.m */,
+				F20EFB0D108CBEDC00D3F192 /* NKDCodabarBarcode.h */,
+				F20EFB0E108CBEDC00D3F192 /* NKDCodabarBarcode.m */,
+				F20EFB0F108CBEDC00D3F192 /* NKDUPCEBarcode.h */,
+				F20EFB10108CBEDC00D3F192 /* NKDUPCEBarcode.m */,
+				F20EFB11108CBEDC00D3F192 /* NKDEAN8Barcode.h */,
+				F20EFB12108CBEDC00D3F192 /* NKDEAN8Barcode.m */,
+				F20EFB13108CBEDC00D3F192 /* NKDBarcodeOffscreenView.h */,
+				F20EFB14108CBEDC00D3F192 /* NKDBarcodeOffscreenView.m */,
+				F20EFB15108CBEDC00D3F192 /* NKDBarcodeImageView.h */,
+				F20EFB16108CBEDC00D3F192 /* NKDBarcodeImageView.m */,
+				F20EFB17108CBEDC00D3F192 /* NKDRoyalMailBarcode.h */,
+				F20EFB18108CBEDC00D3F192 /* NKDRoyalMailBarcode.m */,
+				F20EFB19108CBEDC00D3F192 /* NKDPlanetBarcode.h */,
+				F20EFB1A108CBEDC00D3F192 /* NKDPlanetBarcode.m */,
+				F20EFB1B108CBEDC00D3F192 /* JapanPostBarcode.h */,
+				F20EFB1C108CBEDC00D3F192 /* JapanPostBarcode.m */,
+				F20EFAED108CBEDC00D3F192 /* Categories */,
+			);
+			name = NKDBarcodeFramework;
+			sourceTree = "<group>";
+		};
+		F20EFAED108CBEDC00D3F192 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F20EFAEE108CBEDC00D3F192 /* NSImage-NKDBarcode.h */,
+				F20EFAEF108CBEDC00D3F192 /* NSImage-NKDBarcode.m */,
+				F20EFAF0108CBEDC00D3F192 /* NSImage-Resolution.h */,
+				F20EFAF1108CBEDC00D3F192 /* NSImage-Normalize.m */,
+				F20EFAF2108CBEDC00D3F192 /* NSString-UPCEAN.h */,
+				F20EFAF3108CBEDC00D3F192 /* NSString-UPCEAN.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		F20EFB38108CBF3200D3F192 /* FKAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				F20EFB39108CBF3200D3F192 /* NSAlert_FKAdditions.h */,
+				F20EFB3A108CBF3200D3F192 /* NSAlert_FKAdditions.m */,
+				F20EFB3B108CBF3200D3F192 /* NSBezierPath_FKAdditions.h */,
+				F20EFB3C108CBF3200D3F192 /* NSBezierPath_FKAdditions.m */,
+				F20EFB3D108CBF3200D3F192 /* NSColor_FKAdditions.h */,
+				F20EFB3E108CBF3200D3F192 /* NSColor_FKAdditions.m */,
+				F20EFB3F108CBF3200D3F192 /* NSComboBoxCell_FKAdditions.h */,
+				F20EFB40108CBF3200D3F192 /* NSComboBoxCell_FKAdditions.m */,
+				F20EFB41108CBF3200D3F192 /* NSDate_FKAdditions.h */,
+				F20EFB42108CBF3200D3F192 /* NSDate_FKAdditions.m */,
+				F20EFB43108CBF3200D3F192 /* NSDecimalNumber_FKAdditions.h */,
+				F20EFB44108CBF3200D3F192 /* NSDecimalNumber_FKAdditions.m */,
+				F20EFB45108CBF3200D3F192 /* NSImage_FKAdditions.h */,
+				F20EFB46108CBF3200D3F192 /* NSImage_FKAdditions.m */,
+				F20EFB47108CBF3200D3F192 /* NSImageView_FKAdditions.h */,
+				F20EFB48108CBF3200D3F192 /* NSImageView_FKAdditions.m */,
+				F20EFB49108CBF3200D3F192 /* NSMutableArray_FKAdditions.h */,
+				F20EFB4A108CBF3200D3F192 /* NSMutableArray_FKAdditions.m */,
+				F20EFB4B108CBF3200D3F192 /* NSMutableParagraphStyle_FKAdditions.h */,
+				F20EFB4C108CBF3200D3F192 /* NSMutableParagraphStyle_FKAdditions.m */,
+				F20EFB4D108CBF3200D3F192 /* NSObject_FKAdditions.h */,
+				F20EFB4E108CBF3200D3F192 /* NSObject_FKAdditions.m */,
+				F20EFB4F108CBF3200D3F192 /* NSPointFunctions_FKAdditions.h */,
+				F20EFB50108CBF3200D3F192 /* NSRectFunctions_FKAdditions.h */,
+				F20EFB53108CBF3200D3F192 /* NSString_FKAdditions.h */,
+				F20EFB54108CBF3200D3F192 /* NSString_FKAdditions.m */,
+				F20EFB55108CBF3200D3F192 /* NSTableColumn_FKAdditions.h */,
+				F20EFB56108CBF3200D3F192 /* NSTableColumn_FKAdditions.m */,
+				F20EFB57108CBF3200D3F192 /* NSView_FKAdditions.h */,
+				F20EFB58108CBF3200D3F192 /* NSView_FKAdditions.m */,
+				F20EFB59108CBF3200D3F192 /* NSWindow_FKAdditions.h */,
+				F20EFB5A108CBF3200D3F192 /* NSWindow_FKAdditions.m */,
+			);
+			name = FKAdditions;
+			sourceTree = "<group>";
+		};
+		F20EFCC8108CFB1200D3F192 /* FKModule */ = {
+			isa = PBXGroup;
+			children = (
+				F20EFA3C108CBDC100D3F192 /* FKModule.h */,
+				F20EFAE0108CBE0600D3F192 /* FKModule.m */,
+				F20EFA36108CBDC100D3F192 /* FKModule_BrowserStyle.h */,
+				F20EFA37108CBDC100D3F192 /* FKModule_BrowserStyle.m */,
+				F20EFA38108CBDC100D3F192 /* FKModule_FullStyle.h */,
+				F20EFA39108CBDC100D3F192 /* FKModule_FullStyle.m */,
+				F20EFA3A108CBDC100D3F192 /* FKModule_MiniStyle.h */,
+				F20EFA3B108CBDC100D3F192 /* FKModule_MiniStyle.m */,
+			);
+			name = FKModule;
+			sourceTree = "<group>";
+		};
+		F27499FA10CBC4A500C9DEBA /* FKModuleToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				F2749A0F10CBC4A500C9DEBA /* FKFilterBar */,
+				F27499FB10CBC4A500C9DEBA /* FKModuleToolbar.h */,
+				F27499FC10CBC4A500C9DEBA /* FKModuleToolbar.m */,
+				F27499FD10CBC4A500C9DEBA /* FKModuleToolbarButton.h */,
+				F27499FE10CBC4A500C9DEBA /* FKModuleToolbarButton.m */,
+				F27499FF10CBC4A500C9DEBA /* FKModuleToolbarButtonCell.h */,
+				F2749A0010CBC4A500C9DEBA /* FKModuleToolbarButtonCell.m */,
+				F2749A0110CBC4A500C9DEBA /* FKModuleToolbarClipIndicator.h */,
+				F2749A0210CBC4A500C9DEBA /* FKModuleToolbarClipIndicator.m */,
+				F2749A0310CBC4A500C9DEBA /* FKModuleToolbarClipIndicatorCell.h */,
+				F2749A0410CBC4A500C9DEBA /* FKModuleToolbarClipIndicatorCell.m */,
+				F2749A0510CBC4A500C9DEBA /* FKModuleToolbarFlatButton.h */,
+				F2749A0610CBC4A500C9DEBA /* FKModuleToolbarFlatButton.m */,
+				F2749A0710CBC4A500C9DEBA /* FKModuleToolbarItem.h */,
+				F2749A0810CBC4A500C9DEBA /* FKModuleToolbarItem.m */,
+				F2749A0910CBC4A500C9DEBA /* FKModuleToolbarSeparator.h */,
+				F2749A0A10CBC4A500C9DEBA /* FKModuleToolbarSeparator.m */,
+				F2749A0B10CBC4A500C9DEBA /* FKModuleToolbarSeparatorItem.h */,
+				F2749A0C10CBC4A500C9DEBA /* FKModuleToolbarSeparatorItem.m */,
+				F2749A0D10CBC4A500C9DEBA /* FKModuleToolbarSpaceItem.h */,
+				F2749A0E10CBC4A500C9DEBA /* FKModuleToolbarSpaceItem.m */,
+			);
+			name = FKModuleToolbar;
+			sourceTree = "<group>";
+		};
+		F2749A0F10CBC4A500C9DEBA /* FKFilterBar */ = {
+			isa = PBXGroup;
+			children = (
+				F2749A1010CBC4A500C9DEBA /* FKModuleFilterBar.h */,
+				F2749A1110CBC4A500C9DEBA /* FKModuleFilterBar.m */,
+				F2749A1210CBC4A500C9DEBA /* FKModuleFilterBarButton.h */,
+				F2749A1310CBC4A500C9DEBA /* FKModuleFilterBarButton.m */,
+				F2749A1410CBC4A500C9DEBA /* FKModuleFilterBarButtonCell.h */,
+				F2749A1510CBC4A500C9DEBA /* FKModuleFilterBarButtonCell.m */,
+				F2749A1610CBC4A500C9DEBA /* FKModuleFilterBarClipIndicator.h */,
+				F2749A1710CBC4A500C9DEBA /* FKModuleFilterBarClipIndicator.m */,
+				F2749A1810CBC4A500C9DEBA /* FKModuleFilterBarClipIndicatorCell.h */,
+				F2749A1910CBC4A500C9DEBA /* FKModuleFilterBarClipIndicatorCell.m */,
+			);
+			name = FKFilterBar;
+			sourceTree = "<group>";
+		};
+		F2C5794B0C78EEF90071F3E9 /* Customers */ = {
+			isa = PBXGroup;
+			children = (
+				F2C5796A0C78EF1C0071F3E9 /* CustomersModule.nib */,
+				F2C5794E0C78EF030071F3E9 /* CustomersModule.h */,
+				F2C5794F0C78EF030071F3E9 /* CustomersModule.m */,
+			);
+			name = Customers;
+			sourceTree = "<group>";
+		};
+		F2C82F6A0CAA9EC20018BAE5 /* PaymentMethods */ = {
+			isa = PBXGroup;
+			children = (
+				F2C82FBA0CAA9F330018BAE5 /* PaymentMethodsModule.nib */,
+				F2C82F8A0CAA9F040018BAE5 /* PaymentMethodsModule.h */,
+				F2C82F8B0CAA9F040018BAE5 /* PaymentMethodsModule.m */,
+			);
+			name = PaymentMethods;
+			sourceTree = "<group>";
+		};
+		F2DA32AC0CA3E59500A2CF9A /* Brands */ = {
+			isa = PBXGroup;
+			children = (
+				F22F796B0C552745005F2885 /* BrandsModule.nib */,
+				F22F795F0C552710005F2885 /* BrandsModule.h */,
+				F22F79600C552710005F2885 /* BrandsModule.m */,
+			);
+			name = Brands;
+			sourceTree = "<group>";
+		};
+		F2DA32E10CA3E80700A2CF9A /* TaxRates */ = {
+			isa = PBXGroup;
+			children = (
+				F2E035DC0C3C2F2900BF1030 /* TaxRatesModule.nib */,
+				F2E035900C3C2EE700BF1030 /* TaxRatesModule.h */,
+				F2E035930C3C2EE700BF1030 /* TaxRatesModule.m */,
+			);
+			name = TaxRates;
+			sourceTree = "<group>";
+		};
+		F2DA33140CA3EA0000A2CF9A /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				F2E035E20C3C2F2900BF1030 /* ProvidersModule.nib */,
+				F2E0357C0C3C2EE700BF1030 /* ProvidersModule.h */,
+				F2E0357D0C3C2EE700BF1030 /* ProvidersModule.m */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		F2DA33300CA3ECB700A2CF9A /* ProductFamilies */ = {
+			isa = PBXGroup;
+			children = (
+				F20D990E0C72570600839D54 /* ProductFamiliesModule.nib */,
+				F20D98D50C7256D300839D54 /* ProductFamiliesModule.h */,
+				F20D98D60C7256D300839D54 /* ProductFamiliesModule.m */,
+			);
+			name = ProductFamilies;
+			sourceTree = "<group>";
+		};
+		F2DA334A0CA3EE1600A2CF9A /* Inventories */ = {
+			isa = PBXGroup;
+			children = (
+				F297742B0C89CD610099F564 /* InventoriesModule.nib */,
+				F29774030C89CD1C0099F564 /* InventoriesModule.h */,
+				F29774040C89CD1C0099F564 /* InventoriesModule.m */,
+			);
+			name = Inventories;
+			sourceTree = "<group>";
+		};
+		F2DA33550CA3EEDA00A2CF9A /* ProductCategories */ = {
+			isa = PBXGroup;
+			children = (
+				F2E035D80C3C2F2900BF1030 /* ProductCategoriesModule.nib */,
+				F2E0356C0C3C2EE700BF1030 /* ProductCategoriesModule.h */,
+				F2E0356D0C3C2EE700BF1030 /* ProductCategoriesModule.m */,
+			);
+			name = ProductCategories;
+			sourceTree = "<group>";
+		};
+		F2E036060C3C2FF700BF1030 /* Managed objects */ = {
+			isa = PBXGroup;
+			children = (
+				F2A4AC641147945A000AC76F /* SBMOCHelper.h */,
+				F2A4AC651147945A000AC76F /* SBMOCHelper.m */,
+				F2A4AC7011479501000AC76F /* SBMOCHelper+Brand.h */,
+				F2A4AC7111479501000AC76F /* SBMOCHelper+Brand.m */,
+				F2A4AC9011479862000AC76F /* SBMOCHelper+ProductFamily.h */,
+				F2A4AC9111479862000AC76F /* SBMOCHelper+ProductFamily.m */,
+				F2E0355A0C3C2EE700BF1030 /* Address.h */,
+				F2E0355D0C3C2EE700BF1030 /* Address.m */,
+				F2E035610C3C2EE700BF1030 /* Brand.h */,
+				F2E035630C3C2EE700BF1030 /* Brand.m */,
+				F2E0355B0C3C2EE700BF1030 /* Customer.h */,
+				F2E0355C0C3C2EE700BF1030 /* Customer.m */,
+				F2976E440C875BF30099F564 /* Inventory.h */,
+				F2976E450C875BF40099F564 /* Inventory.m */,
+				F2E035670C3C2EE700BF1030 /* Invoice.h */,
+				F2E035680C3C2EE700BF1030 /* Invoice.m */,
+				F26088E51084C56900CF845F /* PaymentMethod.h */,
+				F26088E61084C56900CF845F /* PaymentMethod.m */,
+				F21D60BF107D2AC8005E4C4F /* Product.h */,
+				F21D60C0107D2AC8005E4C4F /* Product.m */,
+				F2E0356F0C3C2EE700BF1030 /* ProductCategory.h */,
+				F2E035710C3C2EE700BF1030 /* ProductCategory.m */,
+				F2E035730C3C2EE700BF1030 /* ProductFamily.h */,
+				F2E035740C3C2EE700BF1030 /* ProductFamily.m */,
+				F20CE60A107F64360037F659 /* Provider.h */,
+				F20CE60B107F64360037F659 /* Provider.m */,
+				F21D61AA107D3EFF005E4C4F /* ProviderProduct.h */,
+				F21D61AB107D3EFF005E4C4F /* ProviderProduct.m */,
+				F2FD251F106D169000147916 /* Sale.h */,
+				F2FD2520106D169000147916 /* Sale.m */,
+				F20EF233108BB8FD00D3F192 /* SaleLine.h */,
+				F20EF234108BB8FD00D3F192 /* SaleLine.m */,
+				F2E035890C3C2EE700BF1030 /* SupplyOrderLine.h */,
+				F2E0358B0C3C2EE700BF1030 /* SupplyOrderLine.m */,
+				F2E0358D0C3C2EE700BF1030 /* StockAlert.h */,
+				F2E035920C3C2EE700BF1030 /* StockAlert.m */,
+				F2E035870C3C2EE700BF1030 /* StockMovement.h */,
+				F2E0358A0C3C2EE700BF1030 /* StockMovement.m */,
+				F28F1ACE0CA100D900EC715A /* StockSnapshot.h */,
+				F28F1ACF0CA100D900EC715A /* StockSnapshot.m */,
+				F25AA0370CA10E9E00280BAE /* StockSnapshotLine.h */,
+				F25AA0380CA10E9E00280BAE /* StockSnapshotLine.m */,
+				F2E0358E0C3C2EE700BF1030 /* SupplyOrder.h */,
+				F2E035910C3C2EE700BF1030 /* SupplyOrder.m */,
+				F28758D7107B39A40042EBA8 /* TaxRate.h */,
+				F28758D8107B39A40042EBA8 /* TaxRate.m */,
+			);
+			name = "Managed objects";
+			sourceTree = "<group>";
+		};
+		F2E0360A0C3C307500BF1030 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F2C579730C78EF440071F3E9 /* SBModule.h */,
+				F2C579740C78EF440071F3E9 /* SBModule.m */,
+				F2DA32AC0CA3E59500A2CF9A /* Brands */,
+				F2C5794B0C78EEF90071F3E9 /* Customers */,
+				F2DA334A0CA3EE1600A2CF9A /* Inventories */,
+				F2C82F6A0CAA9EC20018BAE5 /* PaymentMethods */,
+				F2DA33550CA3EEDA00A2CF9A /* ProductCategories */,
+				F2DA33300CA3ECB700A2CF9A /* ProductFamilies */,
+				F2E0360B0C3C307B00BF1030 /* Products */,
+				F2DA33140CA3EA0000A2CF9A /* Providers */,
+				F2E0364A0C3C30C400BF1030 /* Sales */,
+				F2DA32E10CA3E80700A2CF9A /* TaxRates */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		F2E0360B0C3C307B00BF1030 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2E036470C3C30C000BF1030 /* ProductsModule.nib */,
+				F2E035760C3C2EE700BF1030 /* ProductsModule.h */,
+				F2E035770C3C2EE700BF1030 /* ProductsModule.m */,
+				F2D197C70CB0E5A600F85FAF /* IncomingProducts.nib */,
+				F2D197B30CB0E54C00F85FAF /* IncomingProductsManager.h */,
+				F2D197B40CB0E54C00F85FAF /* IncomingProductsManager.m */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2E0364A0C3C30C400BF1030 /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+				F2E035DE0C3C2F2900BF1030 /* SalesModule.nib */,
+				F2E035830C3C2EE700BF1030 /* SalesModule.h */,
+				F2E035840C3C2EE700BF1030 /* SalesModule.m */,
+				F27CBD9A0C7F660200A7EDEF /* SaleView.h */,
+				F27CBD9B0C7F660200A7EDEF /* SaleView.m */,
+				F2DA2F1C0CA3117600A2CF9A /* CustomerView.h */,
+				F2DA2F1D0CA3117600A2CF9A /* CustomerView.m */,
+			);
+			name = Sales;
+			sourceTree = "<group>";
+		};
+		F2E036500C3C31CF00BF1030 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F2749A3F10CBC67700C9DEBA /* FKNavigationBarBack.png */,
+				F20EFCB7108CFA8100D3F192 /* FilterBarBack.png */,
+				F22AAE230CB24ED500FFD465 /* TB_AddCustomer.tif */,
+				F2E8412C106AB6A2002326A0 /* TB_AddBrand.png */,
+				F207BBAC0CA6913A00D6B5C6 /* TB_AddInventory.tiff */,
+				F2D19BAD0CB1987E00F85FAF /* TB_AddPaymentMethod.tif */,
+				F2C9D4320C99AC7300E615CB /* TB_AddProduct.tiff */,
+				F2D19C510CB1A01100F85FAF /* TB_AddProductCategory.tiff */,
+				F2D19C520CB1A01100F85FAF /* TB_AddProductFamily.tiff */,
+				F20EEC701089F7CD00D3F192 /* TB_AddProvider.png */,
+				F2329AF80C7987BA0081264C /* TB_AddSale.png */,
+				F2D19BB00CB198B300F85FAF /* TB_AddTax.tif */,
+				F207BBB70CA691B300D6B5C6 /* TB_Delete.tiff */,
+				F2D19B550CB1800900F85FAF /* TB_Edit.tiff */,
+				F2329AF30C79868F0081264C /* TB_Exit.tiff */,
+				F20EE33B10887B0400D3F192 /* TB_Export.tiff */,
+				F290D9F70CA57AD100FA9E55 /* TB_Pause.tiff */,
+				F2D19B8A0CB197F000F85FAF /* TB_Pay.tif */,
+				F2C6BCB90CA6D371009EC4BE /* TB_Print.tiff */,
+				F2D19B820CB1975500F85FAF /* TB_PrintInvoice.tif */,
+				F2D19B790CB18DD800F85FAF /* TB_PrintReceipt.png */,
+				F2D197D10CB0E6DB00F85FAF /* TB_ReceiveProducts.png */,
+				F290D9F60CA57AD100FA9E55 /* TB_Run.tiff */,
+				F2749A5310CBC83200C9DEBA /* TB_Show.png */,
+				F290D9F80CA57AD100FA9E55 /* TB_Stop.tiff */,
+				F290D86B0CA51CAC00FA9E55 /* StatusGray.png */,
+				F290D86C0CA51CAC00FA9E55 /* StatusGreen.png */,
+				F290D86D0CA51CAC00FA9E55 /* StatusRed.png */,
+				F290D86E0CA51CAC00FA9E55 /* StatusYellow.png */,
+				F207BBBB0CA6921C00D6B5C6 /* Inventories.tiff */,
+				F2E8411B106AB64A002326A0 /* Brands.png */,
+				F2D19C270CB19E4A00F85FAF /* ProductCategories.tiff */,
+				F2D19C280CB19E4A00F85FAF /* ProductFamilies.tiff */,
+				F2C94AE20E9192C800F8D763 /* Providers.png */,
+				F2D19BAA0CB1983700F85FAF /* PaymentMethods.tif */,
+				F2D19B870CB197B700F85FAF /* TaxRates.tif */,
+				F21568F40C9C1A3100DCC9E4 /* BarcodeReadersPreferences.tiff */,
+				F22AAE250CB24EF200FFD465 /* Customers.png */,
+				F2DA2FDB0CA39F2F00A2CF9A /* invoice_unpaid_stamp.pdf */,
+				F2DA2FDC0CA39F2F00A2CF9A /* invoice_payed_stamp.pdf */,
+				F241A6260C9734BF004DFF3B /* Products.tiff */,
+				F2C94ADB0E91908300F8D763 /* Sales.png */,
+				F2E035850C3C2EE700BF1030 /* ShoppingBag.icns */,
+				F2DA308B0CA3C6CE00A2CF9A /* SmallClose.png */,
+				F2DA30EA0CA3CDD300A2CF9A /* SmallClose_alt.png */,
+				F2DA30EF0CA3CE4B00A2CF9A /* SmallEdit.png */,
+				F2DA30F00CA3CE4B00A2CF9A /* SmallEdit_alt.png */,
+				F2DA2D940CA300AB00A2CF9A /* small_goto_alt.pdf */,
+				F2DA2D960CA300AB00A2CF9A /* small_goto.pdf */,
+				F2DA2D970CA300AB00A2CF9A /* small_reveal_alt.pdf */,
+				F2DA2D980CA300AB00A2CF9A /* small_reveal_down.pdf */,
+				F2DA2D990CA300AB00A2CF9A /* small_reveal.pdf */,
+				F2DA2D9C0CA300AB00A2CF9A /* small_notification.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F2E036510C3C320500BF1030 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				F2E035D60C3C2F2900BF1030 /* Preferences.nib */,
+				F2E0356E0C3C2EE700BF1030 /* PreferencesController.h */,
+				F2E035700C3C2EE700BF1030 /* PreferencesController.m */,
+				F2E841E3106ABEA8002326A0 /* ShopPreferences.png */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* ShoppingBag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "ShoppingBag" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				F2078D450C8C7E1F00CE5391 /* Copy Files (Templates) */,
+				F2D156600CA8F17D00C7ECFD /* Copy Files (Frameworks) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShoppingBag;
+			productInstallPath = "$(HOME)/Applications";
+			productName = "Shopping Bag";
+			productReference = F260DF10171040AB008848B6 /* ShoppingBag.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Alt Informatique";
+			};
+			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "ShoppingBag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Shopping Bag */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* ShoppingBag */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				F2E035C20C3C2EE700BF1030 /* ShoppingBag.icns in Resources */,
+				F2E035E40C3C2F2900BF1030 /* Preferences.nib in Resources */,
+				F2E035E50C3C2F2900BF1030 /* ProductCategoriesModule.nib in Resources */,
+				F2E035E70C3C2F2900BF1030 /* TaxRatesModule.nib in Resources */,
+				F2E035E80C3C2F2900BF1030 /* SalesModule.nib in Resources */,
+				F2E035EA0C3C2F2900BF1030 /* ProvidersModule.nib in Resources */,
+				F2E036490C3C30C000BF1030 /* ProductsModule.nib in Resources */,
+				F23C64A80C3C344F00DC452C /* MainMenu.nib in Resources */,
+				F20343270C3FE37600E2930C /* Localizable.strings in Resources */,
+				F21DE89B0C52A7EC00FF982E /* ErrorMessages.strings in Resources */,
+				F22F796C0C552745005F2885 /* BrandsModule.nib in Resources */,
+				F20D990F0C72570600839D54 /* ProductFamiliesModule.nib in Resources */,
+				F2C5796B0C78EF1C0071F3E9 /* CustomersModule.nib in Resources */,
+				F2329AF60C79868F0081264C /* TB_Exit.tiff in Resources */,
+				F2329AF90C7987BA0081264C /* TB_AddSale.png in Resources */,
+				F2DA308C0CA3C6CE00A2CF9A /* SmallClose.png in Resources */,
+				F297742C0C89CD610099F564 /* InventoriesModule.nib in Resources */,
+				F241A6270C9734BF004DFF3B /* Products.tiff in Resources */,
+				F2C9D4330C99AC7300E615CB /* TB_AddProduct.tiff in Resources */,
+				F21568F50C9C1A3100DCC9E4 /* BarcodeReadersPreferences.tiff in Resources */,
+				F2DA2D9E0CA300AB00A2CF9A /* small_goto_alt.pdf in Resources */,
+				F2DA2DA00CA300AB00A2CF9A /* small_goto.pdf in Resources */,
+				F2DA2DA10CA300AB00A2CF9A /* small_reveal_alt.pdf in Resources */,
+				F2DA2DA20CA300AB00A2CF9A /* small_reveal_down.pdf in Resources */,
+				F2DA2DA30CA300AB00A2CF9A /* small_reveal.pdf in Resources */,
+				F2DA2DA60CA300AC00A2CF9A /* small_notification.png in Resources */,
+				F2DA2FDD0CA39F2F00A2CF9A /* invoice_unpaid_stamp.pdf in Resources */,
+				F2DA2FDE0CA39F2F00A2CF9A /* invoice_payed_stamp.pdf in Resources */,
+				F2DA30EB0CA3CDD300A2CF9A /* SmallClose_alt.png in Resources */,
+				F2DA30F10CA3CE4B00A2CF9A /* SmallEdit.png in Resources */,
+				F2DA30F20CA3CE4B00A2CF9A /* SmallEdit_alt.png in Resources */,
+				F290D86F0CA51CAC00FA9E55 /* StatusGray.png in Resources */,
+				F290D8700CA51CAC00FA9E55 /* StatusGreen.png in Resources */,
+				F290D8710CA51CAC00FA9E55 /* StatusRed.png in Resources */,
+				F290D8720CA51CAC00FA9E55 /* StatusYellow.png in Resources */,
+				F290D9F90CA57AD100FA9E55 /* TB_Run.tiff in Resources */,
+				F290D9FA0CA57AD100FA9E55 /* TB_Pause.tiff in Resources */,
+				F290D9FB0CA57AD100FA9E55 /* TB_Stop.tiff in Resources */,
+				F207BBAD0CA6913A00D6B5C6 /* TB_AddInventory.tiff in Resources */,
+				F207BBB80CA691B300D6B5C6 /* TB_Delete.tiff in Resources */,
+				F207BBBC0CA6921C00D6B5C6 /* Inventories.tiff in Resources */,
+				F2C6BCBA0CA6D371009EC4BE /* TB_Print.tiff in Resources */,
+				F2C82FBB0CAA9F330018BAE5 /* PaymentMethodsModule.nib in Resources */,
+				F2D197C80CB0E5A600F85FAF /* IncomingProducts.nib in Resources */,
+				F2D197D20CB0E6DB00F85FAF /* TB_ReceiveProducts.png in Resources */,
+				F2D19B560CB1800900F85FAF /* TB_Edit.tiff in Resources */,
+				F2D19B7A0CB18DD800F85FAF /* TB_PrintReceipt.png in Resources */,
+				F2D19B830CB1975500F85FAF /* TB_PrintInvoice.tif in Resources */,
+				F2D19B880CB197B700F85FAF /* TaxRates.tif in Resources */,
+				F2D19B8B0CB197F000F85FAF /* TB_Pay.tif in Resources */,
+				F2D19BAB0CB1983700F85FAF /* PaymentMethods.tif in Resources */,
+				F2D19BAE0CB1987E00F85FAF /* TB_AddPaymentMethod.tif in Resources */,
+				F2D19BB10CB198B300F85FAF /* TB_AddTax.tif in Resources */,
+				F2D19C290CB19E4A00F85FAF /* ProductCategories.tiff in Resources */,
+				F2D19C2A0CB19E4A00F85FAF /* ProductFamilies.tiff in Resources */,
+				F2D19C530CB1A01100F85FAF /* TB_AddProductCategory.tiff in Resources */,
+				F2D19C540CB1A01100F85FAF /* TB_AddProductFamily.tiff in Resources */,
+				F22AAE240CB24ED500FFD465 /* TB_AddCustomer.tif in Resources */,
+				F22AAE260CB24EF200FFD465 /* Customers.png in Resources */,
+				F2C94ADC0E91908300F8D763 /* Sales.png in Resources */,
+				F2C94AE30E9192C800F8D763 /* Providers.png in Resources */,
+				F2E8411C106AB64A002326A0 /* Brands.png in Resources */,
+				F2E8412D106AB6A2002326A0 /* TB_AddBrand.png in Resources */,
+				F2E841E4106ABEA8002326A0 /* ShopPreferences.png in Resources */,
+				F20EE33C10887B0400D3F192 /* TB_Export.tiff in Resources */,
+				F20EEC711089F7CD00D3F192 /* TB_AddProvider.png in Resources */,
+				F20EFC89108CE8F600D3F192 /* TabViewBack.png in Resources */,
+				F20EFCB3108CFA6200D3F192 /* Minus.png in Resources */,
+				F20EFCB4108CFA6200D3F192 /* Plus.png in Resources */,
+				F20EFCB8108CFA8100D3F192 /* FilterBarBack.png in Resources */,
+				F28ED9A1108DEAF300A6C949 /* Receipt.css in Resources */,
+				F2749A4010CBC67700C9DEBA /* FKNavigationBarBack.png in Resources */,
+				F2749A5410CBC83200C9DEBA /* TB_Show.png in Resources */,
+				F21DFCC71881415C00FB28EB /* ShoppingBag_DataModel_1.45.mom in Resources */,
+				F21DFCC81881415C00FB28EB /* ShoppingBag_DataModel_1.411.mom in Resources */,
+				F21DFCC91881415C00FB28EB /* ShoppingBag_DataModel.mom in Resources */,
+				F21DFCCA1881415C00FB28EB /* VersionInfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				F2E035990C3C2EE700BF1030 /* Customer.m in Sources */,
+				F2E0359A0C3C2EE700BF1030 /* Address.m in Sources */,
+				F2E035A00C3C2EE700BF1030 /* Brand.m in Sources */,
+				F2E035A50C3C2EE700BF1030 /* Invoice.m in Sources */,
+				F2E035AA0C3C2EE700BF1030 /* ProductCategoriesModule.m in Sources */,
+				F2E035AD0C3C2EE700BF1030 /* PreferencesController.m in Sources */,
+				F2E035AE0C3C2EE700BF1030 /* ProductCategory.m in Sources */,
+				F2E035B10C3C2EE700BF1030 /* ProductFamily.m in Sources */,
+				F2E035B40C3C2EE700BF1030 /* ProductsModule.m in Sources */,
+				F2E035BA0C3C2EE700BF1030 /* ProvidersModule.m in Sources */,
+				F2E035C10C3C2EE700BF1030 /* SalesModule.m in Sources */,
+				F2E035C50C3C2EE700BF1030 /* ShoppingBagAppDelegate.m in Sources */,
+				F2E035C70C3C2EE700BF1030 /* StockMovement.m in Sources */,
+				F2E035C80C3C2EE700BF1030 /* SupplyOrderLine.m in Sources */,
+				F2E035CE0C3C2EE700BF1030 /* SupplyOrder.m in Sources */,
+				F2E035CF0C3C2EE700BF1030 /* StockAlert.m in Sources */,
+				F2E035D00C3C2EE700BF1030 /* TaxRatesModule.m in Sources */,
+				F2FCC3B1112AC1D8006603DA /* ShoppingBag_DataModel.xcdatamodeld in Sources */,
+				F22F79620C552710005F2885 /* BrandsModule.m in Sources */,
+				F20D98D80C7256D400839D54 /* ProductFamiliesModule.m in Sources */,
+				F2C579510C78EF030071F3E9 /* CustomersModule.m in Sources */,
+				F2C579760C78EF440071F3E9 /* SBModule.m in Sources */,
+				F27CBD9D0C7F660200A7EDEF /* SaleView.m in Sources */,
+				F2976E470C875BF40099F564 /* Inventory.m in Sources */,
+				F29774060C89CD1C0099F564 /* InventoriesModule.m in Sources */,
+				F28F1AD10CA100D900EC715A /* StockSnapshot.m in Sources */,
+				F25AA03A0CA10E9E00280BAE /* StockSnapshotLine.m in Sources */,
+				F2DA2F1F0CA3117600A2CF9A /* CustomerView.m in Sources */,
+				F2C82F8D0CAA9F040018BAE5 /* PaymentMethodsModule.m in Sources */,
+				F2D197B60CB0E54C00F85FAF /* IncomingProductsManager.m in Sources */,
+				F2FD2521106D169000147916 /* Sale.m in Sources */,
+				F28758D9107B39A40042EBA8 /* TaxRate.m in Sources */,
+				F21D60C1107D2AC8005E4C4F /* Product.m in Sources */,
+				F21D61AC107D3EFF005E4C4F /* ProviderProduct.m in Sources */,
+				F20CE60C107F64360037F659 /* Provider.m in Sources */,
+				F26088E71084C56900CF845F /* PaymentMethod.m in Sources */,
+				F20EF235108BB8FD00D3F192 /* SaleLine.m in Sources */,
+				F20EFADA108CBDF300D3F192 /* FKManagedArrayController.m in Sources */,
+				F20EFAE1108CBE0600D3F192 /* FKModule.m in Sources */,
+				F20EFB1D108CBEDC00D3F192 /* NSImage-NKDBarcode.m in Sources */,
+				F20EFB1E108CBEDC00D3F192 /* NSImage-Normalize.m in Sources */,
+				F20EFB1F108CBEDC00D3F192 /* NSString-UPCEAN.m in Sources */,
+				F20EFB20108CBEDC00D3F192 /* NKDBarcode.m in Sources */,
+				F20EFB21108CBEDC00D3F192 /* NKDCode39Barcode.m in Sources */,
+				F20EFB22108CBEDC00D3F192 /* NKDExtendedCode39Barcode.m in Sources */,
+				F20EFB23108CBEDC00D3F192 /* NKDInterleavedTwoOfFiveBarcode.m in Sources */,
+				F20EFB24108CBEDC00D3F192 /* NKDModifiedPlesseyBarcode.m in Sources */,
+				F20EFB25108CBEDC00D3F192 /* NKDPostnetBarcode.m in Sources */,
+				F20EFB26108CBEDC00D3F192 /* NKDUPCABarcode.m in Sources */,
+				F20EFB27108CBEDC00D3F192 /* NKDModifiedPlesseyHexBarcode.m in Sources */,
+				F20EFB28108CBEDC00D3F192 /* NKDIndustrialTwoOfFiveBarcode.m in Sources */,
+				F20EFB29108CBEDC00D3F192 /* NKDEAN13Barcode.m in Sources */,
+				F20EFB2A108CBEDC00D3F192 /* NKDCode128Barcode.m in Sources */,
+				F20EFB2B108CBEDC00D3F192 /* NKDAbstractUPCEANBarcode.m in Sources */,
+				F20EFB2C108CBEDC00D3F192 /* NKDCodabarBarcode.m in Sources */,
+				F20EFB2D108CBEDC00D3F192 /* NKDUPCEBarcode.m in Sources */,
+				F20EFB2E108CBEDC00D3F192 /* NKDEAN8Barcode.m in Sources */,
+				F20EFB2F108CBEDC00D3F192 /* NKDBarcodeOffscreenView.m in Sources */,
+				F20EFB30108CBEDC00D3F192 /* NKDBarcodeImageView.m in Sources */,
+				F20EFB31108CBEDC00D3F192 /* NKDRoyalMailBarcode.m in Sources */,
+				F20EFB32108CBEDC00D3F192 /* NKDPlanetBarcode.m in Sources */,
+				F20EFB33108CBEDC00D3F192 /* JapanPostBarcode.m in Sources */,
+				F20EFB5B108CBF3200D3F192 /* NSAlert_FKAdditions.m in Sources */,
+				F20EFB5C108CBF3200D3F192 /* NSBezierPath_FKAdditions.m in Sources */,
+				F20EFB5D108CBF3200D3F192 /* NSColor_FKAdditions.m in Sources */,
+				F20EFB5E108CBF3200D3F192 /* NSComboBoxCell_FKAdditions.m in Sources */,
+				F20EFB5F108CBF3200D3F192 /* NSDate_FKAdditions.m in Sources */,
+				F20EFB60108CBF3200D3F192 /* NSDecimalNumber_FKAdditions.m in Sources */,
+				F20EFB61108CBF3200D3F192 /* NSImage_FKAdditions.m in Sources */,
+				F20EFB62108CBF3200D3F192 /* NSImageView_FKAdditions.m in Sources */,
+				F20EFB63108CBF3200D3F192 /* NSMutableArray_FKAdditions.m in Sources */,
+				F20EFB64108CBF3200D3F192 /* NSMutableParagraphStyle_FKAdditions.m in Sources */,
+				F20EFB65108CBF3200D3F192 /* NSObject_FKAdditions.m in Sources */,
+				F20EFB67108CBF3200D3F192 /* NSString_FKAdditions.m in Sources */,
+				F20EFB68108CBF3200D3F192 /* NSTableColumn_FKAdditions.m in Sources */,
+				F20EFB69108CBF3200D3F192 /* NSView_FKAdditions.m in Sources */,
+				F20EFB6A108CBF3200D3F192 /* NSWindow_FKAdditions.m in Sources */,
+				F20EFB74108CC1C800D3F192 /* FKAlert.m in Sources */,
+				F20EFB75108CC1C800D3F192 /* FKAppDelegate.m in Sources */,
+				F20EFB76108CC1C800D3F192 /* FKBarcodeScanner.m in Sources */,
+				F20EFB77108CC1C800D3F192 /* FKBarcodeScannersManager.m in Sources */,
+				F20EFB78108CC1C800D3F192 /* FKButton.m in Sources */,
+				F20EFB79108CC1C800D3F192 /* FKButtonCell.m in Sources */,
+				F20EFB7A108CC1C800D3F192 /* FKComboBox.m in Sources */,
+				F20EFB7B108CC1C800D3F192 /* FKComboBoxCell.m in Sources */,
+				F20EFB7C108CC1C800D3F192 /* FKCurrencyFormatter.m in Sources */,
+				F20EFB7D108CC1C800D3F192 /* FKCurrencyTextField.m in Sources */,
+				F20EFB7E108CC1C800D3F192 /* FKCurrencyTextFieldCell.m in Sources */,
+				F20EFB7F108CC1C800D3F192 /* FKDecimalFormatter.m in Sources */,
+				F20EFB80108CC1C800D3F192 /* FKDecimalTextField.m in Sources */,
+				F20EFB81108CC1C800D3F192 /* FKDecimalTextFieldCell.m in Sources */,
+				F20EFB82108CC1C800D3F192 /* FKFlatRoundedButton.m in Sources */,
+				F20EFB83108CC1C800D3F192 /* FKFlatRoundedButtonCell.m in Sources */,
+				F20EFB84108CC1C800D3F192 /* FKFlippedView.m in Sources */,
+				F20EFB85108CC1C800D3F192 /* FKFocusView.m in Sources */,
+				F20EFB86108CC1C800D3F192 /* FKGroup.m in Sources */,
+				F20EFB87108CC1C800D3F192 /* FKImageAndTextCell.m in Sources */,
+				F20EFB88108CC1C800D3F192 /* FKImageAndTextField.m in Sources */,
+				F20EFB89108CC1C800D3F192 /* FKIntegerFormatter.m in Sources */,
+				F20EFB8A108CC1C800D3F192 /* FKIntegerTextField.m in Sources */,
+				F20EFB8B108CC1C800D3F192 /* FKIntegerTextFieldCell.m in Sources */,
+				F20EFB8C108CC1C800D3F192 /* FKLine.m in Sources */,
+				F20EFB8D108CC1C800D3F192 /* FKManagedObject.m in Sources */,
+				F20EFB8E108CC1C800D3F192 /* FKManagedObjectsManager.m in Sources */,
+				F20EFB8F108CC1C800D3F192 /* FKManagedPlatePopUpButton.m in Sources */,
+				F20EFB90108CC1C800D3F192 /* FKModule_BrowserStyle.m in Sources */,
+				F20EFB91108CC1C800D3F192 /* FKModule_FullStyle.m in Sources */,
+				F20EFB92108CC1C800D3F192 /* FKModule_MiniStyle.m in Sources */,
+				F20EFB93108CC1C800D3F192 /* FKModuleBottomBar.m in Sources */,
+				F20EFB94108CC1C800D3F192 /* FKModuleCenter.m in Sources */,
+				F20EFB95108CC1C800D3F192 /* FKModuleGradientTextField.m in Sources */,
+				F20EFB96108CC1C800D3F192 /* FKModuleGradientTextFieldCell.m in Sources */,
+				F20EFB9C108CC1C800D3F192 /* FKModuleTheme.m in Sources */,
+				F20EFB9D108CC1C800D3F192 /* FKModuleThemeBlue.m in Sources */,
+				F20EFB9E108CC1C800D3F192 /* FKModuleThemeBrown.m in Sources */,
+				F20EFB9F108CC1C800D3F192 /* FKModuleThemeGreen.m in Sources */,
+				F20EFBA0108CC1C800D3F192 /* FKModuleThemeOrange.m in Sources */,
+				F20EFBA1108CC1C800D3F192 /* FKModuleThemePurple.m in Sources */,
+				F20EFBA2108CC1C800D3F192 /* FKModuleThemeRed.m in Sources */,
+				F20EFBA3108CC1C800D3F192 /* FKModuleThemeYellow.m in Sources */,
+				F20EFBAD108CC1C800D3F192 /* FKMultiplePanesController.m in Sources */,
+				F20EFBAE108CC1C800D3F192 /* FKMultipleValuesProxy.m in Sources */,
+				F20EFBAF108CC1C800D3F192 /* FKNavigationToolbarItem.m in Sources */,
+				F20EFBB0108CC1C800D3F192 /* FKNumberFormatter.m in Sources */,
+				F20EFBB1108CC1C800D3F192 /* FKOutlineView.m in Sources */,
+				F20EFBB2108CC1C800D3F192 /* FKPercentFormatter.m in Sources */,
+				F20EFBB3108CC1C800D3F192 /* FKPercentTextField.m in Sources */,
+				F20EFBB4108CC1C800D3F192 /* FKPercentTextFieldCell.m in Sources */,
+				F20EFBB5108CC1C800D3F192 /* FKPlatePopUpButton.m in Sources */,
+				F20EFBB6108CC1C800D3F192 /* FKPlatePopUpButtonCell.m in Sources */,
+				F20EFBB7108CC1C800D3F192 /* FKPlusMinusView.m in Sources */,
+				F20EFBB8108CC1C800D3F192 /* FKPrintManager.m in Sources */,
+				F20EFBB9108CC1C800D3F192 /* FKSidebarObject.m in Sources */,
+				F20EFBBA108CC1C800D3F192 /* FKSmartGroup.m in Sources */,
+				F20EFBBB108CC1C800D3F192 /* FKSourceListGroup.m in Sources */,
+				F20EFBBC108CC1C800D3F192 /* FKSourceListItem.m in Sources */,
+				F20EFBBD108CC1C800D3F192 /* FKSourceListSmartGroup.m in Sources */,
+				F20EFBBE108CC1C800D3F192 /* FKSplitter.m in Sources */,
+				F20EFBBF108CC1C800D3F192 /* FKSplitView.m in Sources */,
+				F20EFBC0108CC1C800D3F192 /* FKSquareComboBox.m in Sources */,
+				F20EFBC1108CC1C800D3F192 /* FKStackableView.m in Sources */,
+				F20EFBC2108CC1C800D3F192 /* FKStackView.m in Sources */,
+				F20EFBC3108CC1C800D3F192 /* FKSubviewTableViewCell.m in Sources */,
+				F20EFBC4108CC1C800D3F192 /* FKSubviewTableViewController.m in Sources */,
+				F20EFBC5108CC1C800D3F192 /* FKTableCornerView.m in Sources */,
+				F20EFBC6108CC1C800D3F192 /* FKTableHeaderCell.m in Sources */,
+				F20EFBC7108CC1C800D3F192 /* FKTableHeaderView.m in Sources */,
+				F20EFBC8108CC1C800D3F192 /* FKTabView.m in Sources */,
+				F20EFBC9108CC1C800D3F192 /* FKTabViewItem.m in Sources */,
+				F20EFBCA108CC1C800D3F192 /* FKTextField.m in Sources */,
+				F20EFBCB108CC1C800D3F192 /* FKTextFieldCell.m in Sources */,
+				F20EFBCC108CC1C800D3F192 /* FKToolbarItemButton.m in Sources */,
+				F20EFBCD108CC1C800D3F192 /* FKToolbarItemPopUpButton.m in Sources */,
+				F20EFBCE108CC1C800D3F192 /* FKToolbarItemView.m in Sources */,
+				F20EFBCF108CC1C800D3F192 /* FKURLProtocol.m in Sources */,
+				F20EFBD0108CC1C800D3F192 /* FKVerticallyCenteredCurrencyTextFieldCell.m in Sources */,
+				F20EFBD1108CC1C800D3F192 /* FKVerticallyCenteredDecimalTextFieldCell.m in Sources */,
+				F20EFBD2108CC1C800D3F192 /* FKVerticallyCenteredIntegerTextFieldCell.m in Sources */,
+				F20EFBD3108CC1C800D3F192 /* FKVerticallyCenteredPercentTextFieldCell.m in Sources */,
+				F20EFBD4108CC1C800D3F192 /* FKVerticallyCenteredTextFieldCell.m in Sources */,
+				F20EFBD5108CC1C800D3F192 /* FKView.m in Sources */,
+				F20EFBD6108CC1C800D3F192 /* FKViewAnimation.m in Sources */,
+				F20EFBD7108CC1C800D3F192 /* FKWindow.m in Sources */,
+				F20EFC19108CC26E00D3F192 /* FKTableView.m in Sources */,
+				F2749A1A10CBC4A500C9DEBA /* FKModuleToolbar.m in Sources */,
+				F2749A1B10CBC4A500C9DEBA /* FKModuleToolbarButton.m in Sources */,
+				F2749A1C10CBC4A500C9DEBA /* FKModuleToolbarButtonCell.m in Sources */,
+				F2749A1D10CBC4A500C9DEBA /* FKModuleToolbarClipIndicator.m in Sources */,
+				F2749A1E10CBC4A500C9DEBA /* FKModuleToolbarClipIndicatorCell.m in Sources */,
+				F2749A1F10CBC4A500C9DEBA /* FKModuleToolbarFlatButton.m in Sources */,
+				F2749A2010CBC4A500C9DEBA /* FKModuleToolbarItem.m in Sources */,
+				F2749A2110CBC4A500C9DEBA /* FKModuleToolbarSeparator.m in Sources */,
+				F2749A2210CBC4A500C9DEBA /* FKModuleToolbarSeparatorItem.m in Sources */,
+				F2749A2310CBC4A500C9DEBA /* FKModuleToolbarSpaceItem.m in Sources */,
+				F2749A2410CBC4A500C9DEBA /* FKModuleFilterBar.m in Sources */,
+				F2749A2510CBC4A500C9DEBA /* FKModuleFilterBarButton.m in Sources */,
+				F2749A2610CBC4A500C9DEBA /* FKModuleFilterBarButtonCell.m in Sources */,
+				F2749A2710CBC4A500C9DEBA /* FKModuleFilterBarClipIndicator.m in Sources */,
+				F2749A2810CBC4A500C9DEBA /* FKModuleFilterBarClipIndicatorCell.m in Sources */,
+				F2FCC3C3112AC40C006603DA /* 1_1.45.xcmappingmodel in Sources */,
+				F2A4AC661147945A000AC76F /* SBMOCHelper.m in Sources */,
+				F2A4AC7211479501000AC76F /* SBMOCHelper+Brand.m in Sources */,
+				F2A4AC9211479862000AC76F /* SBMOCHelper+ProductFamily.m in Sources */,
+				F25CD41B12C94DDF00795F3B /* SaleLineMigrationPolicy.m in Sources */,
+				F260DF1817118F8A008848B6 /* SaleMigrationPolicy.m in Sources */,
+				F260DFC9171193B9008848B6 /* 1.45_1.412.xcmappingmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2E036540C3C322100BF1030 /* French */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F20343260C3FE37600E2930C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F20343280C3FE37C00E2930C /* French */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F20D990E0C72570600839D54 /* ProductFamiliesModule.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F20D99100C72570C00839D54 /* French */,
+			);
+			name = ProductFamiliesModule.nib;
+			sourceTree = "<group>";
+		};
+		F21DE89A0C52A7EC00FF982E /* ErrorMessages.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F21DE89C0C52A7F200FF982E /* French */,
+			);
+			name = ErrorMessages.strings;
+			sourceTree = "<group>";
+		};
+		F22F796B0C552745005F2885 /* BrandsModule.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F22F796D0C55274A005F2885 /* French */,
+			);
+			name = BrandsModule.nib;
+			sourceTree = "<group>";
+		};
+		F23C64A70C3C344F00DC452C /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F23C64A90C3C345700DC452C /* French */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		F297742B0C89CD610099F564 /* InventoriesModule.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F297742D0C89CD670099F564 /* French */,
+			);
+			name = InventoriesModule.nib;
+			sourceTree = "<group>";
+		};
+		F2C5796A0C78EF1C0071F3E9 /* CustomersModule.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2C5796C0C78EF210071F3E9 /* French */,
+			);
+			name = CustomersModule.nib;
+			sourceTree = "<group>";
+		};
+		F2C82FBA0CAA9F330018BAE5 /* PaymentMethodsModule.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2C82FBC0CAA9F3B0018BAE5 /* French */,
+			);
+			name = PaymentMethodsModule.nib;
+			sourceTree = "<group>";
+		};
+		F2D197C70CB0E5A600F85FAF /* IncomingProducts.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D197C90CB0E5AB00F85FAF /* French */,
+			);
+			name = IncomingProducts.nib;
+			sourceTree = "<group>";
+		};
+		F2E035D60C3C2F2900BF1030 /* Preferences.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2E035D70C3C2F2900BF1030 /* French */,
+			);
+			name = Preferences.nib;
+			sourceTree = "<group>";
+		};
+		F2E035D80C3C2F2900BF1030 /* ProductCategoriesModule.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2E035D90C3C2F2900BF1030 /* French */,
+			);
+			name = ProductCategoriesModule.nib;
+			sourceTree = "<group>";
+		};
+		F2E035DC0C3C2F2900BF1030 /* TaxRatesModule.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2E035DD0C3C2F2900BF1030 /* French */,
+			);
+			name = TaxRatesModule.nib;
+			sourceTree = "<group>";
+		};
+		F2E035DE0C3C2F2900BF1030 /* SalesModule.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2E035DF0C3C2F2900BF1030 /* French */,
+			);
+			name = SalesModule.nib;
+			sourceTree = "<group>";
+		};
+		F2E035E20C3C2F2900BF1030 /* ProvidersModule.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2E035E30C3C2F2900BF1030 /* French */,
+			);
+			name = ProvidersModule.nib;
+			sourceTree = "<group>";
+		};
+		F2E036470C3C30C000BF1030 /* ProductsModule.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2E036480C3C30C000BF1030 /* French */,
+			);
+			name = ProductsModule.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26FC0A850875C7B200E6366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ShoppingBag_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = ShoppingBag;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		26FC0A860875C7B200E6366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ShoppingBag_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = ShoppingBag;
+				SDKROOT = macosx10.5;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		26FC0A890875C7B200E6366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				SYMROOT = "~/Projets/Builds";
+			};
+			name = Debug;
+		};
+		26FC0A8A0875C7B200E6366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				SYMROOT = "~/Projets/Builds";
+				VALID_ARCHS = "i386 ppc ppc64 ppc7400 ppc970";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26FC0A840875C7B200E6366F /* Build configuration list for PBXNativeTarget "ShoppingBag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC0A850875C7B200E6366F /* Debug */,
+				26FC0A860875C7B200E6366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "ShoppingBag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC0A890875C7B200E6366F /* Debug */,
+				26FC0A8A0875C7B200E6366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F2FCC3B0112AC1D8006603DA /* ShoppingBag_DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F21DFCC31881415C00FB28EB /* ShoppingBag_DataModel_1.45.mom */,
+				F21DFCC41881415C00FB28EB /* ShoppingBag_DataModel_1.411.mom */,
+				F21DFCC51881415C00FB28EB /* ShoppingBag_DataModel.mom */,
+				F21DFCC61881415C00FB28EB /* VersionInfo.plist */,
+			);
+			currentVersion = F21DFCC31881415C00FB28EB /* ShoppingBag_DataModel_1.45.mom */;
+			path = ShoppingBag_DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

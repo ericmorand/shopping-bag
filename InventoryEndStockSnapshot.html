@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<title>Page sans titre</title>
+		<link href="./ShoppingBag.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+
+	<body bgcolor="#ffffff">
+		<div align="center">
+			<p>&Eacute;tat du stock &agrave; la fin de l'inventaire 'string:///inventoryName/'</p>
+			<p>le dateAndHour:///date/</p>
+		</div>
+		<div align="left">
+			<table width="100%" border="0" cellspacing="0" cellpadding="2" align="center">
+				<tr>
+					<td>
+						<div align="center">
+							<b>Produit</b></div>
+					</td>
+					<td align="center" width="100">
+						<div align="center">
+							<b>Stock</b></div>
+					</td>
+					<td align="center" width="75">
+						<div align="center">
+							<b>Prix d'achat HT</b></div>
+					</td>
+					<td align="center" width="75">
+						<div align="center">
+							<b>Prix total HT</b></div>
+					</td>
+				</tr>
+				<!-- BeginRepeat ON products | SORTED BY productName | ASCENDING 1 | CASE INSENSITIVE 1 | -->
+				<tr>
+					<td>string:///productName/</td>
+					<td align="center" width="100">
+						<div align="center">
+							integer:///productCurrentStock/</div>
+					</td>
+					<td align="center" width="75">
+						<div align="right">
+							currency:///productGreatestProviderPrice/</div>
+					</td>
+					<td align="center" width="75">
+						<div align="right">
+							currency:///productStockValue/</div>
+					</td>
+				</tr>
+				<!-- EndRepeat -->
+				<tr>
+					<td></td>
+					<td align="center" width="100"></td>
+					<td align="center" width="75">
+						<div align="right">
+							<b>Total</b></div>
+					</td>
+					<td align="center" width="75">
+						<div align="right">
+							<b>currency:///totalStockValue/</b></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+
+</html>

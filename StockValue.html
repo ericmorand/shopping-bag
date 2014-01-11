@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Valeur du stock</title>
+		<link href="./ShoppingBag.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+
+	<body bgcolor="#ffffff">
+		<div align="center">
+			<p><font size="5">Valeur du stock<br>
+					<br>
+					date:///date/</font></p>
+			<p><font size="5"><br>
+				</font></p>
+		</div>
+		<table width="100%" border="0" cellspacing="0" cellpadding="2">
+			<tr>
+				<td>
+					<div align="center">
+						<b>Fournisseur</b></div>
+				</td>
+				<td width="100">
+					<div align="center">
+						<b>Valeur du stock</b></div>
+				</td>
+			</tr>
+			<!-- BeginRepeat ON providers | SORTED BY providerName | CASE INSENSITIVE 1 | -->
+			<tr>
+				<td>string:///providerName/</td>
+				<td width="100">
+					<div align="right">
+						currency:///providerStockValue/</div>
+				</td>
+			</tr>
+			<!-- EndRepeat -->
+			<tr>
+				<td>
+					<div align="right">
+						<b><font size="1">Valeur totale du stock</font></b></div>
+				</td>
+				<td width="100">
+					<div align="right">
+						<b><font size="1">currency:///totalStockValue/</font></b></div>
+				</td>
+			</tr>
+		</table>
+		<p></p>
+	</body>
+
+</html>

@@ -1,0 +1,37 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = IncomingProductTableView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                buyOrderProductArrayController = id; 
+                incomingOrderEditController = id; 
+                scanView = id; 
+            }; 
+            SUPERCLASS = NSTableView; 
+        }, 
+        {
+            CLASS = IncomingProductsManager; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = SFCleanButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {CLASS = SFCurrencyCell; LANGUAGE = ObjC; SUPERCLASS = NSTextFieldCell; }, 
+        {CLASS = SFCurrencyTextField; LANGUAGE = ObjC; SUPERCLASS = NSTextField; }, 
+        {CLASS = SFLowerToolbarView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            CLASS = SFNonFocusTextField; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {orderController = id; }; 
+            SUPERCLASS = NSTextField; 
+        }, 
+        {
+            CLASS = SFScanView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {orderController = id; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}
