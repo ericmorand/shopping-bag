@@ -64,8 +64,12 @@
 	NSMutableSet * providerProductsSet = [self mutableSetValueForKey:@"providerProducts"];
 	ProviderProduct * aProviderProduct = nil;
 	
+	Product * product = nil;
+	
 	for ( aProviderProduct in providerProductsSet ) {
-		[products addObject:[aProviderProduct product]];
+		if (product = [aProviderProduct product]) {
+			[products addObject:product];
+		}
 	}
 	
 	return products;

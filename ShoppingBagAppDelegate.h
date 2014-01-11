@@ -34,5 +34,6 @@
 - (IBAction)printStockValue:(id)sender;
 - (IBAction)recalculateStock:(id)sender;
 - (IBAction)exportDailyZ:(id)sender;
+- (IBAction)exportSaleLines:(id)sender;
 
 @end

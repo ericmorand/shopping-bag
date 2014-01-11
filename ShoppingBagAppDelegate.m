@@ -15,6 +15,9 @@
 #import "Provider.h"
 #import "ProviderProduct.h"
 #import "Sale.h"
+#import "Customer.h"
+#import "Brand.h"
+#import "ProductFamily.h"
 #import "SaleLine.h"
 #import "StockMovement.h"
 #import "TaxRate.h"
@@ -677,7 +680,7 @@
 	{
 		providerStockValue = [NSDecimalNumber zero];
 		providerDictionary = [NSMutableDictionary dictionary];
-
+		
 		productsEnumerator = [[aProvider products] objectEnumerator];
 		
 		while ( aProduct = [productsEnumerator nextObject] )
@@ -694,6 +697,9 @@
 		
 		totalStockValue = [totalStockValue decimalNumberByAdding:providerStockValue];
 	}
+	
+	
+	
 	
 	[dictionary setObject:[NSDate date] forKey:@"date"];
 	[dictionary setObject:providerDictionariesArray forKey:@"providers"];
@@ -721,6 +727,142 @@
 						modalDelegate:self
 					   didEndSelector:@selector(savePanelDidEnd:returnCode:contextInfo:)
 						  contextInfo:nil];
+}
+
+- (IBAction)exportSaleLines:(id)sender {
+	[self showWindow:sender];
+	
+	NSSavePanel * savePanel = [NSSavePanel savePanel];
+	
+	[savePanel setRequiredFileType:@"csv"];
+	[savePanel beginSheetForDirectory:nil
+								 file:nil
+					   modalForWindow:[NSApp mainWindow]
+						modalDelegate:self
+					   didEndSelector:@selector(exportSaleLinesPanelDidEnd:returnCode:contextInfo:)
+						  contextInfo:nil];
+}
+
+- (NSString *)csvStringForValue:(id)object {
+	return [self csvStringForValue:object formatter:nil];
+}
+
+- (NSString *)csvStringForValue:(id)object formatter:(NSFormatter *)formatter {
+	NSString * result = nil;
+	NSString * tmpStr = nil;
+	
+	tmpStr = (object != nil ? object : ([object isKindOfClass:[NSDecimalNumber class]] ? [NSDecimalNumber zero] : [NSString string]));
+	
+	if (nil != formatter) {
+		tmpStr = [formatter stringForObjectValue:tmpStr];
+	}
+	
+	result = [NSString stringWithFormat:@"\"%@\"", tmpStr];
+	
+	return result;
+}
+
+- (void)exportSaleLinesPanelDidEnd:(NSSavePanel *)sheet returnCode:(int)returnCode contextInfo:(void  *)contextInfo {
+	if (returnCode == NSOKButton) {				
+		NSMutableArray * csvArray = nil;
+		NSMutableString * csvString = [NSMutableString string];
+		NSDateFormatter * dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+		FKDecimalFormatter * decimalFormatter = [[[FKDecimalFormatter alloc] init] autorelease];
+		FKPercentFormatter * percentFormatter = [[[FKPercentFormatter alloc] init] autorelease];
+		
+		[dateFormatter setFormatterBehavior:NSDateFormatterBehavior10_4];
+		[dateFormatter setDateFormat:@"dd/MM/yyyy HH:mm"];	
+		
+		// En-tete
+		
+		csvArray = [NSMutableArray array];
+		
+		[csvArray addObject:NSLocalizedString(@"SaleNumber", @"")];
+		[csvArray addObject:NSLocalizedString(@"Date", @"")];
+		[csvArray addObject:NSLocalizedString(@"Customer", @"")];
+		[csvArray addObject:NSLocalizedString(@"Product", @"")];
+		[csvArray addObject:NSLocalizedString(@"Reference", @"")];
+		[csvArray addObject:NSLocalizedString(@"Brand", @"")];
+		[csvArray addObject:NSLocalizedString(@"ProductFamily", @"")];
+		[csvArray addObject:NSLocalizedString(@"PrimaryProvider", @"")];
+		[csvArray addObject:NSLocalizedString(@"Quantity", @"")];
+		[csvArray addObject:NSLocalizedString(@"DiscountRate", @"")];
+		[csvArray addObject:NSLocalizedString(@"TaxRate", @"")];
+		[csvArray addObject:NSLocalizedString(@"TotalTTC", @"")];
+		[csvArray addObject:NSLocalizedString(@"PaymentMethod", @"")];
+		
+		[csvString appendFormat:@"%@\n", [csvArray componentsJoinedByString:@";"]];
+		
+		// ...
+		
+		NSString * saleNumberStr = nil;
+		NSString * dateStr = nil;
+		NSString * customerStr = nil;
+		NSString * discountStr = nil;
+		NSString * totalStr = nil;
+		NSString * paymentMethodStr = nil;
+		
+		
+		NSManagedObjectContext * context = [self managedObjectContext];
+		NSFetchRequest * fetchRequest = nil;
+		NSEntityDescription * entity = nil;
+		
+		NSMutableArray * saleLinesArray = nil;
+		SaleLine * aSaleLine = nil;
+		Sale * aSale = nil;		
+		// ...
+		
+		fetchRequest = [[[NSFetchRequest alloc] init] autorelease];
+		entity = [NSEntityDescription entityForName:@"SaleLine" inManagedObjectContext:context];
+		
+		[fetchRequest setEntity:entity];
+		
+		saleLinesArray = [[[context executeFetchRequest:fetchRequest error:nil] mutableCopy] autorelease];
+		
+		for (aSaleLine in saleLinesArray) {
+			
+			if (aSale = aSaleLine.sale) {
+				saleNumberStr = [self csvStringForValue:aSale.saleNumber];
+				dateStr = [self csvStringForValue:aSale.date formatter:dateFormatter];
+				customerStr = [self csvStringForValue:aSale.customer.name];
+				discountStr = [self csvStringForValue:aSale.discountRate formatter:percentFormatter];
+				totalStr = [self csvStringForValue:aSale.discountedTotalTTC formatter:decimalFormatter];
+				paymentMethodStr = [self csvStringForValue:aSale.paymentMethod.name];
+			}
+			else {
+				saleNumberStr = @"";
+				dateStr = @"";
+				customerStr = @"";
+				discountStr = @"";
+				totalStr = @"";
+				paymentMethodStr = @"";
+			}
+			
+			csvArray = [NSMutableArray array];
+					
+			[csvArray addObject:saleNumberStr];
+			[csvArray addObject:dateStr];
+			[csvArray addObject:customerStr];
+			[csvArray addObject:[self csvStringForValue:aSaleLine.product.name]];
+			[csvArray addObject:[self csvStringForValue:aSaleLine.product.reference]];
+			[csvArray addObject:[self csvStringForValue:aSaleLine.product.brand.name]];
+			[csvArray addObject:[self csvStringForValue:aSaleLine.product.productFamily.name]];
+			[csvArray addObject:[self csvStringForValue:aSaleLine.product.primaryProvider.name]];
+			[csvArray addObject:[self csvStringForValue:aSaleLine.quantity]];
+			[csvArray addObject:[self csvStringForValue:aSaleLine.discountRate formatter:percentFormatter]];
+			[csvArray addObject:[self csvStringForValue:aSaleLine.productTaxRate formatter:percentFormatter]];
+			[csvArray addObject:[self csvStringForValue:aSaleLine.lineTotalTTC formatter:decimalFormatter]];
+			[csvArray addObject:paymentMethodStr];
+					
+			[csvString appendFormat:@"%@\n", [csvArray componentsJoinedByString:@";"]];
+		}
+		
+		NSError * error = nil;
+		
+		if (![csvString writeToFile:[sheet filename] atomically:YES encoding:NSUnicodeStringEncoding error:&error]) {
+			[self presentError:error];
+		}
+	}
 }
 
 - (IBAction)import:(id)sender

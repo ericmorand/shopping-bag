@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Project</string>
+	<string>Debug</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -195,48 +195,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>F25B29F616E404CB006E66A2</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>Info.plist</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>F25B29F716E404CB006E66A2</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>Info.plist</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>F24980D618815C2C00352BF5</string>
-						<key>history</key>
-						<array>
-							<string>F26B1246188145C200829B52</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1217, 597}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>15 135 1217 638 0 0 2560 1418 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>2560</integer>
@@ -315,17 +274,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
-								<string>7756732906782D8800D1FEB8</string>
-								<string>F2E036060C3C2FF700BF1030</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>F2E036510C3C320500BF1030</string>
-								<string>F2E035D60C3C2F2900BF1030</string>
 								<string>F2E0360A0C3C307500BF1030</string>
 								<string>F2E0360B0C3C307B00BF1030</string>
 								<string>F2E036470C3C30C000BF1030</string>
 								<string>F2E0364A0C3C30C400BF1030</string>
 								<string>F2E035DE0C3C2F2900BF1030</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>F23C64A70C3C344F00DC452C</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C77FABC04509CD000000102</string>
@@ -334,13 +290,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>101</integer>
-									<integer>95</integer>
+									<integer>43</integer>
+									<integer>36</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 700}, {452, 1237}}</string>
+							<string>{{0, 0}, {452, 1237}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -360,8 +316,6 @@
 							<string>MainColumn</string>
 							<real>366</real>
 						</array>
-						<key>RubberWindowFrame</key>
-						<string>1 120 2560 1296 0 0 2560 1418 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -377,7 +331,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>F2E034A90C3C2C3800BF1030</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Info.plist</string>
+								<string>ShoppingBagAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -385,11 +339,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>F2E034AA0C3C2C3800BF1030</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Info.plist</string>
+										<string>ShoppingBagAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F24980D418815C2C00352BF5</string>
+										<string>F24981B818817DE400352BF5</string>
 										<key>history</key>
 										<array>
 											<string>F2C6DDAA146E778300F7615C</string>
@@ -414,7 +368,6 @@
 											<string>F25B286116E3CBD2006E66A2</string>
 											<string>F25B287B16E3CC59006E66A2</string>
 											<string>F25B28A916E3CEE5006E66A2</string>
-											<string>F25B28CB16E3D04A006E66A2</string>
 											<string>F25B28DD16E3D35C006E66A2</string>
 											<string>F25B28EA16E3D4A0006E66A2</string>
 											<string>F25B28F616E3D5B1006E66A2</string>
@@ -428,7 +381,6 @@
 											<string>F260D998170EB65B008848B6</string>
 											<string>F260D9C5170EB907008848B6</string>
 											<string>F260D9C6170EB907008848B6</string>
-											<string>F260D9E1170EBC55008848B6</string>
 											<string>F260D9E3170EBC55008848B6</string>
 											<string>F260D9E6170EBC55008848B6</string>
 											<string>F260D9FF170EBD69008848B6</string>
@@ -440,9 +392,6 @@
 											<string>F260DF26171190F9008848B6</string>
 											<string>F260DF5517119252008848B6</string>
 											<string>F260DF87171192E5008848B6</string>
-											<string>F21DFC9F188140BE00FB28EB</string>
-											<string>F21DFCA0188140BE00FB28EB</string>
-											<string>F21DFCA9188140DE00FB28EB</string>
 											<string>F21DFCB51881411400FB28EB</string>
 											<string>F21DFCCB1881416500FB28EB</string>
 											<string>F21DFCCD1881416500FB28EB</string>
@@ -454,9 +403,15 @@
 											<string>F24980441881561E00352BF5</string>
 											<string>F249809C1881589B00352BF5</string>
 											<string>F24980B418815A2100352BF5</string>
-											<string>F24980BE18815A4500352BF5</string>
-											<string>F24980D318815C2C00352BF5</string>
-											<string>F260DB2B170EC658008848B6</string>
+											<string>F24980DD188174BF00352BF5</string>
+											<string>F24981601881784000352BF5</string>
+											<string>F24981781881799C00352BF5</string>
+											<string>F249819618817BF200352BF5</string>
+											<string>F249819718817BF200352BF5</string>
+											<string>F249819818817BF200352BF5</string>
+											<string>F249819918817BF200352BF5</string>
+											<string>F249819A18817BF200352BF5</string>
+											<string>F24981AA18817D6300352BF5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -471,8 +426,6 @@
 							<dict>
 								<key>Frame</key>
 								<string>{{0, 0}, {2086, 856}}</string>
-								<key>RubberWindowFrame</key>
-								<string>1 120 2560 1296 0 0 2560 1418 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -496,8 +449,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {2086, 367}}</string>
-										<key>RubberWindowFrame</key>
-										<string>1 120 2560 1296 0 0 2560 1418 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -665,7 +616,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>F2E034AE0C3C2C3800BF1030</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ProductsModule.m</string>
+								<string>ShoppingBagAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -673,11 +624,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>F2E034AF0C3C2C3800BF1030</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ProductsModule.m</string>
+										<string>ShoppingBagAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F24980D518815C2C00352BF5</string>
+										<string>F24981B918817DE400352BF5</string>
 										<key>history</key>
 										<array>
 											<string>F2C6DDAA146E778300F7615C</string>
@@ -700,7 +651,6 @@
 											<string>F2C6E003146E964900F7615C</string>
 											<string>F2C6E012146E96C800F7615C</string>
 											<string>F2C6E031146E99EE00F7615C</string>
-											<string>F2C6E032146E99EE00F7615C</string>
 											<string>F2C6E053146EA48A00F7615C</string>
 											<string>F25B27B316E3C2D8006E66A2</string>
 											<string>F25B27E816E3C457006E66A2</string>
@@ -744,7 +694,8 @@
 											<string>F2498009188151F700352BF5</string>
 											<string>F249800E188151FF00352BF5</string>
 											<string>F249804B1881567B00352BF5</string>
-											<string>F24980C618815A5000352BF5</string>
+											<string>F249813E1881770900352BF5</string>
+											<string>F2498139188176EA00352BF5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -864,6 +815,8 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {2560, 471}}</string>
+						<key>RubberWindowFrame</key>
+						<string>0 122 2560 1296 0 0 2560 1418 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -938,7 +891,11 @@
 							</array>
 							<key>Frame</key>
 							<string>{{916, 0}, {1644, 401}}</string>
+							<key>RubberWindowFrame</key>
+							<string>0 122 2560 1296 0 0 2560 1418 </string>
 						</dict>
+						<key>RubberWindowFrame</key>
+						<string>0 122 2560 1296 0 0 2560 1418 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -996,13 +953,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>F24981BA18817DE400352BF5</string>
 		<string>F2497FEC188145CF00352BF5</string>
 		<string>F2497FED188145CF00352BF5</string>
-		<string>F25B29F616E404CB006E66A2</string>
 		<string>/Users/ericmorand/Projets/ShoppingBag1.4/ShoppingBag.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>1 120 2560 1296 0 0 2560 1418 </string>
+	<string>0 122 2560 1296 0 0 2560 1418 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
